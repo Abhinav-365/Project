@@ -1,0 +1,11 @@
+11:41:44,208  INFO root:21 - BookServlet initialized
+11:41:44,212 DEBUG root:28 - Handling GET request for: /
+11:41:44,212  INFO root:66 - Listing all books
+11:41:46,986 DEBUG root:28 - Handling GET request for: /new
+11:41:46,987  INFO root:74 - Showing book form
+11:41:56,563 DEBUG root:60 - Handling POST request
+11:41:56,563 DEBUG root:28 - Handling GET request for: /insert
+11:41:56,563  INFO root:80 - Inserting a new book
+11:41:56,620 DEBUG root:88 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=2100.00,bookName='Java'}
+11:41:56,625 DEBUG root:28 - Handling GET request for: /list
+11:41:56,625  INFO root:66 - Listing all books
