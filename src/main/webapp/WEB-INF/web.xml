@@ -11,4 +11,9 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.xhtml</welcome-file>
   </welcome-file-list>
+  <servlet-mapping>
+  <servlet-name>default</servlet-name>
+  <url-pattern>/resources/*</url-pattern>
+</servlet-mapping>
+  
 </web-app>   
