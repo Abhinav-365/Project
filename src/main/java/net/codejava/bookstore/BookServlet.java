@@ -63,7 +63,7 @@ public class BookServlet extends HttpServlet {
 
     private void list(HttpServletRequest req, HttpServletResponse resp)
             throws SQLException, ServletException, IOException {
-        logger.info("Listing all books");
+        logger.info("Displaying Book Records");
         List<Book> list = dao.listAllBooks();
         req.setAttribute("listBook", list);
         req.getRequestDispatcher("book-list.jsp").forward(req, resp);
