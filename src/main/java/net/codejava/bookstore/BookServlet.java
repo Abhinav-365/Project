@@ -26,7 +26,6 @@ public class BookServlet extends HttpServlet {
             throws ServletException, IOException {
         String action = req.getServletPath();
         logger.debug("Handling GET request for: " + action);
-
         try {
             switch (action) {
                 case "/new":

@@ -7,7 +7,7 @@
 <body>
   <c:choose>
     <c:when test="${book != null}">
-      <h2>Edit Record</h2>
+      <h2>Edit Records</h2>
       <form action="update" method="post">
         <input type="hidden" name="id" value="${book.id}"/>
         <input type="text" name="author"     placeholder="Author"     value="${book.author}"/>
