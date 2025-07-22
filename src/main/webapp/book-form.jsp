@@ -5,6 +5,9 @@
   <link rel="stylesheet" href="<c:url value='/resources/Styles.css'/>" />
 </head>
 <body>
+ <div style="position: absolute; top: 30px; left: 40px; z-index: 1000;">
+ <img src="<c:url value='/resources/logo.png' />" alt="BookStore Logo" style="height: 120px;" />
+ </div>
   <div class="body-container" style="width: 38%">
     <c:choose>
       <c:when test="${book != null}">

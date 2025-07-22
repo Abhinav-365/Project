@@ -1,0 +1,875 @@
+17:43:50,420  INFO root:21 - BookServlet initialized
+17:43:50,422 DEBUG root:62 - Handling POST request
+17:43:50,422 DEBUG root:28 - Handling GET request for: /login
+17:43:50,846 DEBUG root:28 - Handling GET request for: /list
+17:43:50,846  INFO root:68 - Displaying Book Records
+17:43:56,857 DEBUG root:62 - Handling POST request
+17:43:56,858 DEBUG root:28 - Handling GET request for: /login
+17:43:56,876 DEBUG root:28 - Handling GET request for: /list
+17:43:56,876  INFO root:68 - Displaying Book Records
+17:44:05,032 DEBUG root:62 - Handling POST request
+17:44:05,033 DEBUG root:28 - Handling GET request for: /login
+17:44:05,057 DEBUG root:28 - Handling GET request for: /list
+17:44:05,057  INFO root:68 - Displaying Book Records
+17:44:10,074 DEBUG root:62 - Handling POST request
+17:44:10,074 DEBUG root:28 - Handling GET request for: /login
+17:44:10,098 DEBUG root:28 - Handling GET request for: /login
+17:44:10,105 DEBUG root:28 - Handling GET request for: /login
+17:44:10,110 DEBUG root:28 - Handling GET request for: /login
+17:44:10,117 DEBUG root:28 - Handling GET request for: /login
+17:44:10,123 DEBUG root:28 - Handling GET request for: /login
+17:44:10,129 DEBUG root:28 - Handling GET request for: /login
+17:44:10,133 DEBUG root:28 - Handling GET request for: /login
+17:44:10,138 DEBUG root:28 - Handling GET request for: /login
+17:44:10,142 DEBUG root:28 - Handling GET request for: /login
+17:44:10,148 DEBUG root:28 - Handling GET request for: /login
+17:44:10,153 DEBUG root:28 - Handling GET request for: /login
+17:44:10,157 DEBUG root:28 - Handling GET request for: /login
+17:44:10,162 DEBUG root:28 - Handling GET request for: /login
+17:44:10,168 DEBUG root:28 - Handling GET request for: /login
+17:44:10,172 DEBUG root:28 - Handling GET request for: /login
+17:44:10,177 DEBUG root:28 - Handling GET request for: /login
+17:44:10,182 DEBUG root:28 - Handling GET request for: /login
+17:44:10,191 DEBUG root:28 - Handling GET request for: /login
+17:44:10,196 DEBUG root:28 - Handling GET request for: /login
+17:44:11,223 DEBUG root:28 - Handling GET request for: /login
+17:44:11,230 DEBUG root:28 - Handling GET request for: /login
+17:44:11,235 DEBUG root:28 - Handling GET request for: /login
+17:44:11,240 DEBUG root:28 - Handling GET request for: /login
+17:44:11,245 DEBUG root:28 - Handling GET request for: /login
+17:44:11,250 DEBUG root:28 - Handling GET request for: /login
+17:44:11,254 DEBUG root:28 - Handling GET request for: /login
+17:44:11,259 DEBUG root:28 - Handling GET request for: /login
+17:44:11,265 DEBUG root:28 - Handling GET request for: /login
+17:44:11,269 DEBUG root:28 - Handling GET request for: /login
+17:44:11,274 DEBUG root:28 - Handling GET request for: /login
+17:44:11,281 DEBUG root:28 - Handling GET request for: /login
+17:44:11,285 DEBUG root:28 - Handling GET request for: /login
+17:44:11,289 DEBUG root:28 - Handling GET request for: /login
+17:44:11,294 DEBUG root:28 - Handling GET request for: /login
+17:44:11,299 DEBUG root:28 - Handling GET request for: /login
+17:44:11,304 DEBUG root:28 - Handling GET request for: /login
+17:44:11,317 DEBUG root:28 - Handling GET request for: /login
+17:44:11,321 DEBUG root:28 - Handling GET request for: /login
+17:44:11,326 DEBUG root:28 - Handling GET request for: /login
+17:44:19,429 DEBUG root:62 - Handling POST request
+17:44:19,429 DEBUG root:28 - Handling GET request for: /login
+17:44:19,441 DEBUG root:28 - Handling GET request for: /list
+17:44:19,441  INFO root:68 - Displaying Book Records
+17:44:21,878 DEBUG root:28 - Handling GET request for: /new
+17:44:21,878  INFO root:76 - Showing book form
+17:44:32,283 DEBUG root:62 - Handling POST request
+17:44:32,283 DEBUG root:28 - Handling GET request for: /insert
+17:44:32,283  INFO root:82 - Inserting a new book
+17:44:32,309 DEBUG root:90 - Book inserted: Book{id=0, author='William@@@', customer='Abhinav', price=2100.00,bookName='hello'}
+17:44:32,312 DEBUG root:28 - Handling GET request for: /list
+17:44:32,312  INFO root:68 - Displaying Book Records
+17:46:47,650  INFO root:21 - BookServlet initialized
+17:46:47,652 DEBUG root:62 - Handling POST request
+17:46:47,652 DEBUG root:28 - Handling GET request for: /login
+17:46:48,100 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1312)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:65)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+17:55:32,456  INFO root:21 - BookServlet initialized
+17:55:32,459 DEBUG root:62 - Handling POST request
+17:55:32,459 DEBUG root:28 - Handling GET request for: /login
+17:55:33,142 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1312)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:65)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+17:55:52,966 DEBUG root:62 - Handling POST request
+17:55:52,967 DEBUG root:28 - Handling GET request for: /login
+17:55:52,968 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1312)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:65)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:07:56,578  INFO root:21 - BookServlet initialized
+18:07:56,580 DEBUG root:62 - Handling POST request
+18:07:56,580 DEBUG root:28 - Handling GET request for: /login
+18:07:57,328 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1312)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:65)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:09:15,267  INFO root:21 - BookServlet initialized
+18:09:15,269 DEBUG root:62 - Handling POST request
+18:09:15,270 DEBUG root:28 - Handling GET request for: /login
+18:09:15,909 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Abhinav' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1312)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:65)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:09:56,959  INFO root:21 - BookServlet initialized
+18:09:56,961 DEBUG root:62 - Handling POST request
+18:09:56,961 DEBUG root:28 - Handling GET request for: /login
+18:09:57,377 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: Column 'username' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:81)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:55)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:600)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:922)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:68)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:10:36,551  INFO root:21 - BookServlet initialized
+18:10:36,554 DEBUG root:62 - Handling POST request
+18:10:36,554 DEBUG root:28 - Handling GET request for: /login
+18:10:36,964 DEBUG root:28 - Handling GET request for: /list
+18:10:36,964  INFO root:68 - Displaying Book Records
+18:10:39,177 DEBUG root:28 - Handling GET request for: /new
+18:10:39,177  INFO root:76 - Showing book form
+18:10:50,707 DEBUG root:62 - Handling POST request
+18:10:50,707 DEBUG root:28 - Handling GET request for: /insert
+18:10:50,707  INFO root:82 - Inserting a new book
+18:10:50,740 DEBUG root:90 - Book inserted: Book{id=0, author='William@@@', customer='Abhinav', price=1200.00,bookName='Java'}
+18:10:50,744 DEBUG root:28 - Handling GET request for: /list
+18:10:50,744  INFO root:68 - Displaying Book Records
+18:11:28,583 DEBUG root:28 - Handling GET request for: /list
+18:11:28,584  INFO root:68 - Displaying Book Records
+18:11:31,633 DEBUG root:28 - Handling GET request for: /list
+18:11:31,633  INFO root:68 - Displaying Book Records
+18:12:39,275  INFO root:21 - BookServlet initialized
+18:12:39,277 DEBUG root:62 - Handling POST request
+18:12:39,278 DEBUG root:28 - Handling GET request for: /login
+18:12:39,694 DEBUG root:28 - Handling GET request for: /list
+18:12:39,695  INFO root:68 - Displaying Book Records
+18:12:46,959 DEBUG root:62 - Handling POST request
+18:12:46,959 DEBUG root:28 - Handling GET request for: /login
+18:12:46,979 DEBUG root:28 - Handling GET request for: /list
+18:12:46,980  INFO root:68 - Displaying Book Records
+18:12:54,125 DEBUG root:28 - Handling GET request for: /list
+18:12:54,125  INFO root:68 - Displaying Book Records
+18:14:54,514 DEBUG root:28 - Handling GET request for: /list
+18:14:54,514  INFO root:68 - Displaying Book Records
+18:15:21,190  INFO root:21 - BookServlet initialized
+18:15:21,192 DEBUG root:62 - Handling POST request
+18:15:21,192 DEBUG root:28 - Handling GET request for: /login
+18:15:21,620 DEBUG root:28 - Handling GET request for: /login
+18:15:21,626 DEBUG root:28 - Handling GET request for: /login
+18:15:21,633 DEBUG root:28 - Handling GET request for: /login
+18:15:21,640 DEBUG root:28 - Handling GET request for: /login
+18:15:21,646 DEBUG root:28 - Handling GET request for: /login
+18:15:21,651 DEBUG root:28 - Handling GET request for: /login
+18:15:21,658 DEBUG root:28 - Handling GET request for: /login
+18:15:21,663 DEBUG root:28 - Handling GET request for: /login
+18:15:21,669 DEBUG root:28 - Handling GET request for: /login
+18:15:21,673 DEBUG root:28 - Handling GET request for: /login
+18:15:21,678 DEBUG root:28 - Handling GET request for: /login
+18:15:21,683 DEBUG root:28 - Handling GET request for: /login
+18:15:21,688 DEBUG root:28 - Handling GET request for: /login
+18:15:21,692 DEBUG root:28 - Handling GET request for: /login
+18:15:21,697 DEBUG root:28 - Handling GET request for: /login
+18:15:21,701 DEBUG root:28 - Handling GET request for: /login
+18:15:21,706 DEBUG root:28 - Handling GET request for: /login
+18:15:21,710 DEBUG root:28 - Handling GET request for: /login
+18:15:21,715 DEBUG root:28 - Handling GET request for: /login
+18:15:22,743 DEBUG root:28 - Handling GET request for: /login
+18:15:22,749 DEBUG root:28 - Handling GET request for: /login
+18:15:22,753 DEBUG root:28 - Handling GET request for: /login
+18:15:22,758 DEBUG root:28 - Handling GET request for: /login
+18:15:22,762 DEBUG root:28 - Handling GET request for: /login
+18:15:22,766 DEBUG root:28 - Handling GET request for: /login
+18:15:22,771 DEBUG root:28 - Handling GET request for: /login
+18:15:22,775 DEBUG root:28 - Handling GET request for: /login
+18:15:22,778 DEBUG root:28 - Handling GET request for: /login
+18:15:22,782 DEBUG root:28 - Handling GET request for: /login
+18:15:22,787 DEBUG root:28 - Handling GET request for: /login
+18:15:22,791 DEBUG root:28 - Handling GET request for: /login
+18:15:22,795 DEBUG root:28 - Handling GET request for: /login
+18:15:22,799 DEBUG root:28 - Handling GET request for: /login
+18:15:22,803 DEBUG root:28 - Handling GET request for: /login
+18:15:22,806 DEBUG root:28 - Handling GET request for: /login
+18:15:22,810 DEBUG root:28 - Handling GET request for: /login
+18:15:22,814 DEBUG root:28 - Handling GET request for: /login
+18:15:22,818 DEBUG root:28 - Handling GET request for: /login
+18:15:22,821 DEBUG root:28 - Handling GET request for: /login
+18:15:23,596 DEBUG root:28 - Handling GET request for: /login
+18:15:23,602 DEBUG root:28 - Handling GET request for: /login
+18:15:23,606 DEBUG root:28 - Handling GET request for: /login
+18:15:23,609 DEBUG root:28 - Handling GET request for: /login
+18:15:23,613 DEBUG root:28 - Handling GET request for: /login
+18:15:23,617 DEBUG root:28 - Handling GET request for: /login
+18:15:23,620 DEBUG root:28 - Handling GET request for: /login
+18:15:23,624 DEBUG root:28 - Handling GET request for: /login
+18:15:23,627 DEBUG root:28 - Handling GET request for: /login
+18:15:23,630 DEBUG root:28 - Handling GET request for: /login
+18:15:23,635 DEBUG root:28 - Handling GET request for: /login
+18:15:23,638 DEBUG root:28 - Handling GET request for: /login
+18:15:23,641 DEBUG root:28 - Handling GET request for: /login
+18:15:23,645 DEBUG root:28 - Handling GET request for: /login
+18:15:23,650 DEBUG root:28 - Handling GET request for: /login
+18:15:23,653 DEBUG root:28 - Handling GET request for: /login
+18:15:23,657 DEBUG root:28 - Handling GET request for: /login
+18:15:23,660 DEBUG root:28 - Handling GET request for: /login
+18:15:23,664 DEBUG root:28 - Handling GET request for: /login
+18:15:23,668 DEBUG root:28 - Handling GET request for: /login
+18:15:24,532 DEBUG root:28 - Handling GET request for: /login
+18:15:24,537 DEBUG root:28 - Handling GET request for: /login
+18:15:24,543 DEBUG root:28 - Handling GET request for: /login
+18:15:24,548 DEBUG root:28 - Handling GET request for: /login
+18:15:24,552 DEBUG root:28 - Handling GET request for: /login
+18:15:24,555 DEBUG root:28 - Handling GET request for: /login
+18:15:24,558 DEBUG root:28 - Handling GET request for: /login
+18:15:24,562 DEBUG root:28 - Handling GET request for: /login
+18:15:24,566 DEBUG root:28 - Handling GET request for: /login
+18:15:24,569 DEBUG root:28 - Handling GET request for: /login
+18:15:24,572 DEBUG root:28 - Handling GET request for: /login
+18:15:24,576 DEBUG root:28 - Handling GET request for: /login
+18:15:24,580 DEBUG root:28 - Handling GET request for: /login
+18:15:24,583 DEBUG root:28 - Handling GET request for: /login
+18:15:24,586 DEBUG root:28 - Handling GET request for: /login
+18:15:24,590 DEBUG root:28 - Handling GET request for: /login
+18:15:24,594 DEBUG root:28 - Handling GET request for: /login
+18:15:24,603 DEBUG root:28 - Handling GET request for: /login
+18:15:24,606 DEBUG root:28 - Handling GET request for: /login
+18:15:24,611 DEBUG root:28 - Handling GET request for: /login
+18:15:28,892 DEBUG root:62 - Handling POST request
+18:15:28,892 DEBUG root:28 - Handling GET request for: /login
+18:15:28,926 DEBUG root:28 - Handling GET request for: /login
+18:15:28,930 DEBUG root:28 - Handling GET request for: /login
+18:15:28,933 DEBUG root:28 - Handling GET request for: /login
+18:15:28,937 DEBUG root:28 - Handling GET request for: /login
+18:15:28,941 DEBUG root:28 - Handling GET request for: /login
+18:15:28,944 DEBUG root:28 - Handling GET request for: /login
+18:15:28,947 DEBUG root:28 - Handling GET request for: /login
+18:15:28,951 DEBUG root:28 - Handling GET request for: /login
+18:15:28,955 DEBUG root:28 - Handling GET request for: /login
+18:15:28,958 DEBUG root:28 - Handling GET request for: /login
+18:15:28,961 DEBUG root:28 - Handling GET request for: /login
+18:15:28,964 DEBUG root:28 - Handling GET request for: /login
+18:15:28,968 DEBUG root:28 - Handling GET request for: /login
+18:15:28,971 DEBUG root:28 - Handling GET request for: /login
+18:15:28,974 DEBUG root:28 - Handling GET request for: /login
+18:15:28,977 DEBUG root:28 - Handling GET request for: /login
+18:15:28,980 DEBUG root:28 - Handling GET request for: /login
+18:15:28,984 DEBUG root:28 - Handling GET request for: /login
+18:15:28,987 DEBUG root:28 - Handling GET request for: /login
+18:15:30,009 DEBUG root:28 - Handling GET request for: /login
+18:15:30,014 DEBUG root:28 - Handling GET request for: /login
+18:15:30,019 DEBUG root:28 - Handling GET request for: /login
+18:15:30,023 DEBUG root:28 - Handling GET request for: /login
+18:15:30,026 DEBUG root:28 - Handling GET request for: /login
+18:15:30,029 DEBUG root:28 - Handling GET request for: /login
+18:15:30,033 DEBUG root:28 - Handling GET request for: /login
+18:15:30,037 DEBUG root:28 - Handling GET request for: /login
+18:15:30,041 DEBUG root:28 - Handling GET request for: /login
+18:15:30,044 DEBUG root:28 - Handling GET request for: /login
+18:15:30,047 DEBUG root:28 - Handling GET request for: /login
+18:15:30,051 DEBUG root:28 - Handling GET request for: /login
+18:15:30,056 DEBUG root:28 - Handling GET request for: /login
+18:15:30,059 DEBUG root:28 - Handling GET request for: /login
+18:15:30,063 DEBUG root:28 - Handling GET request for: /login
+18:15:30,067 DEBUG root:28 - Handling GET request for: /login
+18:15:30,072 DEBUG root:28 - Handling GET request for: /login
+18:15:30,075 DEBUG root:28 - Handling GET request for: /login
+18:15:30,078 DEBUG root:28 - Handling GET request for: /login
+18:15:30,081 DEBUG root:28 - Handling GET request for: /login
+18:15:35,093 DEBUG root:28 - Handling GET request for: /login
+18:15:35,098 DEBUG root:28 - Handling GET request for: /login
+18:15:35,103 DEBUG root:28 - Handling GET request for: /login
+18:15:35,108 DEBUG root:28 - Handling GET request for: /login
+18:15:35,113 DEBUG root:28 - Handling GET request for: /login
+18:15:35,118 DEBUG root:28 - Handling GET request for: /login
+18:15:35,121 DEBUG root:28 - Handling GET request for: /login
+18:15:35,125 DEBUG root:28 - Handling GET request for: /login
+18:15:35,129 DEBUG root:28 - Handling GET request for: /login
+18:15:35,132 DEBUG root:28 - Handling GET request for: /login
+18:15:35,135 DEBUG root:28 - Handling GET request for: /login
+18:15:35,138 DEBUG root:28 - Handling GET request for: /login
+18:15:35,142 DEBUG root:28 - Handling GET request for: /login
+18:15:35,145 DEBUG root:28 - Handling GET request for: /login
+18:15:35,150 DEBUG root:28 - Handling GET request for: /login
+18:15:35,155 DEBUG root:28 - Handling GET request for: /login
+18:15:35,159 DEBUG root:28 - Handling GET request for: /login
+18:15:35,163 DEBUG root:28 - Handling GET request for: /login
+18:15:35,166 DEBUG root:28 - Handling GET request for: /login
+18:15:35,169 DEBUG root:28 - Handling GET request for: /login
+18:16:05,183 DEBUG root:28 - Handling GET request for: /login
+18:16:05,191 DEBUG root:28 - Handling GET request for: /login
+18:16:05,195 DEBUG root:28 - Handling GET request for: /login
+18:16:05,199 DEBUG root:28 - Handling GET request for: /login
+18:16:05,202 DEBUG root:28 - Handling GET request for: /login
+18:16:05,206 DEBUG root:28 - Handling GET request for: /login
+18:16:05,209 DEBUG root:28 - Handling GET request for: /login
+18:16:05,213 DEBUG root:28 - Handling GET request for: /login
+18:16:05,217 DEBUG root:28 - Handling GET request for: /login
+18:16:05,219 DEBUG root:28 - Handling GET request for: /login
+18:16:05,222 DEBUG root:28 - Handling GET request for: /login
+18:16:05,225 DEBUG root:28 - Handling GET request for: /login
+18:16:05,228 DEBUG root:28 - Handling GET request for: /login
+18:16:05,232 DEBUG root:28 - Handling GET request for: /login
+18:16:05,235 DEBUG root:28 - Handling GET request for: /login
+18:16:05,238 DEBUG root:28 - Handling GET request for: /login
+18:16:05,242 DEBUG root:28 - Handling GET request for: /login
+18:16:05,246 DEBUG root:28 - Handling GET request for: /login
+18:16:05,250 DEBUG root:28 - Handling GET request for: /login
+18:16:05,253 DEBUG root:28 - Handling GET request for: /login
+18:17:05,265 DEBUG root:28 - Handling GET request for: /login
+18:17:05,270 DEBUG root:28 - Handling GET request for: /login
+18:17:05,275 DEBUG root:28 - Handling GET request for: /login
+18:17:05,279 DEBUG root:28 - Handling GET request for: /login
+18:17:05,282 DEBUG root:28 - Handling GET request for: /login
+18:17:05,287 DEBUG root:28 - Handling GET request for: /login
+18:17:05,290 DEBUG root:28 - Handling GET request for: /login
+18:17:05,293 DEBUG root:28 - Handling GET request for: /login
+18:17:05,296 DEBUG root:28 - Handling GET request for: /login
+18:17:05,299 DEBUG root:28 - Handling GET request for: /login
+18:17:05,302 DEBUG root:28 - Handling GET request for: /login
+18:17:05,305 DEBUG root:28 - Handling GET request for: /login
+18:17:05,308 DEBUG root:28 - Handling GET request for: /login
+18:17:05,312 DEBUG root:28 - Handling GET request for: /login
+18:17:05,315 DEBUG root:28 - Handling GET request for: /login
+18:17:05,318 DEBUG root:28 - Handling GET request for: /login
+18:17:05,321 DEBUG root:28 - Handling GET request for: /login
+18:17:05,324 DEBUG root:28 - Handling GET request for: /login
+18:17:05,327 DEBUG root:28 - Handling GET request for: /login
+18:17:05,331 DEBUG root:28 - Handling GET request for: /login
+18:24:36,752  INFO root:21 - BookServlet initialized
+18:24:36,754 DEBUG root:62 - Handling POST request
+18:24:36,755 DEBUG root:28 - Handling GET request for: /login
+18:24:37,213 DEBUG root:28 - Handling GET request for: /list
+18:24:37,213  INFO root:68 - Displaying Book Records
+18:24:40,042 DEBUG root:28 - Handling GET request for: /new
+18:24:40,042  INFO root:76 - Showing book form
+18:24:50,068 DEBUG root:62 - Handling POST request
+18:24:50,068 DEBUG root:28 - Handling GET request for: /insert
+18:24:50,068  INFO root:82 - Inserting a new book
+18:24:50,099 DEBUG root:90 - Book inserted: Book{id=0, author='Jane ', customer='Abhinav', price=2100.00,bookName='Java'}
+18:24:50,103 DEBUG root:28 - Handling GET request for: /list
+18:24:50,103  INFO root:68 - Displaying Book Records
+18:29:20,847 DEBUG root:62 - Handling POST request
+18:29:20,847 DEBUG root:28 - Handling GET request for: /login
+18:29:20,865 DEBUG root:28 - Handling GET request for: /list
+18:29:20,866  INFO root:68 - Displaying Book Records
+18:29:30,762  INFO root:21 - BookServlet initialized
+18:29:30,763 DEBUG root:62 - Handling POST request
+18:29:30,764 DEBUG root:28 - Handling GET request for: /login
+18:29:30,910 DEBUG root:28 - Handling GET request for: /list
+18:29:30,910  INFO root:68 - Displaying Book Records
+18:37:34,341  INFO root:21 - BookServlet initialized
+18:37:34,343 DEBUG root:62 - Handling POST request
+18:37:34,343 DEBUG root:28 - Handling GET request for: /login
+18:37:35,014 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND password = ?' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1312)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:66)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:38:26,283  INFO root:21 - BookServlet initialized
+18:38:26,286 DEBUG root:62 - Handling POST request
+18:38:26,286 DEBUG root:28 - Handling GET request for: /login
+18:38:26,735 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:81)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:55)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1482)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1497)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:2015)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:62)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:38:58,312  INFO root:21 - BookServlet initialized
+18:38:58,314 DEBUG root:62 - Handling POST request
+18:38:58,314 DEBUG root:28 - Handling GET request for: /login
+18:38:58,735 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:81)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:55)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1482)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1497)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:2015)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:62)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:40:01,140  INFO root:21 - BookServlet initialized
+18:40:01,142 DEBUG root:62 - Handling POST request
+18:40:01,143 DEBUG root:28 - Handling GET request for: /login
+18:40:01,563 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:81)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:55)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1482)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1497)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:2015)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:62)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:40:58,358  INFO root:21 - BookServlet initialized
+18:40:58,360 DEBUG root:62 - Handling POST request
+18:40:58,360 DEBUG root:28 - Handling GET request for: /login
+18:40:58,770 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:81)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:55)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1482)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1497)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:2015)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:62)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:41:44,049  INFO root:21 - BookServlet initialized
+18:41:44,052 DEBUG root:62 - Handling POST request
+18:41:44,052 DEBUG root:28 - Handling GET request for: /login
+18:41:44,501 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:81)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:55)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1482)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1497)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:2015)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:62)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:42:50,771  INFO root:21 - BookServlet initialized
+18:42:50,773 DEBUG root:62 - Handling POST request
+18:42:50,773 DEBUG root:28 - Handling GET request for: /login
+18:42:51,232 DEBUG root:28 - Handling GET request for: /list
+18:42:51,232  INFO root:68 - Displaying Book Records
+18:43:37,691  INFO root:21 - BookServlet initialized
+18:43:37,694 DEBUG root:62 - Handling POST request
+18:43:37,694 DEBUG root:28 - Handling GET request for: /login
+18:43:38,041 DEBUG root:62 - Handling POST request
+18:43:38,041 DEBUG root:28 - Handling GET request for: /login
+18:43:38,228 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:81)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:55)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1482)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1497)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:2015)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:62)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:43:38,228 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:81)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:55)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1482)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1497)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.setString(ClientPreparedStatement.java:2015)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:62)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:44:40,373  INFO root:21 - BookServlet initialized
+18:44:40,375 DEBUG root:62 - Handling POST request
+18:44:40,376 DEBUG root:28 - Handling GET request for: /login
+18:44:41,052 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1312)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:65)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)

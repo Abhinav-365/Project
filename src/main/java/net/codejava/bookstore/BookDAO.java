@@ -2,6 +2,8 @@ package net.codejava.bookstore;
 
 import java.sql.*;
 import java.util.*;
+import java.security.MessageDigest;
+
 
 public class BookDAO {
     private final String URL = "jdbc:mysql://localhost:3306/Store";
@@ -54,6 +56,43 @@ public class BookDAO {
         return row;
     }
 
+    public boolean loginStore(String username, String password) throws SQLException {
+        String sql = "SELECT password FROM login WHERE user_name = ?";
+        connect();
+
+        boolean auth = false;
+
+        try (PreparedStatement smt = jdbcConnection.prepareStatement(sql)) {
+            smt.setString(1, username);
+            try (ResultSet rs = smt.executeQuery()) {
+                if (rs.next()) {
+                    String storedHash = rs.getString("password");
+                    String inputHash = sha256(password); 
+                    auth = storedHash.equals(inputHash);
+                }
+            }
+        }
+
+        return auth;
+    }
+
+    public String sha256(String input) {
+        try {
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
+            byte[] hash = md.digest(input.getBytes("UTF-8"));
+            StringBuilder hexString = new StringBuilder();
+            for (byte b : hash) {
+                String hex = Integer.toHexString(0xff & b);
+                if (hex.length() == 1) hexString.append('0');
+                hexString.append(hex);
+            }
+            return hexString.toString();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
     public boolean updateBook(Book book) throws SQLException {
         String sql = "UPDATE Book_Store SET Author_Name=?, Price=?, Customer_Name=?, Book_Name=? WHERE Id=?";
         connect();
@@ -97,4 +136,38 @@ public class BookDAO {
         rs.close(); ps.close(); disconnect();
         return book;
     }
+   
+   public List<Book> listBooksPaginated(int offset, int limit) throws SQLException {
+       List<Book> list = new ArrayList<>();
+       String sql = "SELECT * FROM Book_Store LIMIT ?, ?";
+       connect();
+       PreparedStatement ps = jdbcConnection.prepareStatement(sql);
+       ps.setInt(1, offset);
+       ps.setInt(2, limit);
+       ResultSet rs = ps.executeQuery();
+
+       while (rs.next()) {
+           list.add(new Book(
+               rs.getInt("Id"),
+               rs.getString("Author_Name"),
+               rs.getString("Customer_Name"),
+               rs.getFloat("Price"),
+               rs.getString("Book_Name")
+           ));
+       }
+       rs.close(); ps.close(); disconnect();
+       return list;
+   }
+
+   public int countBooks() throws SQLException {
+       String sql = "SELECT COUNT(*) FROM Book_Store";
+       connect();
+       Statement stmt = jdbcConnection.createStatement();
+       ResultSet rs = stmt.executeQuery(sql);
+       rs.next();
+       int total = rs.getInt(1);
+       rs.close(); stmt.close(); disconnect();
+       return total;
+   }
+
 }

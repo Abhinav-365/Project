@@ -43,6 +43,9 @@ public class BookServlet extends HttpServlet {
                 case "/delete":
                     delete(req, resp);
                     break;
+                case "/login":
+                	login(req,resp);
+                	break;
                 default:
                     list(req, resp);
                     break;
@@ -62,11 +65,27 @@ public class BookServlet extends HttpServlet {
 
     private void list(HttpServletRequest req, HttpServletResponse resp)
             throws SQLException, ServletException, IOException {
-        logger.info("Displaying Book Records");
-        List<Book> list = dao.listAllBooks();
-        req.setAttribute("listBook", list);
+
+        int page = 1;                
+        int recordsPerPage = 5;      
+
+        if (req.getParameter("page") != null) {
+            page = Integer.parseInt(req.getParameter("page"));
+        }
+
+        List<Book> books = dao.listBooksPaginated(
+                (page - 1) * recordsPerPage, recordsPerPage);
+
+        int totalRecords = dao.countBooks();
+        int totalPages   = (int) Math.ceil(totalRecords * 1.0 / recordsPerPage);
+
+        req.setAttribute("listBook",   books);
+        req.setAttribute("currentPage", page);
+        req.setAttribute("totalPages",  totalPages);
+
         req.getRequestDispatcher("book-list.jsp").forward(req, resp);
     }
+
 
     private void showForm(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
@@ -118,4 +137,30 @@ public class BookServlet extends HttpServlet {
         logger.warn("Deleted book with ID: " + id);
         resp.sendRedirect("list");
     }
-}
+    
+    private void login(HttpServletRequest req, HttpServletResponse resp)
+            throws SQLException, IOException, ServletException {
+
+        String username = req.getParameter("userName");
+        String password = req.getParameter("password");
+
+        if (username == null || username.trim().isEmpty() || 
+            password == null || password.trim().isEmpty()) {
+            
+            req.setAttribute("errorMsg", "Username and password are required!");
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
+        }
+
+        boolean auth = dao.loginStore(username, password);
+
+        if (auth) {
+            logger.warn("Logged in Successfully");
+            resp.sendRedirect("list");
+        } else {
+            logger.warn("Login failed");
+            req.setAttribute("errorMessage", "Invalid username or password");
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
+        }
+    }
+
+}         
