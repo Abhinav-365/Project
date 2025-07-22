@@ -1,0 +1,1053 @@
+10:51:25,941  INFO root:21 - BookServlet initialized
+10:51:25,943 DEBUG root:62 - Handling POST request
+10:51:25,944 DEBUG root:28 - Handling GET request for: /login
+10:51:26,696 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1312)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:66)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+10:51:57,700  INFO root:21 - BookServlet initialized
+10:51:57,702 DEBUG root:62 - Handling POST request
+10:51:57,702 DEBUG root:28 - Handling GET request for: /login
+10:51:58,388 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1312)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:66)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:128)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:63)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+10:53:45,298  INFO root:21 - BookServlet initialized
+10:53:45,300 DEBUG root:62 - Handling POST request
+10:53:45,301 DEBUG root:28 - Handling GET request for: /login
+10:53:45,723 DEBUG root:28 - Handling GET request for: /list
+10:53:45,723  INFO root:68 - Displaying Book Records
+10:55:31,092  INFO root:21 - BookServlet initialized
+10:55:31,093 DEBUG root:28 - Handling GET request for: /new
+10:55:31,093  INFO root:76 - Showing book form
+10:55:44,898 DEBUG root:62 - Handling POST request
+10:55:44,898 DEBUG root:28 - Handling GET request for: /insert
+10:55:44,898  INFO root:82 - Inserting a new book
+10:55:45,098 DEBUG root:90 - Book inserted: Book{id=0, author='William', customer='Raj', price=1200.00,bookName='hello World By william'}
+10:55:45,102 DEBUG root:28 - Handling GET request for: /list
+10:55:45,102  INFO root:68 - Displaying Book Records
+10:56:58,332 DEBUG root:62 - Handling POST request
+10:56:58,333 DEBUG root:28 - Handling GET request for: /login
+10:56:58,353 DEBUG root:28 - Handling GET request for: /login
+10:56:58,358 DEBUG root:28 - Handling GET request for: /login
+10:56:58,362 DEBUG root:28 - Handling GET request for: /login
+10:56:58,366 DEBUG root:28 - Handling GET request for: /login
+10:56:58,372 DEBUG root:28 - Handling GET request for: /login
+10:56:58,377 DEBUG root:28 - Handling GET request for: /login
+10:56:58,381 DEBUG root:28 - Handling GET request for: /login
+10:56:58,386 DEBUG root:28 - Handling GET request for: /login
+10:56:58,390 DEBUG root:28 - Handling GET request for: /login
+10:56:58,394 DEBUG root:28 - Handling GET request for: /login
+10:56:58,398 DEBUG root:28 - Handling GET request for: /login
+10:56:58,403 DEBUG root:28 - Handling GET request for: /login
+10:56:58,407 DEBUG root:28 - Handling GET request for: /login
+10:56:58,410 DEBUG root:28 - Handling GET request for: /login
+10:56:58,414 DEBUG root:28 - Handling GET request for: /login
+10:56:58,417 DEBUG root:28 - Handling GET request for: /login
+10:56:58,422 DEBUG root:28 - Handling GET request for: /login
+10:56:58,425 DEBUG root:28 - Handling GET request for: /login
+10:56:58,429 DEBUG root:28 - Handling GET request for: /login
+10:56:59,455 DEBUG root:28 - Handling GET request for: /login
+10:56:59,463 DEBUG root:28 - Handling GET request for: /login
+10:56:59,467 DEBUG root:28 - Handling GET request for: /login
+10:56:59,471 DEBUG root:28 - Handling GET request for: /login
+10:56:59,474 DEBUG root:28 - Handling GET request for: /login
+10:56:59,477 DEBUG root:28 - Handling GET request for: /login
+10:56:59,481 DEBUG root:28 - Handling GET request for: /login
+10:56:59,486 DEBUG root:28 - Handling GET request for: /login
+10:56:59,489 DEBUG root:28 - Handling GET request for: /login
+10:56:59,493 DEBUG root:28 - Handling GET request for: /login
+10:56:59,497 DEBUG root:28 - Handling GET request for: /login
+10:56:59,502 DEBUG root:28 - Handling GET request for: /login
+10:56:59,505 DEBUG root:28 - Handling GET request for: /login
+10:56:59,512 DEBUG root:28 - Handling GET request for: /login
+10:56:59,515 DEBUG root:28 - Handling GET request for: /login
+10:56:59,520 DEBUG root:28 - Handling GET request for: /login
+10:56:59,523 DEBUG root:28 - Handling GET request for: /login
+10:56:59,527 DEBUG root:28 - Handling GET request for: /login
+10:56:59,531 DEBUG root:28 - Handling GET request for: /login
+10:56:59,534 DEBUG root:28 - Handling GET request for: /login
+10:57:00,584 DEBUG root:28 - Handling GET request for: /login
+10:57:00,590 DEBUG root:28 - Handling GET request for: /login
+10:57:00,595 DEBUG root:28 - Handling GET request for: /login
+10:57:00,600 DEBUG root:28 - Handling GET request for: /login
+10:57:00,605 DEBUG root:28 - Handling GET request for: /login
+10:57:00,609 DEBUG root:28 - Handling GET request for: /login
+10:57:00,612 DEBUG root:28 - Handling GET request for: /login
+10:57:00,617 DEBUG root:28 - Handling GET request for: /login
+10:57:00,621 DEBUG root:28 - Handling GET request for: /login
+10:57:00,625 DEBUG root:28 - Handling GET request for: /login
+10:57:00,628 DEBUG root:28 - Handling GET request for: /login
+10:57:00,632 DEBUG root:28 - Handling GET request for: /login
+10:57:00,636 DEBUG root:28 - Handling GET request for: /login
+10:57:00,640 DEBUG root:28 - Handling GET request for: /login
+10:57:00,643 DEBUG root:28 - Handling GET request for: /login
+10:57:00,647 DEBUG root:28 - Handling GET request for: /login
+10:57:00,652 DEBUG root:28 - Handling GET request for: /login
+10:57:00,656 DEBUG root:28 - Handling GET request for: /login
+10:57:00,659 DEBUG root:28 - Handling GET request for: /login
+10:57:00,663 DEBUG root:28 - Handling GET request for: /login
+11:00:30,095  INFO root:21 - BookServlet initialized
+11:00:30,098 DEBUG root:62 - Handling POST request
+11:00:30,098 DEBUG root:28 - Handling GET request for: /login
+11:00:30,484 DEBUG root:28 - Handling GET request for: /list
+11:00:30,484  INFO root:68 - Displaying Book Records
+11:00:35,886 DEBUG root:62 - Handling POST request
+11:00:35,886 DEBUG root:28 - Handling GET request for: /login
+11:00:35,906 DEBUG root:28 - Handling GET request for: /login
+11:00:35,913 DEBUG root:28 - Handling GET request for: /login
+11:00:35,917 DEBUG root:28 - Handling GET request for: /login
+11:00:35,921 DEBUG root:28 - Handling GET request for: /login
+11:00:35,924 DEBUG root:28 - Handling GET request for: /login
+11:00:35,927 DEBUG root:28 - Handling GET request for: /login
+11:00:35,932 DEBUG root:28 - Handling GET request for: /login
+11:00:35,936 DEBUG root:28 - Handling GET request for: /login
+11:00:35,940 DEBUG root:28 - Handling GET request for: /login
+11:00:35,943 DEBUG root:28 - Handling GET request for: /login
+11:00:35,948 DEBUG root:28 - Handling GET request for: /login
+11:00:35,951 DEBUG root:28 - Handling GET request for: /login
+11:00:35,954 DEBUG root:28 - Handling GET request for: /login
+11:00:35,958 DEBUG root:28 - Handling GET request for: /login
+11:00:35,962 DEBUG root:28 - Handling GET request for: /login
+11:00:35,965 DEBUG root:28 - Handling GET request for: /login
+11:00:35,968 DEBUG root:28 - Handling GET request for: /login
+11:00:35,972 DEBUG root:28 - Handling GET request for: /login
+11:00:35,975 DEBUG root:28 - Handling GET request for: /login
+11:00:36,999 DEBUG root:28 - Handling GET request for: /login
+11:00:37,004 DEBUG root:28 - Handling GET request for: /login
+11:00:37,009 DEBUG root:28 - Handling GET request for: /login
+11:00:37,013 DEBUG root:28 - Handling GET request for: /login
+11:00:37,017 DEBUG root:28 - Handling GET request for: /login
+11:00:37,021 DEBUG root:28 - Handling GET request for: /login
+11:00:37,025 DEBUG root:28 - Handling GET request for: /login
+11:00:37,030 DEBUG root:28 - Handling GET request for: /login
+11:00:37,033 DEBUG root:28 - Handling GET request for: /login
+11:00:37,036 DEBUG root:28 - Handling GET request for: /login
+11:00:37,039 DEBUG root:28 - Handling GET request for: /login
+11:00:37,043 DEBUG root:28 - Handling GET request for: /login
+11:00:37,048 DEBUG root:28 - Handling GET request for: /login
+11:00:37,051 DEBUG root:28 - Handling GET request for: /login
+11:00:37,054 DEBUG root:28 - Handling GET request for: /login
+11:00:37,059 DEBUG root:28 - Handling GET request for: /login
+11:00:37,063 DEBUG root:28 - Handling GET request for: /login
+11:00:37,066 DEBUG root:28 - Handling GET request for: /login
+11:00:37,069 DEBUG root:28 - Handling GET request for: /login
+11:00:37,073 DEBUG root:28 - Handling GET request for: /login
+11:00:37,700 DEBUG root:28 - Handling GET request for: /login
+11:00:37,705 DEBUG root:28 - Handling GET request for: /login
+11:00:37,709 DEBUG root:28 - Handling GET request for: /login
+11:00:37,714 DEBUG root:28 - Handling GET request for: /login
+11:00:37,717 DEBUG root:28 - Handling GET request for: /login
+11:00:37,720 DEBUG root:28 - Handling GET request for: /login
+11:00:37,724 DEBUG root:28 - Handling GET request for: /login
+11:00:37,728 DEBUG root:28 - Handling GET request for: /login
+11:00:37,731 DEBUG root:28 - Handling GET request for: /login
+11:00:37,734 DEBUG root:28 - Handling GET request for: /login
+11:00:37,737 DEBUG root:28 - Handling GET request for: /login
+11:00:37,739 DEBUG root:28 - Handling GET request for: /login
+11:00:37,743 DEBUG root:28 - Handling GET request for: /login
+11:00:37,747 DEBUG root:28 - Handling GET request for: /login
+11:00:37,750 DEBUG root:28 - Handling GET request for: /login
+11:00:37,753 DEBUG root:28 - Handling GET request for: /login
+11:00:37,756 DEBUG root:28 - Handling GET request for: /login
+11:00:37,759 DEBUG root:28 - Handling GET request for: /login
+11:00:37,763 DEBUG root:28 - Handling GET request for: /login
+11:00:37,766 DEBUG root:28 - Handling GET request for: /login
+11:00:43,929 DEBUG root:62 - Handling POST request
+11:00:43,929 DEBUG root:28 - Handling GET request for: /login
+11:00:43,933 DEBUG root:28 - Handling GET request for: /login
+11:00:43,938 DEBUG root:28 - Handling GET request for: /login
+11:00:43,942 DEBUG root:28 - Handling GET request for: /login
+11:00:43,945 DEBUG root:28 - Handling GET request for: /login
+11:00:43,949 DEBUG root:28 - Handling GET request for: /login
+11:00:43,952 DEBUG root:28 - Handling GET request for: /login
+11:00:43,954 DEBUG root:28 - Handling GET request for: /login
+11:00:43,957 DEBUG root:28 - Handling GET request for: /login
+11:00:43,962 DEBUG root:28 - Handling GET request for: /login
+11:00:43,964 DEBUG root:28 - Handling GET request for: /login
+11:00:43,967 DEBUG root:28 - Handling GET request for: /login
+11:00:43,969 DEBUG root:28 - Handling GET request for: /login
+11:00:43,973 DEBUG root:28 - Handling GET request for: /login
+11:00:43,976 DEBUG root:28 - Handling GET request for: /login
+11:00:43,978 DEBUG root:28 - Handling GET request for: /login
+11:00:43,981 DEBUG root:28 - Handling GET request for: /login
+11:00:43,984 DEBUG root:28 - Handling GET request for: /login
+11:00:43,986 DEBUG root:28 - Handling GET request for: /login
+11:00:43,989 DEBUG root:28 - Handling GET request for: /login
+11:00:45,011 DEBUG root:28 - Handling GET request for: /login
+11:00:45,017 DEBUG root:28 - Handling GET request for: /login
+11:00:45,021 DEBUG root:28 - Handling GET request for: /login
+11:00:45,030 DEBUG root:28 - Handling GET request for: /login
+11:00:45,034 DEBUG root:28 - Handling GET request for: /login
+11:00:45,037 DEBUG root:28 - Handling GET request for: /login
+11:00:45,040 DEBUG root:28 - Handling GET request for: /login
+11:00:45,045 DEBUG root:28 - Handling GET request for: /login
+11:00:45,048 DEBUG root:28 - Handling GET request for: /login
+11:00:45,051 DEBUG root:28 - Handling GET request for: /login
+11:00:45,055 DEBUG root:28 - Handling GET request for: /login
+11:00:45,059 DEBUG root:28 - Handling GET request for: /login
+11:00:45,061 DEBUG root:28 - Handling GET request for: /login
+11:00:45,064 DEBUG root:28 - Handling GET request for: /login
+11:00:45,067 DEBUG root:28 - Handling GET request for: /login
+11:00:45,070 DEBUG root:28 - Handling GET request for: /login
+11:00:45,073 DEBUG root:28 - Handling GET request for: /login
+11:00:45,077 DEBUG root:28 - Handling GET request for: /login
+11:00:45,080 DEBUG root:28 - Handling GET request for: /login
+11:00:45,083 DEBUG root:28 - Handling GET request for: /login
+11:00:45,920 DEBUG root:28 - Handling GET request for: /login
+11:00:45,925 DEBUG root:28 - Handling GET request for: /login
+11:00:45,930 DEBUG root:28 - Handling GET request for: /login
+11:00:45,933 DEBUG root:28 - Handling GET request for: /login
+11:00:45,937 DEBUG root:28 - Handling GET request for: /login
+11:00:45,941 DEBUG root:28 - Handling GET request for: /login
+11:00:45,945 DEBUG root:28 - Handling GET request for: /login
+11:00:45,948 DEBUG root:28 - Handling GET request for: /login
+11:00:45,951 DEBUG root:28 - Handling GET request for: /login
+11:00:45,954 DEBUG root:28 - Handling GET request for: /login
+11:00:45,957 DEBUG root:28 - Handling GET request for: /login
+11:00:45,961 DEBUG root:28 - Handling GET request for: /login
+11:00:45,964 DEBUG root:28 - Handling GET request for: /login
+11:00:45,967 DEBUG root:28 - Handling GET request for: /login
+11:00:45,970 DEBUG root:28 - Handling GET request for: /login
+11:00:45,973 DEBUG root:28 - Handling GET request for: /login
+11:00:45,977 DEBUG root:28 - Handling GET request for: /login
+11:00:45,980 DEBUG root:28 - Handling GET request for: /login
+11:00:45,983 DEBUG root:28 - Handling GET request for: /login
+11:00:45,986 DEBUG root:28 - Handling GET request for: /login
+11:00:51,003 DEBUG root:28 - Handling GET request for: /login
+11:00:51,014 DEBUG root:28 - Handling GET request for: /login
+11:00:51,027 DEBUG root:28 - Handling GET request for: /login
+11:00:51,032 DEBUG root:28 - Handling GET request for: /login
+11:00:51,036 DEBUG root:28 - Handling GET request for: /login
+11:00:51,043 DEBUG root:28 - Handling GET request for: /login
+11:00:51,053 DEBUG root:28 - Handling GET request for: /login
+11:00:51,059 DEBUG root:28 - Handling GET request for: /login
+11:00:51,065 DEBUG root:28 - Handling GET request for: /login
+11:00:51,068 DEBUG root:28 - Handling GET request for: /login
+11:00:51,071 DEBUG root:28 - Handling GET request for: /login
+11:00:51,075 DEBUG root:28 - Handling GET request for: /login
+11:00:51,079 DEBUG root:28 - Handling GET request for: /login
+11:00:51,082 DEBUG root:28 - Handling GET request for: /login
+11:00:51,084 DEBUG root:28 - Handling GET request for: /login
+11:00:51,087 DEBUG root:28 - Handling GET request for: /login
+11:00:51,091 DEBUG root:28 - Handling GET request for: /login
+11:00:51,094 DEBUG root:28 - Handling GET request for: /login
+11:00:51,097 DEBUG root:28 - Handling GET request for: /login
+11:00:51,100 DEBUG root:28 - Handling GET request for: /login
+11:01:12,666  INFO root:21 - BookServlet initialized
+11:01:12,668 DEBUG root:62 - Handling POST request
+11:01:12,668 DEBUG root:28 - Handling GET request for: /login
+11:01:13,053 DEBUG root:28 - Handling GET request for: /list
+11:01:13,053  INFO root:68 - Displaying Book Records
+11:01:18,984 DEBUG root:62 - Handling POST request
+11:01:18,984 DEBUG root:28 - Handling GET request for: /login
+11:01:57,244  INFO root:21 - BookServlet initialized
+11:01:57,246 DEBUG root:62 - Handling POST request
+11:01:57,247 DEBUG root:28 - Handling GET request for: /login
+11:02:34,338  INFO root:21 - BookServlet initialized
+11:02:34,340 DEBUG root:62 - Handling POST request
+11:02:34,341 DEBUG root:28 - Handling GET request for: /login
+11:02:34,731 DEBUG root:28 - Handling GET request for: /list
+11:02:34,732  INFO root:68 - Displaying Book Records
+11:02:40,314 DEBUG root:62 - Handling POST request
+11:02:40,314 DEBUG root:28 - Handling GET request for: /login
+11:03:20,783 DEBUG root:62 - Handling POST request
+11:03:20,783 DEBUG root:28 - Handling GET request for: /login
+11:03:27,468 DEBUG root:62 - Handling POST request
+11:03:27,469 DEBUG root:28 - Handling GET request for: /login
+11:03:27,474 DEBUG root:28 - Handling GET request for: /list
+11:03:27,474  INFO root:68 - Displaying Book Records
+11:03:29,756 DEBUG root:28 - Handling GET request for: /edit
+11:03:29,772  INFO root:98 - Editing book with ID: 1
+11:03:37,933 DEBUG root:62 - Handling POST request
+11:03:37,933 DEBUG root:28 - Handling GET request for: /update
+11:03:37,950  INFO root:113 - Updated book: Book{id=1, author='Jane ', customer='jsjsjws', price=2100.00,bookName='Java'}
+11:03:37,953 DEBUG root:28 - Handling GET request for: /list
+11:03:37,953  INFO root:68 - Displaying Book Records
+11:03:40,728 DEBUG root:28 - Handling GET request for: /edit
+11:03:40,745  INFO root:98 - Editing book with ID: 1
+11:03:44,540 DEBUG root:62 - Handling POST request
+11:03:44,541 DEBUG root:28 - Handling GET request for: /update
+11:03:44,557  INFO root:113 - Updated book: Book{id=1, author='Jane ', customer='jsjsjws', price=2100.00,bookName='Java he;loo'}
+11:03:44,560 DEBUG root:28 - Handling GET request for: /list
+11:03:44,560  INFO root:68 - Displaying Book Records
+11:03:47,856 DEBUG root:28 - Handling GET request for: /delete
+11:03:47,871  WARN root:121 - Deleted book with ID: 2
+11:03:47,874 DEBUG root:28 - Handling GET request for: /list
+11:03:47,874  INFO root:68 - Displaying Book Records
+11:03:49,055 DEBUG root:28 - Handling GET request for: /new
+11:03:49,055  INFO root:76 - Showing book form
+11:03:57,114 DEBUG root:62 - Handling POST request
+11:03:57,115 DEBUG root:28 - Handling GET request for: /insert
+11:03:57,115  INFO root:82 - Inserting a new book
+11:03:57,131 DEBUG root:90 - Book inserted: Book{id=0, author='hardik', customer='amazon', price=1499.00,bookName='hello World By william'}
+11:03:57,134 DEBUG root:28 - Handling GET request for: /list
+11:03:57,135  INFO root:68 - Displaying Book Records
+11:04:12,680 DEBUG root:28 - Handling GET request for: /login
+11:05:14,134 DEBUG root:62 - Handling POST request
+11:05:14,135 DEBUG root:28 - Handling GET request for: /login
+11:05:14,139 DEBUG root:28 - Handling GET request for: /list
+11:05:14,139  INFO root:68 - Displaying Book Records
+11:05:22,785 DEBUG root:62 - Handling POST request
+11:05:22,786 DEBUG root:28 - Handling GET request for: /login
+11:05:22,800 DEBUG root:28 - Handling GET request for: /list
+11:05:22,800  INFO root:68 - Displaying Book Records
+11:06:28,645 DEBUG root:62 - Handling POST request
+11:06:28,645 DEBUG root:28 - Handling GET request for: /login
+11:06:28,659 DEBUG root:28 - Handling GET request for: /list
+11:06:28,659  INFO root:68 - Displaying Book Records
+11:07:17,852 DEBUG root:62 - Handling POST request
+11:07:17,852 DEBUG root:28 - Handling GET request for: /login
+11:07:17,869 DEBUG root:28 - Handling GET request for: /list
+11:07:17,869  INFO root:68 - Displaying Book Records
+11:10:50,070 DEBUG root:62 - Handling POST request
+11:10:50,070 DEBUG root:28 - Handling GET request for: /login
+11:11:36,515 DEBUG root:62 - Handling POST request
+11:11:36,515 DEBUG root:28 - Handling GET request for: /login
+11:11:38,081 DEBUG root:62 - Handling POST request
+11:11:38,081 DEBUG root:28 - Handling GET request for: /login
+11:11:39,415 DEBUG root:62 - Handling POST request
+11:11:39,415 DEBUG root:28 - Handling GET request for: /login
+11:11:40,328 DEBUG root:62 - Handling POST request
+11:11:40,328 DEBUG root:28 - Handling GET request for: /login
+11:11:40,927 DEBUG root:62 - Handling POST request
+11:11:40,927 DEBUG root:28 - Handling GET request for: /login
+11:11:41,411 DEBUG root:62 - Handling POST request
+11:11:41,411 DEBUG root:28 - Handling GET request for: /login
+11:11:41,948 DEBUG root:62 - Handling POST request
+11:11:41,949 DEBUG root:28 - Handling GET request for: /login
+11:11:47,112 DEBUG root:62 - Handling POST request
+11:11:47,112 DEBUG root:28 - Handling GET request for: /login
+11:12:01,497 DEBUG root:62 - Handling POST request
+11:12:01,498 DEBUG root:28 - Handling GET request for: /login
+11:12:01,503 DEBUG root:28 - Handling GET request for: /list
+11:12:01,503  INFO root:68 - Displaying Book Records
+11:12:07,868 DEBUG root:28 - Handling GET request for: /delete
+11:12:07,882  WARN root:121 - Deleted book with ID: 1
+11:12:07,885 DEBUG root:28 - Handling GET request for: /list
+11:12:07,886  INFO root:68 - Displaying Book Records
+11:12:12,742 DEBUG root:28 - Handling GET request for: /delete
+11:12:12,765  WARN root:121 - Deleted book with ID: 3
+11:12:12,768 DEBUG root:28 - Handling GET request for: /list
+11:12:12,768  INFO root:68 - Displaying Book Records
+11:12:23,892 DEBUG root:62 - Handling POST request
+11:12:23,892 DEBUG root:28 - Handling GET request for: /login
+11:12:23,905 DEBUG root:28 - Handling GET request for: /list
+11:12:23,905  INFO root:68 - Displaying Book Records
+11:12:25,907 DEBUG root:28 - Handling GET request for: /new
+11:12:25,907  INFO root:76 - Showing book form
+11:12:28,202 DEBUG root:28 - Handling GET request for: /list
+11:12:28,202  INFO root:68 - Displaying Book Records
+11:17:22,046 DEBUG root:28 - Handling GET request for: /new
+11:17:22,046  INFO root:76 - Showing book form
+11:17:24,055 DEBUG root:28 - Handling GET request for: /list
+11:17:24,055  INFO root:68 - Displaying Book Records
+11:17:30,372 DEBUG root:28 - Handling GET request for: /new
+11:17:30,372  INFO root:76 - Showing book form
+11:19:46,002 DEBUG root:62 - Handling POST request
+11:19:46,002 DEBUG root:28 - Handling GET request for: /login
+11:19:46,017 DEBUG root:28 - Handling GET request for: /list
+11:19:46,017  INFO root:68 - Displaying Book Records
+11:19:47,612 DEBUG root:28 - Handling GET request for: /new
+11:19:47,612  INFO root:76 - Showing book form
+11:19:49,754 DEBUG root:28 - Handling GET request for: /list
+11:19:49,754  INFO root:68 - Displaying Book Records
+11:20:41,906 DEBUG root:28 - Handling GET request for: /list
+11:20:41,906  INFO root:68 - Displaying Book Records
+11:22:02,645 DEBUG root:28 - Handling GET request for: /list
+11:22:02,645  INFO root:68 - Displaying Book Records
+11:22:45,198 DEBUG root:62 - Handling POST request
+11:22:45,198 DEBUG root:28 - Handling GET request for: /login
+11:22:45,210 DEBUG root:28 - Handling GET request for: /list
+11:22:45,210  INFO root:68 - Displaying Book Records
+11:25:26,922 DEBUG root:28 - Handling GET request for: /list
+11:25:26,922  INFO root:68 - Displaying Book Records
+11:25:28,289 DEBUG root:28 - Handling GET request for: /list
+11:25:28,290  INFO root:68 - Displaying Book Records
+11:25:28,992 DEBUG root:28 - Handling GET request for: /list
+11:25:28,992  INFO root:68 - Displaying Book Records
+11:25:29,439 DEBUG root:28 - Handling GET request for: /list
+11:25:29,440  INFO root:68 - Displaying Book Records
+11:25:52,430 DEBUG root:28 - Handling GET request for: /list
+11:25:52,430  INFO root:68 - Displaying Book Records
+11:30:36,758 DEBUG root:28 - Handling GET request for: /list
+11:30:36,758  INFO root:68 - Displaying Book Records
+11:30:38,446 DEBUG root:28 - Handling GET request for: /list
+11:30:38,446  INFO root:68 - Displaying Book Records
+11:30:38,635 DEBUG root:28 - Handling GET request for: /list
+11:30:38,635  INFO root:68 - Displaying Book Records
+11:30:38,824 DEBUG root:28 - Handling GET request for: /list
+11:30:38,825  INFO root:68 - Displaying Book Records
+11:30:39,005 DEBUG root:28 - Handling GET request for: /list
+11:30:39,005  INFO root:68 - Displaying Book Records
+11:30:55,676 DEBUG root:62 - Handling POST request
+11:30:55,677 DEBUG root:28 - Handling GET request for: /login
+11:30:55,687 DEBUG root:28 - Handling GET request for: /list
+11:30:55,687  INFO root:68 - Displaying Book Records
+11:32:01,760 DEBUG root:62 - Handling POST request
+11:32:01,760 DEBUG root:28 - Handling GET request for: /login
+11:32:01,772 DEBUG root:28 - Handling GET request for: /list
+11:32:01,772  INFO root:68 - Displaying Book Records
+11:32:44,804 DEBUG root:62 - Handling POST request
+11:32:44,804 DEBUG root:28 - Handling GET request for: /login
+11:32:44,815 DEBUG root:28 - Handling GET request for: /list
+11:32:44,815  INFO root:68 - Displaying Book Records
+11:32:49,232 DEBUG root:28 - Handling GET request for: /list
+11:32:49,233  INFO root:68 - Displaying Book Records
+11:33:32,244 DEBUG root:62 - Handling POST request
+11:33:32,244 DEBUG root:28 - Handling GET request for: /login
+11:33:32,256 DEBUG root:28 - Handling GET request for: /list
+11:33:32,256  INFO root:68 - Displaying Book Records
+11:36:08,744 DEBUG root:62 - Handling POST request
+11:36:08,745 DEBUG root:28 - Handling GET request for: /login
+11:36:08,757 DEBUG root:28 - Handling GET request for: /list
+11:36:08,757  INFO root:68 - Displaying Book Records
+11:36:38,617 DEBUG root:62 - Handling POST request
+11:36:38,618 DEBUG root:28 - Handling GET request for: /login
+11:36:38,629 DEBUG root:28 - Handling GET request for: /list
+11:36:38,629  INFO root:68 - Displaying Book Records
+11:36:40,784 DEBUG root:28 - Handling GET request for: /new
+11:36:40,784  INFO root:76 - Showing book form
+11:36:46,780 DEBUG root:62 - Handling POST request
+11:36:46,781 DEBUG root:28 - Handling GET request for: /insert
+11:36:46,781  INFO root:82 - Inserting a new book
+11:36:46,791 DEBUG root:90 - Book inserted: Book{id=0, author='hardik', customer='amazon', price=1200.00,bookName='hello'}
+11:36:46,793 DEBUG root:28 - Handling GET request for: /list
+11:36:46,793  INFO root:68 - Displaying Book Records
+11:37:51,015 DEBUG root:62 - Handling POST request
+11:37:51,015 DEBUG root:28 - Handling GET request for: /login
+11:37:51,027 DEBUG root:28 - Handling GET request for: /list
+11:37:51,028  INFO root:68 - Displaying Book Records
+11:37:54,559 DEBUG root:28 - Handling GET request for: /edit
+11:37:54,566  INFO root:98 - Editing book with ID: 4
+11:38:04,009 DEBUG root:62 - Handling POST request
+11:38:04,009 DEBUG root:28 - Handling GET request for: /update
+11:38:04,020  INFO root:113 - Updated book: Book{id=4, author='123', customer='amazon', price=1200.00,bookName='hello'}
+11:38:04,022 DEBUG root:28 - Handling GET request for: /list
+11:38:04,022  INFO root:68 - Displaying Book Records
+11:38:11,110 DEBUG root:28 - Handling GET request for: /edit
+11:38:11,120  INFO root:98 - Editing book with ID: 4
+11:38:34,921 DEBUG root:28 - Handling GET request for: /list
+11:38:34,921  INFO root:68 - Displaying Book Records
+11:47:39,951 DEBUG root:62 - Handling POST request
+11:47:39,951 DEBUG root:28 - Handling GET request for: /login
+11:47:39,962 DEBUG root:28 - Handling GET request for: /list
+11:47:39,962  INFO root:68 - Displaying Book Records
+11:47:42,507 DEBUG root:28 - Handling GET request for: /new
+11:47:42,507  INFO root:76 - Showing book form
+11:51:02,778  INFO root:21 - BookServlet initialized
+11:51:02,780 DEBUG root:62 - Handling POST request
+11:51:02,780 DEBUG root:28 - Handling GET request for: /login
+11:51:03,224 DEBUG root:28 - Handling GET request for: /list
+11:51:03,224  INFO root:68 - Displaying Book Records
+11:51:08,790 DEBUG root:62 - Handling POST request
+11:51:08,790 DEBUG root:28 - Handling GET request for: /login
+11:51:52,482  INFO root:21 - BookServlet initialized
+11:51:52,484 DEBUG root:62 - Handling POST request
+11:51:52,484 DEBUG root:28 - Handling GET request for: /login
+11:52:45,591  INFO root:21 - BookServlet initialized
+11:52:45,593 DEBUG root:62 - Handling POST request
+11:52:45,593 DEBUG root:28 - Handling GET request for: /login
+11:53:49,697  INFO root:21 - BookServlet initialized
+11:53:49,699 DEBUG root:62 - Handling POST request
+11:53:49,700 DEBUG root:28 - Handling GET request for: /login
+11:54:29,515 DEBUG root:62 - Handling POST request
+11:54:29,516 DEBUG root:28 - Handling GET request for: /login
+12:00:03,196  INFO root:21 - BookServlet initialized
+12:00:03,199 DEBUG root:62 - Handling POST request
+12:00:03,199 DEBUG root:28 - Handling GET request for: /login
+12:00:10,525 DEBUG root:62 - Handling POST request
+12:00:10,526 DEBUG root:28 - Handling GET request for: /login
+12:01:24,501 DEBUG root:62 - Handling POST request
+12:01:24,501 DEBUG root:28 - Handling GET request for: /login
+12:01:29,716 DEBUG root:62 - Handling POST request
+12:01:29,716 DEBUG root:28 - Handling GET request for: /login
+12:02:16,141 DEBUG root:62 - Handling POST request
+12:02:16,142 DEBUG root:28 - Handling GET request for: /login
+12:02:20,426 DEBUG root:62 - Handling POST request
+12:02:20,427 DEBUG root:28 - Handling GET request for: /login
+12:02:37,483 DEBUG root:62 - Handling POST request
+12:02:37,483 DEBUG root:28 - Handling GET request for: /login
+12:05:33,582  INFO root:21 - BookServlet initialized
+12:05:33,585 DEBUG root:62 - Handling POST request
+12:05:33,585 DEBUG root:28 - Handling GET request for: /login
+12:06:23,737 DEBUG root:62 - Handling POST request
+12:06:23,737 DEBUG root:28 - Handling GET request for: /login
+12:06:40,280 DEBUG root:62 - Handling POST request
+12:06:40,280 DEBUG root:28 - Handling GET request for: /login
+12:06:40,288 DEBUG root:28 - Handling GET request for: /list
+12:06:40,288  INFO root:68 - Displaying Book Records
+12:07:12,042 DEBUG root:62 - Handling POST request
+12:07:12,042 DEBUG root:28 - Handling GET request for: /login
+12:07:23,573 DEBUG root:62 - Handling POST request
+12:07:23,573 DEBUG root:28 - Handling GET request for: /login
+12:09:04,785 DEBUG root:62 - Handling POST request
+12:09:04,786 DEBUG root:28 - Handling GET request for: /login
+12:10:25,250 DEBUG root:62 - Handling POST request
+12:10:25,250 DEBUG root:28 - Handling GET request for: /login
+12:10:25,254 DEBUG root:28 - Handling GET request for: /list
+12:10:25,255  INFO root:68 - Displaying Book Records
+12:10:27,022 DEBUG root:28 - Handling GET request for: /new
+12:10:27,022  INFO root:76 - Showing book form
+12:10:33,657 DEBUG root:62 - Handling POST request
+12:10:33,657 DEBUG root:28 - Handling GET request for: /login
+12:10:33,671 DEBUG root:28 - Handling GET request for: /list
+12:10:33,671  INFO root:68 - Displaying Book Records
+12:10:39,114 DEBUG root:62 - Handling POST request
+12:10:39,114 DEBUG root:28 - Handling GET request for: /login
+12:12:18,534 DEBUG root:62 - Handling POST request
+12:12:18,534 DEBUG root:28 - Handling GET request for: /login
+12:12:18,538 DEBUG root:28 - Handling GET request for: /list
+12:12:18,538  INFO root:68 - Displaying Book Records
+12:12:23,352 DEBUG root:62 - Handling POST request
+12:12:23,352 DEBUG root:28 - Handling GET request for: /login
+12:13:08,522 DEBUG root:62 - Handling POST request
+12:13:08,522 DEBUG root:28 - Handling GET request for: /login
+12:13:08,527 DEBUG root:28 - Handling GET request for: /list
+12:13:08,527  INFO root:68 - Displaying Book Records
+12:13:30,931 DEBUG root:62 - Handling POST request
+12:13:30,931 DEBUG root:28 - Handling GET request for: /login
+12:13:30,949 DEBUG root:28 - Handling GET request for: /list
+12:13:30,949  INFO root:68 - Displaying Book Records
+12:13:39,099 DEBUG root:62 - Handling POST request
+12:13:39,100 DEBUG root:28 - Handling GET request for: /login
+12:13:45,506 DEBUG root:62 - Handling POST request
+12:13:45,506 DEBUG root:28 - Handling GET request for: /login
+12:13:46,292 DEBUG root:62 - Handling POST request
+12:13:46,292 DEBUG root:28 - Handling GET request for: /login
+12:13:46,818 DEBUG root:62 - Handling POST request
+12:13:46,818 DEBUG root:28 - Handling GET request for: /login
+12:27:20,361 DEBUG root:62 - Handling POST request
+12:27:20,362 DEBUG root:28 - Handling GET request for: /login
+12:27:30,454 DEBUG root:62 - Handling POST request
+12:27:30,454 DEBUG root:28 - Handling GET request for: /login
+12:32:59,369 DEBUG root:62 - Handling POST request
+12:32:59,370 DEBUG root:28 - Handling GET request for: /login
+12:33:32,325 DEBUG root:62 - Handling POST request
+12:33:32,325 DEBUG root:28 - Handling GET request for: /login
+12:35:35,378 DEBUG root:62 - Handling POST request
+12:35:35,378 DEBUG root:28 - Handling GET request for: /login
+12:35:46,289 DEBUG root:62 - Handling POST request
+12:35:46,289 DEBUG root:28 - Handling GET request for: /login
+12:42:17,255  INFO root:21 - BookServlet initialized
+12:42:17,257 DEBUG root:62 - Handling POST request
+12:42:17,258 DEBUG root:28 - Handling GET request for: /login
+12:42:17,663 DEBUG root:28 - Handling GET request for: /list
+12:42:17,663  INFO root:68 - Displaying Book Records
+12:42:36,604 DEBUG root:62 - Handling POST request
+12:42:36,605 DEBUG root:28 - Handling GET request for: /login
+12:44:59,668 DEBUG root:62 - Handling POST request
+12:44:59,668 DEBUG root:28 - Handling GET request for: /login
+12:44:59,673 DEBUG root:28 - Handling GET request for: /list
+12:44:59,673  INFO root:68 - Displaying Book Records
+12:45:19,464 DEBUG root:62 - Handling POST request
+12:45:19,465 DEBUG root:28 - Handling GET request for: /login
+12:45:19,483 DEBUG root:28 - Handling GET request for: /list
+12:45:19,483  INFO root:68 - Displaying Book Records
+12:54:40,738  INFO root:21 - BookServlet initialized
+12:54:40,740 DEBUG root:62 - Handling POST request
+12:54:40,740 DEBUG root:28 - Handling GET request for: /login
+12:54:41,157  WARN root:133 - Logged in Succesfully
+12:54:41,161 DEBUG root:28 - Handling GET request for: /list
+12:54:41,162  INFO root:68 - Displaying Book Records
+12:56:30,074 DEBUG root:28 - Handling GET request for: /list
+12:56:30,075  INFO root:68 - Displaying Book Records
+12:58:04,640 DEBUG root:62 - Handling POST request
+12:58:04,641 DEBUG root:28 - Handling GET request for: /login
+12:58:04,655  WARN root:133 - Logged in Succesfully
+12:58:04,658 DEBUG root:28 - Handling GET request for: /list
+12:58:04,659  INFO root:68 - Displaying Book Records
+12:58:07,265 DEBUG root:28 - Handling GET request for: /list
+12:58:07,265  INFO root:68 - Displaying Book Records
+12:58:08,125 DEBUG root:28 - Handling GET request for: /list
+12:58:08,126  INFO root:68 - Displaying Book Records
+12:58:35,244 DEBUG root:28 - Handling GET request for: /list
+12:58:35,245  INFO root:68 - Displaying Book Records
+12:58:35,896 DEBUG root:28 - Handling GET request for: /list
+12:58:35,897  INFO root:68 - Displaying Book Records
+13:00:25,068 DEBUG root:62 - Handling POST request
+13:00:25,068 DEBUG root:28 - Handling GET request for: /login
+13:00:25,079  WARN root:133 - Logged in Succesfully
+13:00:25,082 DEBUG root:28 - Handling GET request for: /list
+13:00:25,082  INFO root:68 - Displaying Book Records
+13:03:21,280 DEBUG root:62 - Handling POST request
+13:03:21,281 DEBUG root:28 - Handling GET request for: /login
+13:03:21,292  WARN root:133 - Logged in Succesfully
+13:03:21,295 DEBUG root:28 - Handling GET request for: /list
+13:03:21,295  INFO root:68 - Displaying Book Records
+13:04:07,099 DEBUG root:62 - Handling POST request
+13:04:07,100 DEBUG root:28 - Handling GET request for: /login
+13:04:07,112  WARN root:133 - Logged in Succesfully
+13:04:07,115 DEBUG root:28 - Handling GET request for: /list
+13:04:07,115  INFO root:68 - Displaying Book Records
+13:06:17,531 DEBUG root:62 - Handling POST request
+13:06:17,531 DEBUG root:28 - Handling GET request for: /login
+13:06:17,542  WARN root:133 - Logged in Succesfully
+13:06:17,545 DEBUG root:28 - Handling GET request for: /list
+13:06:17,545  INFO root:68 - Displaying Book Records
+13:08:48,385 DEBUG root:62 - Handling POST request
+13:08:48,386 DEBUG root:28 - Handling GET request for: /login
+13:08:48,398  WARN root:133 - Logged in Succesfully
+13:08:48,401 DEBUG root:28 - Handling GET request for: /list
+13:08:48,401  INFO root:68 - Displaying Book Records
+13:11:25,126 DEBUG root:62 - Handling POST request
+13:11:25,126 DEBUG root:28 - Handling GET request for: /login
+13:11:25,138  WARN root:133 - Logged in Succesfully
+13:11:25,142 DEBUG root:28 - Handling GET request for: /list
+13:11:25,142  INFO root:68 - Displaying Book Records
+13:11:46,524 DEBUG root:62 - Handling POST request
+13:11:46,524 DEBUG root:28 - Handling GET request for: /login
+13:11:46,536  WARN root:136 - Log in fail
+13:12:02,179 DEBUG root:62 - Handling POST request
+13:12:02,180 DEBUG root:28 - Handling GET request for: /login
+13:12:02,181  WARN root:133 - Logged in Succesfully
+13:12:02,184 DEBUG root:28 - Handling GET request for: /list
+13:12:02,184  INFO root:68 - Displaying Book Records
+13:12:08,508 DEBUG root:28 - Handling GET request for: /edit
+13:12:08,521  INFO root:98 - Editing book with ID: 4
+13:12:14,057 DEBUG root:62 - Handling POST request
+13:12:14,057 DEBUG root:28 - Handling GET request for: /update
+13:12:14,074  INFO root:113 - Updated book: Book{id=4, author='12345', customer='amazon', price=1200.00,bookName='hello'}
+13:12:14,078 DEBUG root:28 - Handling GET request for: /list
+13:12:14,078  INFO root:68 - Displaying Book Records
+13:13:33,898 DEBUG root:28 - Handling GET request for: /list
+13:13:33,899  INFO root:68 - Displaying Book Records
+13:14:17,142 DEBUG root:28 - Handling GET request for: /new
+13:14:17,142  INFO root:76 - Showing book form
+15:09:55,454 DEBUG root:62 - Handling POST request
+15:09:55,454 DEBUG root:28 - Handling GET request for: /login
+15:09:55,465  WARN root:133 - Logged in Succesfully
+15:09:55,468 DEBUG root:28 - Handling GET request for: /list
+15:09:55,468  INFO root:68 - Displaying Book Records
+15:11:38,455 DEBUG root:62 - Handling POST request
+15:11:38,455 DEBUG root:28 - Handling GET request for: /login
+15:11:38,465  WARN root:133 - Logged in Succesfully
+15:11:38,468 DEBUG root:28 - Handling GET request for: /list
+15:11:38,468  INFO root:68 - Displaying Book Records
+15:14:03,682 DEBUG root:62 - Handling POST request
+15:14:03,682 DEBUG root:28 - Handling GET request for: /login
+15:14:03,692  WARN root:133 - Logged in Succesfully
+15:14:03,695 DEBUG root:28 - Handling GET request for: /list
+15:14:03,695  INFO root:68 - Displaying Book Records
+15:18:00,710 DEBUG root:62 - Handling POST request
+15:18:00,711 DEBUG root:28 - Handling GET request for: /login
+15:18:00,720  WARN root:133 - Logged in Succesfully
+15:18:00,723 DEBUG root:28 - Handling GET request for: /list
+15:18:00,724  INFO root:68 - Displaying Book Records
+15:18:54,631 DEBUG root:62 - Handling POST request
+15:18:54,632 DEBUG root:28 - Handling GET request for: /login
+15:18:54,642  WARN root:133 - Logged in Succesfully
+15:18:54,645 DEBUG root:28 - Handling GET request for: /list
+15:18:54,645  INFO root:68 - Displaying Book Records
+15:19:52,165 DEBUG root:28 - Handling GET request for: /list
+15:19:52,166  INFO root:68 - Displaying Book Records
+15:19:54,435 DEBUG root:28 - Handling GET request for: /list
+15:19:54,436  INFO root:68 - Displaying Book Records
+15:19:55,699 DEBUG root:28 - Handling GET request for: /list
+15:19:55,700  INFO root:68 - Displaying Book Records
+15:20:38,168 DEBUG root:62 - Handling POST request
+15:20:38,168 DEBUG root:28 - Handling GET request for: /login
+15:20:38,176  WARN root:133 - Logged in Succesfully
+15:20:38,179 DEBUG root:28 - Handling GET request for: /list
+15:20:38,179  INFO root:68 - Displaying Book Records
+15:20:59,966 DEBUG root:62 - Handling POST request
+15:20:59,966 DEBUG root:28 - Handling GET request for: /login
+15:20:59,976  WARN root:133 - Logged in Succesfully
+15:20:59,979 DEBUG root:28 - Handling GET request for: /list
+15:20:59,979  INFO root:68 - Displaying Book Records
+15:24:30,157 DEBUG root:62 - Handling POST request
+15:24:30,157 DEBUG root:28 - Handling GET request for: /login
+15:24:30,167  WARN root:133 - Logged in Succesfully
+15:24:30,170 DEBUG root:28 - Handling GET request for: /list
+15:24:30,170  INFO root:68 - Displaying Book Records
+15:24:30,209 DEBUG root:28 - Handling GET request for: /<c:url value='/resources/logo.png' />
+15:24:30,209  INFO root:68 - Displaying Book Records
+15:26:06,971 DEBUG root:62 - Handling POST request
+15:26:06,971 DEBUG root:28 - Handling GET request for: /login
+15:26:06,980  WARN root:136 - Log in fail
+15:26:15,613 DEBUG root:62 - Handling POST request
+15:26:15,613 DEBUG root:28 - Handling GET request for: /login
+15:26:15,614  WARN root:136 - Log in fail
+15:26:38,125 DEBUG root:62 - Handling POST request
+15:26:38,125 DEBUG root:28 - Handling GET request for: /login
+15:26:38,126  WARN root:133 - Logged in Succesfully
+15:26:38,129 DEBUG root:28 - Handling GET request for: /list
+15:26:38,130  INFO root:68 - Displaying Book Records
+15:27:27,332 DEBUG root:62 - Handling POST request
+15:27:27,333 DEBUG root:28 - Handling GET request for: /login
+15:27:27,343  WARN root:133 - Logged in Succesfully
+15:27:27,345 DEBUG root:28 - Handling GET request for: /list
+15:27:27,345  INFO root:68 - Displaying Book Records
+15:28:43,341 DEBUG root:62 - Handling POST request
+15:28:43,341 DEBUG root:28 - Handling GET request for: /login
+15:28:43,350  WARN root:133 - Logged in Succesfully
+15:28:43,353 DEBUG root:28 - Handling GET request for: /list
+15:28:43,353  INFO root:68 - Displaying Book Records
+15:31:20,696 DEBUG root:28 - Handling GET request for: /list
+15:31:20,696  INFO root:68 - Displaying Book Records
+15:32:17,265 DEBUG root:28 - Handling GET request for: /list
+15:32:17,265  INFO root:68 - Displaying Book Records
+15:32:29,634 DEBUG root:28 - Handling GET request for: /list
+15:32:29,635  INFO root:68 - Displaying Book Records
+15:32:43,849 DEBUG root:28 - Handling GET request for: /list
+15:32:43,849  INFO root:68 - Displaying Book Records
+15:34:28,316 DEBUG root:28 - Handling GET request for: /list
+15:34:28,317  INFO root:68 - Displaying Book Records
+15:34:42,858 DEBUG root:28 - Handling GET request for: /list
+15:34:42,858  INFO root:68 - Displaying Book Records
+15:34:59,309 DEBUG root:28 - Handling GET request for: /list
+15:34:59,309  INFO root:68 - Displaying Book Records
+15:35:29,507 DEBUG root:28 - Handling GET request for: /list
+15:35:29,508  INFO root:68 - Displaying Book Records
+15:35:43,853 DEBUG root:28 - Handling GET request for: /list
+15:35:43,853  INFO root:68 - Displaying Book Records
+15:35:53,634 DEBUG root:28 - Handling GET request for: /list
+15:35:53,635  INFO root:68 - Displaying Book Records
+15:36:13,299 DEBUG root:28 - Handling GET request for: /list
+15:36:13,299  INFO root:68 - Displaying Book Records
+15:36:25,258 DEBUG root:28 - Handling GET request for: /list
+15:36:25,258  INFO root:68 - Displaying Book Records
+15:36:36,398 DEBUG root:28 - Handling GET request for: /list
+15:36:36,399  INFO root:68 - Displaying Book Records
+15:37:03,396 DEBUG root:28 - Handling GET request for: /list
+15:37:03,397  INFO root:68 - Displaying Book Records
+15:37:18,260 DEBUG root:28 - Handling GET request for: /list
+15:37:18,261  INFO root:68 - Displaying Book Records
+15:37:31,012 DEBUG root:28 - Handling GET request for: /list
+15:37:31,012  INFO root:68 - Displaying Book Records
+15:37:40,772 DEBUG root:28 - Handling GET request for: /edit
+15:37:40,781  INFO root:98 - Editing book with ID: 4
+15:44:31,244  INFO root:21 - BookServlet initialized
+15:44:31,245 DEBUG root:62 - Handling POST request
+15:44:31,245 DEBUG root:28 - Handling GET request for: /login
+15:44:31,658  WARN root:133 - Logged in Succesfully
+15:44:31,662 DEBUG root:28 - Handling GET request for: /list
+15:44:31,663  INFO root:68 - Displaying Book Records
+15:50:21,109  INFO root:21 - BookServlet initialized
+15:50:21,111 DEBUG root:62 - Handling POST request
+15:50:21,111 DEBUG root:28 - Handling GET request for: /login
+15:50:21,502  WARN root:133 - Logged in Succesfully
+15:50:21,507 DEBUG root:28 - Handling GET request for: /list
+15:50:21,508  INFO root:68 - Displaying Book Records
+15:51:14,037 DEBUG root:62 - Handling POST request
+15:51:14,037 DEBUG root:28 - Handling GET request for: /login
+15:51:14,052  WARN root:133 - Logged in Succesfully
+15:51:14,055 DEBUG root:28 - Handling GET request for: /list
+15:51:14,056  INFO root:68 - Displaying Book Records
+15:56:14,391 DEBUG root:62 - Handling POST request
+15:56:14,391 DEBUG root:28 - Handling GET request for: /login
+15:56:14,407  WARN root:133 - Logged in Succesfully
+15:56:14,410 DEBUG root:28 - Handling GET request for: /list
+15:56:14,410  INFO root:68 - Displaying Book Records
+15:56:36,608 DEBUG root:28 - Handling GET request for: /list
+15:56:36,609  INFO root:68 - Displaying Book Records
+15:56:51,491 DEBUG root:28 - Handling GET request for: /list
+15:56:51,492  INFO root:68 - Displaying Book Records
+15:57:13,716 DEBUG root:28 - Handling GET request for: /list
+15:57:13,716  INFO root:68 - Displaying Book Records
+15:57:15,467 DEBUG root:28 - Handling GET request for: /list
+15:57:15,467  INFO root:68 - Displaying Book Records
+15:57:16,132 DEBUG root:28 - Handling GET request for: /list
+15:57:16,132  INFO root:68 - Displaying Book Records
+15:57:32,188 DEBUG root:62 - Handling POST request
+15:57:32,188 DEBUG root:28 - Handling GET request for: /login
+15:57:32,200  WARN root:133 - Logged in Succesfully
+15:57:32,203 DEBUG root:28 - Handling GET request for: /list
+15:57:32,203  INFO root:68 - Displaying Book Records
+15:57:34,457 DEBUG root:28 - Handling GET request for: /list
+15:57:34,458  INFO root:68 - Displaying Book Records
+15:57:48,840 DEBUG root:28 - Handling GET request for: /list
+15:57:48,840  INFO root:68 - Displaying Book Records
+15:58:34,044 DEBUG root:28 - Handling GET request for: /edit
+15:58:34,058  INFO root:98 - Editing book with ID: 4
+15:58:47,520 DEBUG root:28 - Handling GET request for: /edit
+15:58:47,531  INFO root:98 - Editing book with ID: 4
+15:58:54,255 DEBUG root:62 - Handling POST request
+15:58:54,255 DEBUG root:28 - Handling GET request for: /update
+15:58:54,271  INFO root:113 - Updated book: Book{id=4, author='12345', customer='amazon1234', price=1200.00,bookName='hello'}
+15:58:54,273 DEBUG root:28 - Handling GET request for: /list
+15:58:54,274  INFO root:68 - Displaying Book Records
+15:59:00,805 DEBUG root:28 - Handling GET request for: /delete
+15:59:00,831  WARN root:121 - Deleted book with ID: 4
+15:59:00,834 DEBUG root:28 - Handling GET request for: /list
+15:59:00,835  INFO root:68 - Displaying Book Records
+15:59:02,783 DEBUG root:28 - Handling GET request for: /new
+15:59:02,784  INFO root:76 - Showing book form
+15:59:11,894 DEBUG root:62 - Handling POST request
+15:59:11,894 DEBUG root:28 - Handling GET request for: /insert
+15:59:11,894  INFO root:82 - Inserting a new book
+15:59:11,907 DEBUG root:90 - Book inserted: Book{id=0, author='Jane ', customer='Abhinav', price=2100.00,bookName='hello'}
+15:59:11,909 DEBUG root:28 - Handling GET request for: /list
+15:59:11,909  INFO root:68 - Displaying Book Records
+16:03:01,189 DEBUG root:62 - Handling POST request
+16:03:01,189 DEBUG root:28 - Handling GET request for: /login
+16:03:01,201  WARN root:133 - Logged in Succesfully
+16:03:01,203 DEBUG root:28 - Handling GET request for: /list
+16:03:01,204  INFO root:68 - Displaying Book Records
+16:03:03,306 DEBUG root:28 - Handling GET request for: /new
+16:03:03,306  INFO root:76 - Showing book form
+16:03:38,945 DEBUG root:62 - Handling POST request
+16:03:38,945 DEBUG root:28 - Handling GET request for: /login
+16:03:38,956  WARN root:133 - Logged in Succesfully
+16:03:38,959 DEBUG root:28 - Handling GET request for: /list
+16:03:38,959  INFO root:68 - Displaying Book Records
+16:03:41,134 DEBUG root:28 - Handling GET request for: /new
+16:03:41,134  INFO root:76 - Showing book form
+16:03:53,342 DEBUG root:28 - Handling GET request for: /new
+16:03:53,342  INFO root:76 - Showing book form
+16:04:01,274 DEBUG root:62 - Handling POST request
+16:04:01,274 DEBUG root:28 - Handling GET request for: /insert
+16:04:01,275  INFO root:82 - Inserting a new book
+16:04:01,287 DEBUG root:90 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=2100.00,bookName='Java'}
+16:04:01,290 DEBUG root:28 - Handling GET request for: /list
+16:04:01,291  INFO root:68 - Displaying Book Records
+16:07:14,147 DEBUG root:62 - Handling POST request
+16:07:14,147 DEBUG root:28 - Handling GET request for: /login
+16:07:14,160  WARN root:133 - Logged in Succesfully
+16:07:14,163 DEBUG root:28 - Handling GET request for: /list
+16:07:14,163  INFO root:68 - Displaying Book Records
+16:07:30,600 DEBUG root:28 - Handling GET request for: /edit
+16:07:30,610  INFO root:98 - Editing book with ID: 5
+16:07:35,447 DEBUG root:62 - Handling POST request
+16:07:35,447 DEBUG root:28 - Handling GET request for: /update
+16:07:35,461  INFO root:113 - Updated book: Book{id=5, author='Jane 123', customer='Abhinav', price=2100.00,bookName='hello'}
+16:07:35,464 DEBUG root:28 - Handling GET request for: /list
+16:07:35,464  INFO root:68 - Displaying Book Records
+16:09:40,953 DEBUG root:28 - Handling GET request for: /edit
+16:09:40,963  INFO root:98 - Editing book with ID: 5
+16:09:48,038 DEBUG root:62 - Handling POST request
+16:09:48,038 DEBUG root:28 - Handling GET request for: /update
+16:09:48,074  INFO root:113 - Updated book: Book{id=5, author='Jane 123', customer='Abhinav', price=2100.00,bookName='123'}
+16:09:48,076 DEBUG root:28 - Handling GET request for: /list
+16:09:48,076  INFO root:68 - Displaying Book Records
+16:18:23,529 DEBUG root:28 - Handling GET request for: /new
+16:18:23,529  INFO root:76 - Showing book form
+16:18:27,398 DEBUG root:62 - Handling POST request
+16:18:27,398 DEBUG root:28 - Handling GET request for: /insert
+16:18:27,398  INFO root:82 - Inserting a new book
+16:18:36,937 DEBUG root:62 - Handling POST request
+16:18:36,937 DEBUG root:28 - Handling GET request for: /insert
+16:18:36,937  INFO root:82 - Inserting a new book
+16:18:36,958 DEBUG root:90 - Book inserted: Book{id=0, author='hardik', customer='amazon', price=2100.00,bookName='Java'}
+16:18:36,960 DEBUG root:28 - Handling GET request for: /list
+16:18:36,960  INFO root:68 - Displaying Book Records
+16:18:38,379 DEBUG root:28 - Handling GET request for: /new
+16:18:38,379  INFO root:76 - Showing book form
+16:18:47,226 DEBUG root:62 - Handling POST request
+16:18:47,227 DEBUG root:28 - Handling GET request for: /insert
+16:18:47,227  INFO root:82 - Inserting a new book
+16:18:47,238 DEBUG root:90 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=1200.00,bookName='hello'}
+16:18:47,241 DEBUG root:28 - Handling GET request for: /list
+16:18:47,241  INFO root:68 - Displaying Book Records
+16:18:48,670 DEBUG root:28 - Handling GET request for: /new
+16:18:48,670  INFO root:76 - Showing book form
+16:18:57,440 DEBUG root:62 - Handling POST request
+16:18:57,440 DEBUG root:28 - Handling GET request for: /insert
+16:18:57,440  INFO root:82 - Inserting a new book
+16:18:57,453 DEBUG root:90 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=2100.00,bookName='Java'}
+16:18:57,456 DEBUG root:28 - Handling GET request for: /list
+16:18:57,456  INFO root:68 - Displaying Book Records
+16:18:59,225 DEBUG root:28 - Handling GET request for: /new
+16:18:59,225  INFO root:76 - Showing book form
+16:19:08,772 DEBUG root:62 - Handling POST request
+16:19:08,773 DEBUG root:28 - Handling GET request for: /insert
+16:19:08,774  INFO root:82 - Inserting a new book
+16:19:08,786 DEBUG root:90 - Book inserted: Book{id=0, author='hardik', customer='amazon', price=1200.00,bookName='hello World By william'}
+16:19:08,789 DEBUG root:28 - Handling GET request for: /list
+16:19:08,789  INFO root:68 - Displaying Book Records
+16:19:12,721 DEBUG root:28 - Handling GET request for: /new
+16:19:12,721  INFO root:76 - Showing book form
+16:19:21,458 DEBUG root:62 - Handling POST request
+16:19:21,459 DEBUG root:28 - Handling GET request for: /insert
+16:19:21,459  INFO root:82 - Inserting a new book
+16:19:21,471 DEBUG root:90 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=2100.00,bookName='hello'}
+16:19:21,473 DEBUG root:28 - Handling GET request for: /list
+16:19:21,473  INFO root:68 - Displaying Book Records
+16:19:23,477 DEBUG root:28 - Handling GET request for: /new
+16:19:23,477  INFO root:76 - Showing book form
+16:19:32,887 DEBUG root:62 - Handling POST request
+16:19:32,887 DEBUG root:28 - Handling GET request for: /insert
+16:19:32,887  INFO root:82 - Inserting a new book
+16:19:32,899 DEBUG root:90 - Book inserted: Book{id=0, author='hardik', customer='amazon', price=1200.00,bookName='hello'}
+16:19:32,901 DEBUG root:28 - Handling GET request for: /list
+16:19:32,901  INFO root:68 - Displaying Book Records
+16:19:50,099 DEBUG root:28 - Handling GET request for: /new
+16:19:50,100  INFO root:76 - Showing book form
+16:19:58,847 DEBUG root:62 - Handling POST request
+16:19:58,847 DEBUG root:28 - Handling GET request for: /insert
+16:19:58,847  INFO root:82 - Inserting a new book
+16:19:58,858 DEBUG root:90 - Book inserted: Book{id=0, author='hardik', customer='amazon', price=2100.00,bookName='hello'}
+16:19:58,861 DEBUG root:28 - Handling GET request for: /list
+16:19:58,861  INFO root:68 - Displaying Book Records
+16:20:03,429 DEBUG root:28 - Handling GET request for: /new
+16:20:03,430  INFO root:76 - Showing book form
+16:20:07,219 DEBUG root:62 - Handling POST request
+16:20:07,219 DEBUG root:28 - Handling GET request for: /insert
+16:20:07,219  INFO root:82 - Inserting a new book
+16:20:16,387 DEBUG root:62 - Handling POST request
+16:20:16,387 DEBUG root:28 - Handling GET request for: /insert
+16:20:16,387  INFO root:82 - Inserting a new book
+16:20:16,436 DEBUG root:90 - Book inserted: Book{id=0, author='Jane ', customer='Abhinav', price=1200.00,bookName='hello'}
+16:20:16,438 DEBUG root:28 - Handling GET request for: /list
+16:20:16,438  INFO root:68 - Displaying Book Records
+16:21:03,248 DEBUG root:28 - Handling GET request for: /delete
+16:21:03,270  WARN root:121 - Deleted book with ID: 13
+16:21:03,272 DEBUG root:28 - Handling GET request for: /list
+16:21:03,272  INFO root:68 - Displaying Book Records
+16:21:15,537 DEBUG root:28 - Handling GET request for: /delete
+16:21:15,558  WARN root:121 - Deleted book with ID: 14
+16:21:15,561 DEBUG root:28 - Handling GET request for: /list
+16:21:15,561  INFO root:68 - Displaying Book Records
+16:21:18,891 DEBUG root:28 - Handling GET request for: /delete
+16:21:18,913  WARN root:121 - Deleted book with ID: 12
+16:21:18,916 DEBUG root:28 - Handling GET request for: /list
+16:21:18,916  INFO root:68 - Displaying Book Records
+16:21:22,323 DEBUG root:28 - Handling GET request for: /delete
+16:21:22,343  WARN root:121 - Deleted book with ID: 11
+16:21:22,346 DEBUG root:28 - Handling GET request for: /list
+16:21:22,346  INFO root:68 - Displaying Book Records
+16:21:26,063 DEBUG root:28 - Handling GET request for: /delete
+16:21:26,074  WARN root:121 - Deleted book with ID: 8
+16:21:26,077 DEBUG root:28 - Handling GET request for: /list
+16:21:26,077  INFO root:68 - Displaying Book Records
+16:23:45,867  INFO root:21 - BookServlet initialized
+16:23:45,869 DEBUG root:62 - Handling POST request
+16:23:45,869 DEBUG root:28 - Handling GET request for: /login
+16:23:47,320 DEBUG root:62 - Handling POST request
+16:23:47,320 DEBUG root:28 - Handling GET request for: /login
+16:25:36,714  INFO root:21 - BookServlet initialized
+16:25:36,716 DEBUG root:62 - Handling POST request
+16:25:36,716 DEBUG root:28 - Handling GET request for: /login
+16:26:29,531 DEBUG root:62 - Handling POST request
+16:26:29,532 DEBUG root:28 - Handling GET request for: /login
+16:26:32,726 DEBUG root:62 - Handling POST request
+16:26:32,726 DEBUG root:28 - Handling GET request for: /login
+16:26:38,528  INFO root:21 - BookServlet initialized
+16:26:38,529 DEBUG root:62 - Handling POST request
+16:26:38,530 DEBUG root:28 - Handling GET request for: /login
+16:26:38,895  WARN root:146 - Login failed
+16:27:27,422  INFO root:21 - BookServlet initialized
+16:27:27,425 DEBUG root:62 - Handling POST request
+16:27:27,425 DEBUG root:28 - Handling GET request for: /login
+16:27:27,821  WARN root:146 - Login failed
+16:27:36,958 DEBUG root:62 - Handling POST request
+16:27:36,959 DEBUG root:28 - Handling GET request for: /login
+16:27:36,961  WARN root:143 - Logged in Successfully
+16:27:36,964 DEBUG root:28 - Handling GET request for: /list
+16:27:36,965  INFO root:68 - Displaying Book Records
+16:28:28,354 DEBUG root:62 - Handling POST request
+16:28:28,354 DEBUG root:28 - Handling GET request for: /login
+16:28:28,368  WARN root:146 - Login failed
+16:28:33,212 DEBUG root:62 - Handling POST request
+16:28:33,212 DEBUG root:28 - Handling GET request for: /login
+16:28:33,215  WARN root:146 - Login failed
+16:28:36,347 DEBUG root:62 - Handling POST request
+16:28:36,347 DEBUG root:28 - Handling GET request for: /login
+16:28:36,349  WARN root:146 - Login failed
+16:28:39,087 DEBUG root:62 - Handling POST request
+16:28:39,087 DEBUG root:28 - Handling GET request for: /login
+16:28:39,090  WARN root:146 - Login failed
+16:29:34,206 DEBUG root:62 - Handling POST request
+16:29:34,206 DEBUG root:28 - Handling GET request for: /login
+16:29:34,208  WARN root:146 - Login failed
+16:29:42,311 DEBUG root:62 - Handling POST request
+16:29:42,311 DEBUG root:28 - Handling GET request for: /login
+16:29:42,314  WARN root:146 - Login failed
+16:29:47,252 DEBUG root:62 - Handling POST request
+16:29:47,252 DEBUG root:28 - Handling GET request for: /login
+16:29:47,254  WARN root:146 - Login failed
+16:31:45,121 DEBUG root:62 - Handling POST request
+16:31:45,121 DEBUG root:28 - Handling GET request for: /login
+16:31:45,123  WARN root:146 - Login failed
+16:31:49,657 DEBUG root:62 - Handling POST request
+16:31:49,657 DEBUG root:28 - Handling GET request for: /login
+16:31:49,659  WARN root:146 - Login failed
+16:33:15,770 DEBUG root:62 - Handling POST request
+16:33:15,770 DEBUG root:28 - Handling GET request for: /login
+16:33:15,772  WARN root:146 - Login failed
+16:33:25,485 DEBUG root:62 - Handling POST request
+16:33:25,486 DEBUG root:28 - Handling GET request for: /login
+16:33:25,487  WARN root:146 - Login failed
+16:34:36,917 DEBUG root:62 - Handling POST request
+16:34:36,917 DEBUG root:28 - Handling GET request for: /login
+16:34:36,919  WARN root:146 - Login failed
+16:36:22,845 DEBUG root:62 - Handling POST request
+16:36:22,845 DEBUG root:28 - Handling GET request for: /login
+16:36:22,847  WARN root:146 - Login failed
+16:37:43,166 DEBUG root:62 - Handling POST request
+16:37:43,166 DEBUG root:28 - Handling GET request for: /login
+16:37:43,213  WARN root:146 - Login failed
+16:38:02,625 DEBUG root:62 - Handling POST request
+16:38:02,625 DEBUG root:28 - Handling GET request for: /login
+16:38:02,627  WARN root:146 - Login failed
+16:40:55,642  INFO root:21 - BookServlet initialized
+16:40:55,642 DEBUG root:62 - Handling POST request
+16:40:55,643 DEBUG root:28 - Handling GET request for: /login
+16:40:55,920  WARN root:144 - Login failed
+16:41:05,087 DEBUG root:62 - Handling POST request
+16:41:05,087 DEBUG root:28 - Handling GET request for: /login
+16:41:05,089  WARN root:141 - Logged in Successfully
+16:41:05,092 DEBUG root:28 - Handling GET request for: /list
+16:41:05,092  INFO root:68 - Displaying Book Records
+16:41:11,832 DEBUG root:28 - Handling GET request for: /delete
+16:41:11,860  WARN root:121 - Deleted book with ID: 10
+16:41:11,863 DEBUG root:28 - Handling GET request for: /list
+16:41:11,864  INFO root:68 - Displaying Book Records

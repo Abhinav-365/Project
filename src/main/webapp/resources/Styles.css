@@ -1,73 +1,112 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #b3d9ff, #e6f0ff);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #333;
 }
 
-h2 {
-    color: #333;
+.body-container {
+    display: block;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 900px;
+    background: white;
+    border-radius: 25px;   
+}
+
+form {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     text-align: center;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="number"] {
+    display: block;
+    width: 90%;
+    padding: 12px;
+    margin: 6px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="number"]:focus {
+    border-color: #3399ff;
+    outline: none;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 90%;
+    padding: 12px;
+    background: #3399ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 12px auto 0 auto;
+}
+
+form input[type="submit"]:hover {
+    background: #267acc;
+}
+
+a[href="list"] {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
     margin-top: 20px;
 }
 
-/* Table Styles */
-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
-    padding: 10px;
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #eee;
     text-align: left;
-    border: 1px solid #ddd;
 }
 
-th {
-    background-color: #4CAF50;
-    color: white;
+table th {
+    background-color: #f4f6f9;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
-/* Form Styles */
-form {
-    width: 50%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-input[type="text"], input[type="number"], input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/* Link Styles */
 a {
-    color: #4CAF50;
+    color: #3399ff;
     text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
-a:hover {
-    text-decoration: underline;
+h2 {
+    text-align: center;
+    color: #333;
 }
+

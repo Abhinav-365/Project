@@ -1,69 +1,188 @@
-10:23:50,478  INFO root:21 - BookServlet initialized
-10:23:50,482 DEBUG root:28 - Handling GET request for: /<c:url value='/resources/Styles.css'/>
-10:23:50,483  INFO root:66 - Displaying Book Records
-10:23:58,524 DEBUG root:60 - Handling POST request
-10:23:58,524 DEBUG root:28 - Handling GET request for: /book
-10:23:58,525  INFO root:66 - Displaying Book Records
-10:24:00,969 DEBUG root:28 - Handling GET request for: /book/new
-10:24:00,970  INFO root:66 - Displaying Book Records
-10:24:08,880 DEBUG root:28 - Handling GET request for: /edit
-10:24:08,912  INFO root:96 - Editing book with ID: 4
-10:24:12,763 DEBUG root:28 - Handling GET request for: /list
-10:24:12,764  INFO root:66 - Displaying Book Records
-10:24:15,942 DEBUG root:28 - Handling GET request for: /book/new
-10:24:15,942  INFO root:66 - Displaying Book Records
-10:27:48,447 DEBUG root:28 - Handling GET request for: /<c:url value='/resources/Styles.css'/>
-10:27:48,448  INFO root:66 - Displaying Book Records
-10:27:56,210 DEBUG root:60 - Handling POST request
-10:27:56,210 DEBUG root:28 - Handling GET request for: /book
-10:27:56,210  INFO root:66 - Displaying Book Records
-10:28:07,305 DEBUG root:28 - Handling GET request for: /edit
-10:28:07,321  INFO root:96 - Editing book with ID: 4
-10:28:57,830 DEBUG root:60 - Handling POST request
-10:28:57,830 DEBUG root:28 - Handling GET request for: /book
-10:28:57,830  INFO root:66 - Displaying Book Records
-10:28:59,076 DEBUG root:28 - Handling GET request for: /new
-10:28:59,076  INFO root:74 - Showing book form
-10:29:09,380 DEBUG root:60 - Handling POST request
-10:29:09,380 DEBUG root:28 - Handling GET request for: /insert
-10:29:09,380  INFO root:80 - Inserting a new book
-10:29:09,401 DEBUG root:88 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=2100.00,bookName='hello'}
-10:29:09,404 DEBUG root:28 - Handling GET request for: /list
-10:29:09,404  INFO root:66 - Displaying Book Records
-10:29:33,751 DEBUG root:28 - Handling GET request for: /<c:url value='/resources/Styles.css'/>
-10:29:33,752  INFO root:66 - Displaying Book Records
-10:29:52,614 DEBUG root:60 - Handling POST request
-10:29:52,614 DEBUG root:28 - Handling GET request for: /book
-10:29:52,614  INFO root:66 - Displaying Book Records
-10:29:57,072 DEBUG root:28 - Handling GET request for: /edit
-10:29:57,086  INFO root:96 - Editing book with ID: 4
-10:30:05,853 DEBUG root:60 - Handling POST request
-10:30:05,853 DEBUG root:28 - Handling GET request for: /update
-10:30:05,873  INFO root:111 - Updated book: Book{id=4, author='hardik', customer='Abhinav', price=21.00,bookName='654546fdfdgd'}
-10:30:05,876 DEBUG root:28 - Handling GET request for: /list
-10:30:05,876  INFO root:66 - Displaying Book Records
-10:30:09,446 DEBUG root:28 - Handling GET request for: /delete
-10:30:09,463  WARN root:119 - Deleted book with ID: 4
-10:30:09,467 DEBUG root:28 - Handling GET request for: /list
-10:30:09,467  INFO root:66 - Displaying Book Records
-10:30:11,071 DEBUG root:28 - Handling GET request for: /new
-10:30:11,071  INFO root:74 - Showing book form
-10:30:20,687 DEBUG root:60 - Handling POST request
-10:30:20,687 DEBUG root:28 - Handling GET request for: /insert
-10:30:20,687  INFO root:80 - Inserting a new book
-10:30:20,949 ERROR root:52 - SQL Exception in doGet
-com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Out of range value for column 'Price' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96)
+10:08:07,853  INFO root:21 - BookServlet initialized
+10:08:07,855 DEBUG root:62 - Handling POST request
+10:08:07,855 DEBUG root:28 - Handling GET request for: /login
+10:08:08,254  WARN root:141 - Logged in Successfully
+10:08:08,258 DEBUG root:28 - Handling GET request for: /list
+10:08:08,259  INFO root:68 - Displaying Book Records
+10:09:00,234 DEBUG root:28 - Handling GET request for: /new
+10:09:00,234  INFO root:76 - Showing book form
+10:09:10,939 DEBUG root:28 - Handling GET request for: /edit
+10:09:10,960  INFO root:98 - Editing book with ID: 5
+10:09:13,590 DEBUG root:28 - Handling GET request for: /list
+10:09:13,590  INFO root:68 - Displaying Book Records
+10:09:17,006 DEBUG root:28 - Handling GET request for: /new
+10:09:17,006  INFO root:76 - Showing book form
+10:09:19,404 DEBUG root:28 - Handling GET request for: /list
+10:09:19,404  INFO root:68 - Displaying Book Records
+10:20:48,615  INFO root:21 - BookServlet initialized
+10:20:48,618 DEBUG root:62 - Handling POST request
+10:20:48,618 DEBUG root:28 - Handling GET request for: /login
+10:20:49,002  WARN root:157 - Logged in Successfully
+10:20:49,005 DEBUG root:28 - Handling GET request for: /list
+10:20:56,021 DEBUG root:28 - Handling GET request for: /list
+10:20:58,784 DEBUG root:28 - Handling GET request for: /new
+10:20:58,784  INFO root:92 - Showing book form
+10:21:06,458 DEBUG root:62 - Handling POST request
+10:21:06,458 DEBUG root:28 - Handling GET request for: /insert
+10:21:06,458  INFO root:98 - Inserting a new book
+10:21:06,477 DEBUG root:106 - Book inserted: Book{id=0, author='Jane ', customer='amazon', price=2100.00,bookName='Java'}
+10:21:06,480 DEBUG root:28 - Handling GET request for: /list
+10:21:10,542 DEBUG root:28 - Handling GET request for: /new
+10:21:10,542  INFO root:92 - Showing book form
+10:21:18,199 DEBUG root:62 - Handling POST request
+10:21:18,200 DEBUG root:28 - Handling GET request for: /insert
+10:21:18,200  INFO root:98 - Inserting a new book
+10:21:18,214 DEBUG root:106 - Book inserted: Book{id=0, author='Jane ', customer='Abhinav', price=2100.00,bookName='Java'}
+10:21:18,216 DEBUG root:28 - Handling GET request for: /list
+10:21:21,347 DEBUG root:28 - Handling GET request for: /list
+10:21:23,088 DEBUG root:28 - Handling GET request for: /list
+10:21:51,221 DEBUG root:28 - Handling GET request for: /list
+10:21:52,819 DEBUG root:28 - Handling GET request for: /list
+10:21:54,626 DEBUG root:28 - Handling GET request for: /list
+10:22:35,778 DEBUG root:28 - Handling GET request for: /list
+10:22:37,661 DEBUG root:28 - Handling GET request for: /list
+10:22:38,459 DEBUG root:28 - Handling GET request for: /list
+10:22:38,953 DEBUG root:28 - Handling GET request for: /list
+10:22:39,394 DEBUG root:28 - Handling GET request for: /list
+10:22:41,398  INFO root:21 - BookServlet initialized
+10:22:41,399 DEBUG root:28 - Handling GET request for: /list
+10:22:44,172 DEBUG root:28 - Handling GET request for: /list
+10:22:50,724 DEBUG root:28 - Handling GET request for: /list
+10:22:52,267 DEBUG root:28 - Handling GET request for: /list
+10:23:34,511 DEBUG root:28 - Handling GET request for: /list
+10:23:35,684 DEBUG root:28 - Handling GET request for: /list
+10:23:36,209 DEBUG root:28 - Handling GET request for: /list
+10:23:36,664 DEBUG root:28 - Handling GET request for: /list
+10:23:37,067 DEBUG root:28 - Handling GET request for: /list
+10:23:37,458 DEBUG root:28 - Handling GET request for: /list
+10:23:37,789 DEBUG root:28 - Handling GET request for: /list
+10:23:38,066 DEBUG root:28 - Handling GET request for: /list
+10:23:49,899 DEBUG root:28 - Handling GET request for: /list
+10:23:50,555 DEBUG root:28 - Handling GET request for: /list
+10:23:50,902 DEBUG root:28 - Handling GET request for: /list
+10:23:51,225 DEBUG root:28 - Handling GET request for: /list
+10:23:51,547 DEBUG root:28 - Handling GET request for: /list
+10:25:39,908  INFO root:21 - BookServlet initialized
+10:25:39,910 DEBUG root:62 - Handling POST request
+10:25:39,910 DEBUG root:28 - Handling GET request for: /login
+10:25:40,336  WARN root:157 - Logged in Successfully
+10:25:40,341 DEBUG root:28 - Handling GET request for: /list
+10:26:01,731 DEBUG root:28 - Handling GET request for: /list
+10:26:02,480 DEBUG root:28 - Handling GET request for: /list
+10:26:02,984 DEBUG root:28 - Handling GET request for: /list
+10:26:03,378 DEBUG root:28 - Handling GET request for: /list
+10:26:03,722 DEBUG root:28 - Handling GET request for: /list
+10:26:04,053 DEBUG root:28 - Handling GET request for: /list
+10:26:04,389 DEBUG root:28 - Handling GET request for: /list
+10:26:04,592 DEBUG root:28 - Handling GET request for: /list
+10:26:04,800 DEBUG root:28 - Handling GET request for: /list
+10:26:05,015 DEBUG root:28 - Handling GET request for: /list
+10:26:05,224 DEBUG root:28 - Handling GET request for: /list
+10:26:05,418 DEBUG root:28 - Handling GET request for: /list
+10:26:05,596 DEBUG root:28 - Handling GET request for: /list
+10:26:05,805 DEBUG root:28 - Handling GET request for: /list
+10:26:06,019 DEBUG root:28 - Handling GET request for: /list
+10:26:06,228 DEBUG root:28 - Handling GET request for: /list
+10:26:06,436 DEBUG root:28 - Handling GET request for: /list
+10:26:06,653 DEBUG root:28 - Handling GET request for: /list
+10:26:06,853 DEBUG root:28 - Handling GET request for: /list
+10:26:07,061 DEBUG root:28 - Handling GET request for: /list
+10:26:07,242 DEBUG root:28 - Handling GET request for: /list
+10:26:07,964 DEBUG root:28 - Handling GET request for: /list
+10:28:20,253 DEBUG root:28 - Handling GET request for: /list
+10:28:25,139 DEBUG root:28 - Handling GET request for: /list
+10:28:26,324 DEBUG root:28 - Handling GET request for: /list
+10:28:27,381 DEBUG root:28 - Handling GET request for: /list
+10:28:28,355 DEBUG root:28 - Handling GET request for: /list
+10:30:21,017 DEBUG root:62 - Handling POST request
+10:30:21,017 DEBUG root:28 - Handling GET request for: /login
+10:30:21,027  WARN root:157 - Logged in Successfully
+10:30:21,029 DEBUG root:28 - Handling GET request for: /list
+10:30:31,626 DEBUG root:28 - Handling GET request for: /edit
+10:30:31,636  INFO root:114 - Editing book with ID: 5
+10:30:36,418 DEBUG root:28 - Handling GET request for: /list
+10:30:37,813 DEBUG root:28 - Handling GET request for: /list
+10:31:15,653 DEBUG root:28 - Handling GET request for: /list
+10:31:16,713 DEBUG root:28 - Handling GET request for: /list
+10:31:17,336 DEBUG root:28 - Handling GET request for: /list
+10:31:18,043 DEBUG root:28 - Handling GET request for: /list
+10:42:59,255  INFO root:21 - BookServlet initialized
+10:42:59,256 DEBUG root:62 - Handling POST request
+10:42:59,257 DEBUG root:28 - Handling GET request for: /login
+10:42:59,691  WARN root:157 - Logged in Successfully
+10:42:59,695 DEBUG root:28 - Handling GET request for: /list
+10:43:12,103 DEBUG root:28 - Handling GET request for: /new
+10:43:12,104  INFO root:92 - Showing book form
+10:43:21,006 DEBUG root:62 - Handling POST request
+10:43:21,006 DEBUG root:28 - Handling GET request for: /insert
+10:43:21,006  INFO root:98 - Inserting a new book
+10:43:21,027 DEBUG root:106 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=2100.00,bookName='Java'}
+10:43:21,030 DEBUG root:28 - Handling GET request for: /list
+10:43:28,131 DEBUG root:28 - Handling GET request for: /new
+10:43:28,132  INFO root:92 - Showing book form
+10:43:37,652 DEBUG root:62 - Handling POST request
+10:43:37,652 DEBUG root:28 - Handling GET request for: /insert
+10:43:37,652  INFO root:98 - Inserting a new book
+10:43:37,670 DEBUG root:106 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=2100.00,bookName='Java'}
+10:43:37,674 DEBUG root:28 - Handling GET request for: /list
+10:43:39,992 DEBUG root:28 - Handling GET request for: /list
+10:43:41,549 DEBUG root:28 - Handling GET request for: /list
+10:43:42,999 DEBUG root:28 - Handling GET request for: /list
+10:43:44,503 DEBUG root:28 - Handling GET request for: /list
+10:44:10,167 DEBUG root:28 - Handling GET request for: /list
+10:44:18,421 DEBUG root:28 - Handling GET request for: /delete
+10:44:18,443  WARN root:137 - Deleted book with ID: 17
+10:44:18,446 DEBUG root:28 - Handling GET request for: /list
+10:44:22,344 DEBUG root:28 - Handling GET request for: /delete
+10:44:22,369  WARN root:137 - Deleted book with ID: 18
+10:44:22,371 DEBUG root:28 - Handling GET request for: /list
+10:44:25,689 DEBUG root:28 - Handling GET request for: /delete
+10:44:25,712  WARN root:137 - Deleted book with ID: 16
+10:44:25,714 DEBUG root:28 - Handling GET request for: /list
+10:44:43,152 DEBUG root:28 - Handling GET request for: /list
+10:45:27,325  INFO root:21 - BookServlet initialized
+10:45:27,327 DEBUG root:28 - Handling GET request for: /new
+10:45:27,327  INFO root:92 - Showing book form
+10:45:35,104 DEBUG root:62 - Handling POST request
+10:45:35,105 DEBUG root:28 - Handling GET request for: /insert
+10:45:35,105  INFO root:98 - Inserting a new book
+10:45:35,304 DEBUG root:106 - Book inserted: Book{id=0, author='Jane ', customer='Abhinav', price=2100.00,bookName='hello'}
+10:45:35,309 DEBUG root:28 - Handling GET request for: /list
+10:45:36,925 DEBUG root:28 - Handling GET request for: /list
+10:45:38,953 DEBUG root:28 - Handling GET request for: /new
+10:45:38,954  INFO root:92 - Showing book form
+10:47:45,091 DEBUG root:28 - Handling GET request for: /list
+10:47:47,610 DEBUG root:28 - Handling GET request for: /list
+10:48:33,383 DEBUG root:28 - Handling GET request for: /edit
+10:48:33,395  INFO root:114 - Editing book with ID: 9
+10:48:38,056 DEBUG root:28 - Handling GET request for: /list
+10:48:39,879 DEBUG root:28 - Handling GET request for: /list
+10:48:40,865 DEBUG root:28 - Handling GET request for: /list
+10:49:11,746 DEBUG root:28 - Handling GET request for: /list
+10:49:33,335 DEBUG root:28 - Handling GET request for: /list
+10:49:49,570  INFO root:21 - BookServlet initialized
+10:49:49,571 DEBUG root:28 - Handling GET request for: /list
+10:49:51,021 DEBUG root:28 - Handling GET request for: /list
+10:49:51,628 DEBUG root:28 - Handling GET request for: /list
+10:49:52,172 DEBUG root:28 - Handling GET request for: /list
+10:49:52,657 DEBUG root:28 - Handling GET request for: /list
+10:49:58,262 DEBUG root:28 - Handling GET request for: /new
+10:49:58,262  INFO root:92 - Showing book form
+10:50:07,842 DEBUG root:62 - Handling POST request
+10:50:07,842 DEBUG root:28 - Handling GET request for: /insert
+10:50:07,842  INFO root:98 - Inserting a new book
+10:50:07,878 DEBUG root:106 - Book inserted: Book{id=0, author='Jane ', customer='Abhinav', price=2100.00,bookName='Java'}
+10:50:07,880 DEBUG root:28 - Handling GET request for: /list
+10:50:08,100 ERROR root:54 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5, 5' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
-	at net.codejava.bookstore.BookDAO.insertBook(BookDAO.java:52)
-	at net.codejava.bookstore.BookServlet.insert(BookServlet.java:87)
-	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:36)
-	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:61)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1058)
+	at net.codejava.bookstore.BookDAO.listBooksPaginated(BookDAO.java:148)
+	at net.codejava.bookstore.BookServlet.list(BookServlet.java:76)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:50)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
@@ -87,58 +206,133 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Out of range 
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1447)
-10:30:38,453 DEBUG root:60 - Handling POST request
-10:30:38,453 DEBUG root:28 - Handling GET request for: /insert
-10:30:38,453  INFO root:80 - Inserting a new book
-10:30:38,463 DEBUG root:88 - Book inserted: Book{id=0, author='William@@@', customer='123', price=878.00,bookName='getr'}
-10:30:38,466 DEBUG root:28 - Handling GET request for: /list
-10:30:38,466  INFO root:66 - Displaying Book Records
-10:30:53,658 DEBUG root:28 - Handling GET request for: /edit
-10:30:53,669  INFO root:96 - Editing book with ID: 10
-10:31:12,547 DEBUG root:60 - Handling POST request
-10:31:12,548 DEBUG root:28 - Handling GET request for: /update
-10:31:12,559 ERROR root:52 - SQL Exception in doGet
-com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Out of range value for column 'Price' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
-	at net.codejava.bookstore.BookDAO.updateBook(BookDAO.java:66)
-	at net.codejava.bookstore.BookServlet.update(BookServlet.java:110)
-	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:42)
-	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:61)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-10:47:30,864 DEBUG root:60 - Handling POST request
-10:47:30,865 DEBUG root:28 - Handling GET request for: /update
-10:47:30,873  INFO root:111 - Updated book: Book{id=10, author='William@@@', customer='123', price=8654.00,bookName='getr'}
-10:47:30,876 DEBUG root:28 - Handling GET request for: /list
-10:47:30,876  INFO root:66 - Displaying Book Records
-10:47:46,617 DEBUG root:28 - Handling GET request for: /new
-10:47:46,618  INFO root:74 - Showing book form
-10:47:53,493 DEBUG root:28 - Handling GET request for: /edit
-10:47:53,504  INFO root:96 - Editing book with ID: 7
+10:50:23,743  INFO root:21 - BookServlet initialized
+10:50:23,744 DEBUG root:62 - Handling POST request
+10:50:23,744 DEBUG root:28 - Handling GET request for: /insert
+10:50:23,744  INFO root:98 - Inserting a new book
+10:50:23,862 DEBUG root:106 - Book inserted: Book{id=0, author='Jane ', customer='Abhinav', price=2100.00,bookName='Java'}
+10:50:23,864 DEBUG root:28 - Handling GET request for: /list
+10:50:31,239 DEBUG root:28 - Handling GET request for: /edit
+10:50:31,248  INFO root:114 - Editing book with ID: 2
+10:50:44,535 DEBUG root:62 - Handling POST request
+10:50:44,536 DEBUG root:28 - Handling GET request for: /update
+10:50:44,547  INFO root:129 - Updated book: Book{id=2, author='William', customer='Abhinav', price=2100.00,bookName='hello World By william'}
+10:50:44,550 DEBUG root:28 - Handling GET request for: /list
+10:50:51,422 DEBUG root:28 - Handling GET request for: /new
+10:50:51,422  INFO root:92 - Showing book form
+10:51:40,414 DEBUG root:62 - Handling POST request
+10:51:40,414 DEBUG root:28 - Handling GET request for: /login
+10:51:40,423  WARN root:160 - Login failed
+10:51:52,497 DEBUG root:62 - Handling POST request
+10:51:52,498 DEBUG root:28 - Handling GET request for: /login
+10:51:52,499  WARN root:157 - Logged in Successfully
+10:51:52,502 DEBUG root:28 - Handling GET request for: /list
+10:53:41,654 DEBUG root:28 - Handling GET request for: /new
+10:53:41,654  INFO root:92 - Showing book form
+10:53:54,822 DEBUG root:62 - Handling POST request
+10:53:54,823 DEBUG root:28 - Handling GET request for: /insert
+10:53:54,823  INFO root:98 - Inserting a new book
+10:54:34,096 DEBUG root:62 - Handling POST request
+10:54:34,096 DEBUG root:28 - Handling GET request for: /insert
+10:54:34,096  INFO root:98 - Inserting a new book
+10:54:34,116 DEBUG root:106 - Book inserted: Book{id=0, author='Shakespear', customer='Raj', price=1499.00,bookName='hello'}
+10:54:34,120 DEBUG root:28 - Handling GET request for: /list
+10:54:37,132 DEBUG root:28 - Handling GET request for: /edit
+10:54:37,141  INFO root:114 - Editing book with ID: 3
+10:54:39,438 DEBUG root:28 - Handling GET request for: /list
+10:54:42,466 DEBUG root:28 - Handling GET request for: /new
+10:54:42,466  INFO root:92 - Showing book form
+10:55:05,947 DEBUG root:62 - Handling POST request
+10:55:05,947 DEBUG root:28 - Handling GET request for: /insert
+10:55:05,947  INFO root:98 - Inserting a new book
+10:55:22,031 DEBUG root:62 - Handling POST request
+10:55:22,031 DEBUG root:28 - Handling GET request for: /insert
+10:55:22,031  INFO root:98 - Inserting a new book
+10:55:22,042 DEBUG root:106 - Book inserted: Book{id=0, author='Raju', customer='Value First', price=1000.00,bookName='Java1234'}
+10:55:22,044 DEBUG root:28 - Handling GET request for: /list
+10:55:27,744 DEBUG root:28 - Handling GET request for: /new
+10:55:27,744  INFO root:92 - Showing book form
+10:55:40,669 DEBUG root:62 - Handling POST request
+10:55:40,670 DEBUG root:28 - Handling GET request for: /insert
+10:55:40,670  INFO root:98 - Inserting a new book
+10:55:40,680 DEBUG root:106 - Book inserted: Book{id=0, author='Hardik', customer='amazon', price=1499.00,bookName='Java'}
+10:55:40,682 DEBUG root:28 - Handling GET request for: /list
+10:55:46,880 DEBUG root:28 - Handling GET request for: /new
+10:55:46,880  INFO root:92 - Showing book form
+10:56:00,398 DEBUG root:62 - Handling POST request
+10:56:00,398 DEBUG root:28 - Handling GET request for: /insert
+10:56:00,398  INFO root:98 - Inserting a new book
+10:56:00,410 DEBUG root:106 - Book inserted: Book{id=0, author='William@', customer='Abhinav', price=2100.00,bookName='Java'}
+10:56:00,412 DEBUG root:28 - Handling GET request for: /list
+10:56:02,364 DEBUG root:28 - Handling GET request for: /list
+10:56:03,465 DEBUG root:28 - Handling GET request for: /list
+10:56:20,579 DEBUG root:28 - Handling GET request for: /list
+10:59:31,074  INFO root:21 - BookServlet initialized
+10:59:31,076 DEBUG root:62 - Handling POST request
+10:59:31,076 DEBUG root:28 - Handling GET request for: /login
+10:59:31,508  WARN root:160 - Login failed
+10:59:37,246 DEBUG root:62 - Handling POST request
+10:59:37,247 DEBUG root:28 - Handling GET request for: /login
+10:59:37,250  WARN root:160 - Login failed
+10:59:44,835 DEBUG root:62 - Handling POST request
+10:59:44,835 DEBUG root:28 - Handling GET request for: /login
+10:59:44,838  WARN root:160 - Login failed
+11:00:00,855 DEBUG root:62 - Handling POST request
+11:00:00,855 DEBUG root:28 - Handling GET request for: /login
+11:00:00,857  WARN root:160 - Login failed
+11:00:24,743 DEBUG root:62 - Handling POST request
+11:00:24,744 DEBUG root:28 - Handling GET request for: /login
+11:00:24,745  WARN root:157 - Logged in Successfully
+11:00:24,748 DEBUG root:28 - Handling GET request for: /list
+11:00:37,195 DEBUG root:28 - Handling GET request for: /list
+11:00:38,736 DEBUG root:28 - Handling GET request for: /list
+11:00:40,124 DEBUG root:28 - Handling GET request for: /list
+11:00:50,657 DEBUG root:28 - Handling GET request for: /edit
+11:00:50,668  INFO root:114 - Editing book with ID: 6
+11:00:56,030 DEBUG root:62 - Handling POST request
+11:00:56,031 DEBUG root:28 - Handling GET request for: /update
+11:00:56,047  INFO root:129 - Updated book: Book{id=6, author='William@', customer='Abhinavddd', price=2100.00,bookName='Java'}
+11:00:56,049 DEBUG root:28 - Handling GET request for: /list
+11:01:02,473 DEBUG root:28 - Handling GET request for: /delete
+11:01:02,497  WARN root:137 - Deleted book with ID: 2
+11:01:02,499 DEBUG root:28 - Handling GET request for: /list
+11:01:20,772 DEBUG root:28 - Handling GET request for: /edit
+11:01:20,784  INFO root:114 - Editing book with ID: 1
+11:01:27,794 DEBUG root:62 - Handling POST request
+11:01:27,794 DEBUG root:28 - Handling GET request for: /update
+11:01:27,806  INFO root:129 - Updated book: Book{id=1, author='Jane jiop', customer='Abhinav', price=2100.00,bookName='Java'}
+11:01:27,808 DEBUG root:28 - Handling GET request for: /list
+11:02:28,429 DEBUG root:28 - Handling GET request for: /edit
+11:02:28,440  INFO root:114 - Editing book with ID: 1
+11:02:33,964 DEBUG root:62 - Handling POST request
+11:02:33,964 DEBUG root:28 - Handling GET request for: /update
+11:02:33,977  INFO root:129 - Updated book: Book{id=1, author='Jane jiop', customer='Abhinav jain', price=2100.00,bookName='Java'}
+11:02:33,979 DEBUG root:28 - Handling GET request for: /list
+11:03:10,556 DEBUG root:28 - Handling GET request for: /list
+11:03:49,550 DEBUG root:28 - Handling GET request for: /new
+11:03:49,550  INFO root:92 - Showing book form
+11:03:51,992 DEBUG root:28 - Handling GET request for: /list
+11:08:51,397 DEBUG root:62 - Handling POST request
+11:08:51,397 DEBUG root:28 - Handling GET request for: /login
+11:08:51,407  WARN root:160 - Login failed
+11:09:11,297 DEBUG root:62 - Handling POST request
+11:09:11,297 DEBUG root:28 - Handling GET request for: /login
+11:09:11,298  WARN root:157 - Logged in Successfully
+11:09:11,301 DEBUG root:28 - Handling GET request for: /list
+11:18:36,683 DEBUG root:28 - Handling GET request for: /list
+11:18:37,666 DEBUG root:28 - Handling GET request for: /list
+11:18:38,294 DEBUG root:28 - Handling GET request for: /list
+11:18:38,884 DEBUG root:28 - Handling GET request for: /list
+11:27:35,804 DEBUG root:62 - Handling POST request
+11:27:35,804 DEBUG root:28 - Handling GET request for: /login
+11:27:35,814  WARN root:157 - Logged in Successfully
+11:27:35,817 DEBUG root:28 - Handling GET request for: /list
+11:29:17,128 DEBUG root:28 - Handling GET request for: /new
+11:29:17,129  INFO root:92 - Showing book form
+11:29:47,905 DEBUG root:62 - Handling POST request
+11:29:47,905 DEBUG root:28 - Handling GET request for: /insert
+11:29:47,905  INFO root:98 - Inserting a new book
+11:29:47,919 DEBUG root:106 - Book inserted: Book{id=0, author='William', customer='Raj', price=2100.00,bookName='hello'}
+11:29:47,921 DEBUG root:28 - Handling GET request for: /list
+11:29:53,721 DEBUG root:28 - Handling GET request for: /list
+11:29:55,012 DEBUG root:28 - Handling GET request for: /list
