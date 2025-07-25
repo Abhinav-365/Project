@@ -169,5 +169,35 @@ public class BookDAO {
        rs.close(); stmt.close(); disconnect();
        return total;
    }
+   
+   public List<Book> searchBooks(String keyword) throws SQLException {
+       List<Book> list = new ArrayList<>();
+       String sql = "SELECT * FROM Book_Store " +
+                    "WHERE Author_Name   LIKE ? " +
+                    "   OR Customer_Name LIKE ? " +
+                    "   OR Book_Name     LIKE ?";
+       connect();
+       PreparedStatement ps = jdbcConnection.prepareStatement(sql);
+       String kw = "%" + keyword + "%";
+       ps.setString(1, kw);
+       ps.setString(2, kw);
+       ps.setString(3, kw);
+       ResultSet rs = ps.executeQuery();
+
+       while (rs.next()) {
+           list.add(new Book(
+               rs.getInt("Id"),
+               rs.getString("Author_Name"),
+               rs.getString("Customer_Name"),
+               rs.getFloat("Price"),
+               rs.getString("Book_Name")
+           ));
+       }
+       rs.close();
+       ps.close();
+       disconnect();
+       return list;
+   }
+
 
 }
