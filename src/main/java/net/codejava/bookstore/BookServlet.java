@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 
 @WebServlet("/")
 public class BookServlet extends HttpServlet {
+
     private static final long serialVersionUID = 1L;
     private BookDAO dao;
     private Logger logger;
@@ -24,31 +25,20 @@ public class BookServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
+
         String action = req.getServletPath();
         logger.debug("Handling GET request for: " + action);
+
         try {
             switch (action) {
-                case "/new":
-                    showForm(req, resp);
-                    break;
-                case "/insert":
-                    insert(req, resp);
-                    break;
-                case "/edit":
-                    showEdit(req, resp);
-                    break;
-                case "/update":
-                    update(req, resp);
-                    break;
-                case "/delete":
-                    delete(req, resp);
-                    break;
-                case "/login":
-                	login(req,resp);
-                	break;
-                default:
-                    list(req, resp);
-                    break;
+                case "/new":     showForm(req, resp);             break;
+                case "/insert":  insert(req, resp);               break;
+                case "/edit":    showEdit(req, resp);             break;
+                case "/update":  update(req, resp);               break;
+                case "/delete":  delete(req, resp);               break;
+                case "/login":   login(req, resp);                break;
+                case "/search":  search(req, resp);               break;
+                default:         list(req, resp);                 break;
             }
         } catch (SQLException ex) {
             logger.error("SQL Exception in doGet", ex);
@@ -66,8 +56,8 @@ public class BookServlet extends HttpServlet {
     private void list(HttpServletRequest req, HttpServletResponse resp)
             throws SQLException, ServletException, IOException {
 
-        int page = 1;                
-        int recordsPerPage = 5;      
+        int page = 1;
+        int recordsPerPage = 5;
 
         if (req.getParameter("page") != null) {
             page = Integer.parseInt(req.getParameter("page"));
@@ -82,6 +72,26 @@ public class BookServlet extends HttpServlet {
         req.setAttribute("listBook",   books);
         req.setAttribute("currentPage", page);
         req.setAttribute("totalPages",  totalPages);
+
+        req.getRequestDispatcher("book-list.jsp").forward(req, resp);
+    }
+
+    private void search(HttpServletRequest req, HttpServletResponse resp)
+            throws SQLException, ServletException, IOException {
+
+        String keyword = req.getParameter("query");
+        if (keyword == null || keyword.trim().isEmpty()) {
+            resp.sendRedirect("list");   // empty search => go back
+            return;
+        }
+
+        List<Book> results = dao.searchBooks(keyword);
+
+        req.setAttribute("listBook",   results);
+        req.setAttribute("searchQuery", keyword);
+
+        req.setAttribute("totalPages",  1);
+        req.setAttribute("currentPage", 1);
 
         req.getRequestDispatcher("book-list.jsp").forward(req, resp);
     }
@@ -102,6 +112,7 @@ public class BookServlet extends HttpServlet {
                 Float.parseFloat(req.getParameter("price")),
                 req.getParameter("bookName")
         );
+
         dao.insertBook(book);
         logger.debug("Book inserted: " + book);
         resp.sendRedirect("list");
@@ -162,5 +173,4 @@ public class BookServlet extends HttpServlet {
             req.getRequestDispatcher("login.jsp").forward(req, resp);
         }
     }
-
 }         

@@ -19,13 +19,11 @@ body {
 }
 
 form {
-    background: white;
-    padding: 30px 20px;
     border-radius: 20px;
     width: 100%;
     max-width: 400px;
     margin: 30px auto;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  
     text-align: center;
 }
 
@@ -73,7 +71,7 @@ form input[type="submit"]:hover {
 a[href="list"] {
     display: block;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1px;
     color: #ff4d4d;
     font-weight: bold;
 }
@@ -109,4 +107,3 @@ h2 {
     text-align: center;
     color: #333;
 }
-
