@@ -21,10 +21,10 @@
     </a>
   </div>
 
-  <!-- Spacer to push content below the logo -->
+  <!-- Spacer -->
   <div style="height: 140px;"></div>
 
-  <!-- Main Container Wrapper -->
+  <!-- Main Container -->
   <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
     <div style="background-color: white; padding: 20px 30px;
                 border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -33,8 +33,8 @@
 
       <!-- Search Bar -->
       <form action="search" method="get" style="display: flex; gap: 10px; align-items: center; width: 100%; margin-bottom: 20px;">
-        <input type="text" name="query" value="${param.query}" placeholder="Search"
-               style="flex: 1; padding: 7px; border: 2px solid #ccc; border-radius: 6px; font-size: 15px; box-sizing: border-box;" />
+        <input type="text" name="query" value="${searchQuery}" placeholder="Search"
+               style="flex: 1; padding: 7px; border: 2px solid #ccc; border-radius: 6px; font-size: 15px;" />
         <button type="submit"
                 style="padding: 9px 20px; background-color: #3399ff; color: white; font-weight: bold;
                        border: none; border-radius: 6px; cursor: pointer;">
@@ -47,18 +47,21 @@
         </a>
       </form>
 
+      <!-- Search Info -->
       <c:if test="${not empty searchQuery}">
-        <p style="text-align: center; margin-top: -10px; margin-bottom: 10px;">Search results for: "<strong>${searchQuery}</strong>"</p>
+        <p style="text-align: center; margin-top: -10px; margin-bottom: 10px;">
+          Search results for: "<strong>${searchQuery}</strong>"
+        </p>
       </c:if>
 
-      <!-- Add New Button -->
+      <!-- Add New -->
       <div style="width: 100%; text-align: right; margin-bottom: -12px;">
         <a href="new" style="text-decoration: none; font-weight: bold; color: #3399ff;">+ Add New</a>
       </div>
 
-      <!-- Book Table -->
+      <!-- Table -->
       <table style="width: 100%; border-collapse: collapse; text-align: center;">
-        <tr style="background-color: #f0f0f0; color: black; font-weight: bold; font-size: 16px; border-bottom: 2px solid #ccc;">
+        <tr style="background-color: #f0f0f0; font-weight: bold; font-size: 16px; border-bottom: 2px solid #ccc;">
           <th style="padding: 12px; border: 1px solid #ddd;">ID</th>
           <th style="padding: 12px; border: 1px solid #ddd;">Author</th>
           <th style="padding: 12px; border: 1px solid #ddd;">Customer</th>
@@ -82,7 +85,7 @@
         </c:forEach>
       </table>
 
-      <!-- Enhanced Pagination -->
+      <!-- Pagination -->
       <div style="margin-top: 30px; text-align: center;">
         <c:if test="${totalPages > 1}">
           <c:set var="window" value="2" />
@@ -91,14 +94,27 @@
 
           <!-- First Page + Ellipsis -->
           <c:if test="${start > 1}">
-            <a href="list?page=1"
-               style="margin: 0 4px; padding: 6px 12px; border: 1px solid #3399ff; border-radius: 6px; text-decoration: none; font-weight: bold; background-color: white; color: #3399ff;">1</a>
+            <c:url var="firstUrl" value="${empty searchQuery ? 'list' : 'search'}">
+              <c:param name="page" value="1" />
+              <c:if test="${not empty searchQuery}">
+                <c:param name="query" value="${searchQuery}" />
+              </c:if>
+            </c:url>
+            <a href="${firstUrl}"
+               style="margin: 0 4px; padding: 6px 12px; border: 1px solid #3399ff; border-radius: 6px;
+                      text-decoration: none; font-weight: bold; background-color: white; color: #3399ff;">1</a>
             <span style="margin: 0 5px;">...</span>
           </c:if>
 
           <!-- Page Numbers -->
           <c:forEach var="i" begin="${start < 1 ? 1 : start}" end="${end > totalPages ? totalPages : end}">
-            <a href="list?page=${i}"
+            <c:url var="pageUrl" value="${empty searchQuery ? 'list' : 'search'}">
+              <c:param name="page" value="${i}" />
+              <c:if test="${not empty searchQuery}">
+                <c:param name="query" value="${searchQuery}" />
+              </c:if>
+            </c:url>
+            <a href="${pageUrl}"
                style="display: inline-block; margin: 0 4px; padding: 6px 12px;
                       border: 1px solid #3399ff; border-radius: 6px; text-decoration: none;
                       font-weight: bold;
@@ -111,8 +127,17 @@
           <!-- Ellipsis + Last Page -->
           <c:if test="${end < totalPages}">
             <span style="margin: 0 5px;">...</span>
-            <a href="list?page=${totalPages}"
-               style="margin: 0 4px; padding: 6px 12px; border: 1px solid #3399ff; border-radius: 6px; text-decoration: none; font-weight: bold; background-color: white; color: #3399ff;">${totalPages}</a>
+            <c:url var="lastUrl" value="${empty searchQuery ? 'list' : 'search'}">
+              <c:param name="page" value="${totalPages}" />
+              <c:if test="${not empty searchQuery}">
+                <c:param name="query" value="${searchQuery}" />
+              </c:if>
+            </c:url>
+            <a href="${lastUrl}"
+               style="margin: 0 4px; padding: 6px 12px; border: 1px solid #3399ff; border-radius: 6px;
+                      text-decoration: none; font-weight: bold; background-color: white; color: #3399ff;">
+              ${totalPages}
+            </a>
           </c:if>
         </c:if>
       </div>
@@ -121,7 +146,7 @@
 
   <!-- Footer -->
   <footer style="width: 100%; background: linear-gradient(to right, #b3d9ff, #e6f0ff);
-                 color: #333; text-align: center; padding: 8px 0;
+                 color: #333; text-align: center; padding: 1px 0;
                  position: fixed; bottom: 0; left: 0; font-size: 14px;">
     <p style="margin: 0;">&copy; 2025 ValueFirst BookStore Inc.</p>
     <a href='/privacy' style='color: #333; text-decoration: none; margin: 0 5px;'>Privacy Policy</a> |
