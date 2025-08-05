@@ -1,0 +1,678 @@
+09:53:07,375  INFO root:26 - BookServlet initialized
+09:53:07,377 DEBUG root:57 - Handling POST request
+09:53:07,377 DEBUG root:34 - Handling GET request for: /login
+09:53:07,833  INFO root:181 - Login successful, generating OTP...
+09:53:13,942  INFO root:223 - OTP sent to email: Value First
+09:53:44,741 DEBUG root:57 - Handling POST request
+09:53:44,741 DEBUG root:34 - Handling GET request for: /verify-otp
+09:53:44,741  INFO root:244 - OTP verified successfully
+09:53:44,780 DEBUG root:34 - Handling GET request for: /list
+09:54:08,986 DEBUG root:34 - Handling GET request for: /list
+11:07:42,913  INFO root:26 - BookServlet initialized
+11:07:42,916 DEBUG root:57 - Handling POST request
+11:07:42,916 DEBUG root:34 - Handling GET request for: /login
+11:07:43,333  INFO root:181 - Login successful, generating OTP...
+11:07:49,693  INFO root:224 - OTP sent to email: Value First
+11:08:20,172 DEBUG root:57 - Handling POST request
+11:08:20,173 DEBUG root:34 - Handling GET request for: /verify-otp
+11:08:20,186  INFO root:246 - OTP verified successfully
+11:08:20,213 DEBUG root:34 - Handling GET request for: /list
+11:12:57,928  INFO root:26 - BookServlet initialized
+11:12:57,930 DEBUG root:57 - Handling POST request
+11:12:57,930 DEBUG root:34 - Handling GET request for: /login
+11:12:58,341  INFO root:181 - Login successful, generating OTP...
+11:13:03,834  INFO root:224 - OTP sent to email: Value First
+11:13:32,754 DEBUG root:57 - Handling POST request
+11:13:32,754 DEBUG root:34 - Handling GET request for: /verify-otp
+11:13:32,768  INFO root:246 - OTP verified successfully
+11:13:32,796 DEBUG root:34 - Handling GET request for: /list
+11:14:03,939 DEBUG root:34 - Handling GET request for: /search
+11:14:09,733 DEBUG root:34 - Handling GET request for: /list
+11:14:22,344 DEBUG root:34 - Handling GET request for: /search
+11:15:19,569 DEBUG root:34 - Handling GET request for: /search
+11:21:16,024 DEBUG root:34 - Handling GET request for: /edit
+11:21:16,037  INFO root:135 - Editing book with ID: 1
+11:22:04,966 DEBUG root:57 - Handling POST request
+11:22:04,966 DEBUG root:34 - Handling GET request for: /update
+11:22:04,979  INFO root:150 - Updated book: Book{id=1, author='Author name', customer='new Customer', price=1747.89,bookName='Book_4927'}
+11:22:04,983 DEBUG root:34 - Handling GET request for: /list
+11:22:12,505 DEBUG root:34 - Handling GET request for: /edit
+11:22:12,517  INFO root:135 - Editing book with ID: 1
+11:22:20,348 DEBUG root:57 - Handling POST request
+11:22:20,348 DEBUG root:34 - Handling GET request for: /update
+11:22:20,571 ERROR root:49 - SQL Exception in doGet
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'Book_Name' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
+	at net.codejava.bookstore.BookDAO.updateBook(BookDAO.java:105)
+	at net.codejava.bookstore.BookServlet.update(BookServlet.java:149)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:41)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+11:23:33,885 DEBUG root:57 - Handling POST request
+11:23:33,885 DEBUG root:34 - Handling GET request for: /update
+11:23:33,899  INFO root:150 - Updated book: Book{id=1, author='Author name', customer='new Customer', price=1747.89,bookName='book name'}
+11:23:33,902 DEBUG root:34 - Handling GET request for: /list
+11:23:56,385 DEBUG root:34 - Handling GET request for: /edit
+11:23:56,395  INFO root:135 - Editing book with ID: 1
+11:24:03,353 DEBUG root:34 - Handling GET request for: /list
+11:24:14,963 DEBUG root:34 - Handling GET request for: /new
+11:24:14,963  INFO root:112 - Showing book form
+11:24:18,182 DEBUG root:34 - Handling GET request for: /list
+11:24:20,034 DEBUG root:34 - Handling GET request for: /edit
+11:24:20,045  INFO root:135 - Editing book with ID: 1
+11:24:22,415 DEBUG root:34 - Handling GET request for: /list
+11:24:24,611 DEBUG root:34 - Handling GET request for: /new
+11:24:24,611  INFO root:112 - Showing book form
+11:24:28,959 DEBUG root:34 - Handling GET request for: /list
+11:24:30,713 DEBUG root:34 - Handling GET request for: /edit
+11:24:30,724  INFO root:135 - Editing book with ID: 1
+11:24:32,988 DEBUG root:34 - Handling GET request for: /list
+11:24:41,552 DEBUG root:34 - Handling GET request for: /new
+11:24:41,552  INFO root:112 - Showing book form
+11:24:46,174 DEBUG root:34 - Handling GET request for: /list
+11:24:47,836 DEBUG root:34 - Handling GET request for: /edit
+11:24:47,846  INFO root:135 - Editing book with ID: 1
+11:25:00,226 DEBUG root:34 - Handling GET request for: /list
+11:25:02,641 DEBUG root:34 - Handling GET request for: /new
+11:25:02,641  INFO root:112 - Showing book form
+11:25:44,476 DEBUG root:34 - Handling GET request for: /list
+11:26:21,645 DEBUG root:34 - Handling GET request for: /list
+11:26:34,097 DEBUG root:34 - Handling GET request for: /search
+11:26:34,102 DEBUG root:34 - Handling GET request for: /list
+11:26:36,557 DEBUG root:34 - Handling GET request for: /search
+11:26:36,560 DEBUG root:34 - Handling GET request for: /list
+11:26:38,958 DEBUG root:34 - Handling GET request for: /list
+11:26:40,722 DEBUG root:34 - Handling GET request for: /list
+11:26:42,305 DEBUG root:34 - Handling GET request for: /list
+11:26:44,696 DEBUG root:34 - Handling GET request for: /list
+11:26:48,121 DEBUG root:34 - Handling GET request for: /list
+11:26:49,920 DEBUG root:34 - Handling GET request for: /list
+11:26:51,375 DEBUG root:34 - Handling GET request for: /list
+11:26:52,921 DEBUG root:34 - Handling GET request for: /list
+11:27:00,875 DEBUG root:34 - Handling GET request for: /list
+11:27:04,696 DEBUG root:34 - Handling GET request for: /edit
+11:27:04,706  INFO root:135 - Editing book with ID: 1
+11:27:07,295 DEBUG root:34 - Handling GET request for: /list
+11:27:10,707 DEBUG root:34 - Handling GET request for: /edit
+11:27:10,716  INFO root:135 - Editing book with ID: 1
+11:27:33,582 DEBUG root:34 - Handling GET request for: /list
+11:27:47,251 DEBUG root:34 - Handling GET request for: /delete
+11:27:47,274  WARN root:158 - Deleted book with ID: 1
+11:27:47,277 DEBUG root:34 - Handling GET request for: /list
+11:27:50,641 DEBUG root:34 - Handling GET request for: /delete
+11:27:50,660  WARN root:158 - Deleted book with ID: 2
+11:27:50,663 DEBUG root:34 - Handling GET request for: /list
+11:27:52,650 DEBUG root:34 - Handling GET request for: /list
+11:27:58,163 DEBUG root:34 - Handling GET request for: /delete
+11:27:58,182  WARN root:158 - Deleted book with ID: 1101
+11:27:58,185 DEBUG root:34 - Handling GET request for: /list
+11:28:01,273 DEBUG root:34 - Handling GET request for: /list
+11:28:59,463 DEBUG root:34 - Handling GET request for: /edit
+11:28:59,473  INFO root:135 - Editing book with ID: 1095
+11:29:21,975 DEBUG root:57 - Handling POST request
+11:29:21,975 DEBUG root:34 - Handling GET request for: /update
+11:29:21,985  INFO root:150 - Updated book: Book{id=1095, author='Author namerr', customer='Customer nameeee', price=8349.45,bookName='Book_31667'}
+11:29:21,988 DEBUG root:34 - Handling GET request for: /list
+11:29:52,329 DEBUG root:34 - Handling GET request for: /new
+11:29:52,329  INFO root:112 - Showing book form
+11:29:54,671 DEBUG root:34 - Handling GET request for: /list
+11:31:03,009 DEBUG root:34 - Handling GET request for: /edit
+11:31:03,018  INFO root:135 - Editing book with ID: 3
+11:31:19,475 DEBUG root:57 - Handling POST request
+11:31:19,475 DEBUG root:34 - Handling GET request for: /update
+11:31:19,486  INFO root:150 - Updated book: Book{id=3, author='Author ok', customer='Customer ok', price=6166.27,bookName='Book_3729'}
+11:31:19,489 DEBUG root:34 - Handling GET request for: /list
+11:31:41,481 DEBUG root:34 - Handling GET request for: /edit
+11:31:41,491  INFO root:135 - Editing book with ID: 3
+11:31:43,470 DEBUG root:34 - Handling GET request for: /list
+11:31:45,933 DEBUG root:34 - Handling GET request for: /new
+11:31:45,933  INFO root:112 - Showing book form
+11:31:49,289 DEBUG root:34 - Handling GET request for: /list
+11:31:51,150 DEBUG root:34 - Handling GET request for: /edit
+11:31:51,158  INFO root:135 - Editing book with ID: 3
+11:31:52,963 DEBUG root:34 - Handling GET request for: /list
+11:32:32,671 DEBUG root:34 - Handling GET request for: /list
+11:32:34,141 DEBUG root:34 - Handling GET request for: /list
+11:32:36,103 DEBUG root:34 - Handling GET request for: /list
+11:32:37,659 DEBUG root:34 - Handling GET request for: /list
+11:32:38,622 DEBUG root:34 - Handling GET request for: /list
+11:32:39,951 DEBUG root:34 - Handling GET request for: /list
+11:32:41,246 DEBUG root:34 - Handling GET request for: /list
+11:32:42,679 DEBUG root:34 - Handling GET request for: /list
+11:34:30,981 DEBUG root:34 - Handling GET request for: /list
+11:34:32,763 DEBUG root:34 - Handling GET request for: /list
+11:34:34,470 DEBUG root:34 - Handling GET request for: /list
+11:35:12,566 DEBUG root:34 - Handling GET request for: /list
+11:35:14,247 DEBUG root:34 - Handling GET request for: /list
+11:35:28,488 DEBUG root:34 - Handling GET request for: /edit
+11:35:28,496  INFO root:135 - Editing book with ID: 3
+11:35:30,452 DEBUG root:34 - Handling GET request for: /list
+11:36:11,831 DEBUG root:34 - Handling GET request for: /list
+11:36:17,750 DEBUG root:34 - Handling GET request for: /list
+11:36:42,035 DEBUG root:57 - Handling POST request
+11:36:42,036 DEBUG root:34 - Handling GET request for: /login
+11:36:42,044  INFO root:181 - Login successful, generating OTP...
+11:36:47,486  INFO root:224 - OTP sent to email: Value First
+11:37:05,488 DEBUG root:57 - Handling POST request
+11:37:05,488 DEBUG root:34 - Handling GET request for: /verify-otp
+11:37:05,494  INFO root:246 - OTP verified successfully
+11:37:05,516 DEBUG root:34 - Handling GET request for: /list
+11:37:22,458 DEBUG root:34 - Handling GET request for: /new
+11:37:22,459  INFO root:112 - Showing book form
+11:37:25,167 DEBUG root:34 - Handling GET request for: /list
+11:37:33,287 DEBUG root:34 - Handling GET request for: /delete
+11:37:33,298  WARN root:158 - Deleted book with ID: 4
+11:37:33,300 DEBUG root:34 - Handling GET request for: /list
+11:37:36,103 DEBUG root:34 - Handling GET request for: /list
+11:37:37,192 DEBUG root:34 - Handling GET request for: /list
+11:37:38,287 DEBUG root:34 - Handling GET request for: /list
+11:37:40,555 DEBUG root:34 - Handling GET request for: /list
+11:39:31,114 DEBUG root:34 - Handling GET request for: /edit
+11:39:31,121  INFO root:135 - Editing book with ID: 3
+11:39:36,100 DEBUG root:34 - Handling GET request for: /list
+11:39:37,904 DEBUG root:34 - Handling GET request for: /new
+11:39:37,905  INFO root:112 - Showing book form
+11:40:32,207 DEBUG root:34 - Handling GET request for: /list
+11:40:35,162 DEBUG root:34 - Handling GET request for: /list
+11:40:36,000 DEBUG root:34 - Handling GET request for: /list
+11:40:36,718 DEBUG root:34 - Handling GET request for: /list
+11:41:37,052 DEBUG root:34 - Handling GET request for: /search
+11:41:41,812 DEBUG root:34 - Handling GET request for: /list
+11:41:54,557 DEBUG root:34 - Handling GET request for: /search
+11:42:38,297 DEBUG root:34 - Handling GET request for: /delete
+11:42:38,317  WARN root:158 - Deleted book with ID: 3
+11:42:38,320 DEBUG root:34 - Handling GET request for: /list
+11:43:06,697 DEBUG root:34 - Handling GET request for: /delete
+11:43:06,744  WARN root:158 - Deleted book with ID: 5
+11:43:06,747 DEBUG root:34 - Handling GET request for: /list
+11:43:19,624 DEBUG root:34 - Handling GET request for: /list
+11:43:22,963 DEBUG root:34 - Handling GET request for: /list
+11:43:24,817 DEBUG root:34 - Handling GET request for: /list
+11:43:26,277 DEBUG root:34 - Handling GET request for: /list
+11:43:33,956 DEBUG root:34 - Handling GET request for: /search
+11:43:43,504 DEBUG root:34 - Handling GET request for: /list
+11:55:20,664 DEBUG root:57 - Handling POST request
+11:55:20,664 DEBUG root:34 - Handling GET request for: /login
+11:55:20,673  INFO root:181 - Login successful, generating OTP...
+11:55:26,057  INFO root:224 - OTP sent to email: Value First
+11:56:26,612 DEBUG root:57 - Handling POST request
+11:56:26,612 DEBUG root:34 - Handling GET request for: /verify-otp
+11:56:26,620  WARN root:250 - Invalid OTP
+12:28:56,637  INFO root:26 - BookServlet initialized
+12:28:56,638 DEBUG root:57 - Handling POST request
+12:28:56,638 DEBUG root:34 - Handling GET request for: /login
+12:28:57,103  INFO root:181 - Login successful, generating OTP...
+12:29:01,934  INFO root:235 - OTP sent to email: Value First
+12:29:33,347 DEBUG root:57 - Handling POST request
+12:29:33,347 DEBUG root:34 - Handling GET request for: /verify-otp
+12:29:33,362  INFO root:257 - OTP verified successfully
+12:29:33,381 DEBUG root:34 - Handling GET request for: /list
+12:30:17,200 DEBUG root:57 - Handling POST request
+12:30:17,201 DEBUG root:34 - Handling GET request for: /login
+12:30:17,215  INFO root:181 - Login successful, generating OTP...
+12:30:22,249  INFO root:235 - OTP sent to email: Value First
+12:32:10,297 DEBUG root:57 - Handling POST request
+12:32:10,298 DEBUG root:34 - Handling GET request for: /login
+12:32:10,312  INFO root:181 - Login successful, generating OTP...
+12:32:15,498  INFO root:235 - OTP sent to email: Value First
+12:33:01,059 DEBUG root:57 - Handling POST request
+12:33:01,059 DEBUG root:34 - Handling GET request for: /verify-otp
+12:33:01,071  WARN root:261 - Invalid OTP
+14:55:10,116  INFO root:26 - BookServlet initialized
+14:55:10,117 DEBUG root:57 - Handling POST request
+14:55:10,117 DEBUG root:34 - Handling GET request for: /verify-otp
+14:59:09,134  INFO root:26 - BookServlet initialized
+14:59:09,135 DEBUG root:57 - Handling POST request
+14:59:09,136 DEBUG root:34 - Handling GET request for: /login
+14:59:09,298  INFO root:181 - Login successful, generating OTP...
+14:59:14,927  INFO root:234 - OTP sent to email: Value First
+14:59:31,332 DEBUG root:57 - Handling POST request
+14:59:31,333 DEBUG root:34 - Handling GET request for: /verify-otp
+14:59:31,344  WARN root:260 - Invalid OTP
+14:59:52,373 DEBUG root:57 - Handling POST request
+14:59:52,373 DEBUG root:34 - Handling GET request for: /verify-otp
+14:59:52,385  INFO root:256 - OTP verified successfully
+14:59:52,411 DEBUG root:34 - Handling GET request for: /list
+15:00:43,834 DEBUG root:57 - Handling POST request
+15:00:43,835 DEBUG root:34 - Handling GET request for: /login
+15:00:43,845  INFO root:181 - Login successful, generating OTP...
+15:00:49,102  INFO root:234 - OTP sent to email: Value First
+15:06:50,175 DEBUG root:34 - Handling GET request for: /new
+15:06:50,175  INFO root:112 - Showing book form
+15:46:27,690 DEBUG root:57 - Handling POST request
+15:46:27,690 DEBUG root:34 - Handling GET request for: /login
+15:46:27,699  INFO root:181 - Login successful, generating OTP...
+15:46:32,369  INFO root:234 - OTP sent to email: Value First
+15:47:14,117 DEBUG root:57 - Handling POST request
+15:47:14,117 DEBUG root:34 - Handling GET request for: /verify-otp
+15:47:14,127  INFO root:256 - OTP verified successfully
+15:47:14,149 DEBUG root:34 - Handling GET request for: /list
+15:52:11,030 DEBUG root:34 - Handling GET request for: /delete
+15:52:11,053  WARN root:158 - Deleted book with ID: 6
+15:52:11,056 DEBUG root:34 - Handling GET request for: /list
+22:08:31,662  INFO root:26 - BookServlet initialized
+22:08:31,665 DEBUG root:57 - Handling POST request
+22:08:31,665 DEBUG root:34 - Handling GET request for: /login
+22:08:32,168  INFO root:181 - Login successful, generating OTP...
+22:08:32,467 ERROR root:49 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5 MINUTE) WHERE user_name = 'Value First'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
+	at net.codejava.bookstore.BookDAO.saveOTPToDatabase(BookDAO.java:247)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:188)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:43)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+22:09:26,581  INFO root:26 - BookServlet initialized
+22:09:26,582 DEBUG root:57 - Handling POST request
+22:09:26,583 DEBUG root:34 - Handling GET request for: /login
+22:09:26,807  INFO root:181 - Login successful, generating OTP...
+22:09:27,111 ERROR root:49 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5 MINUTE) WHERE user_name = 'Value First'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
+	at net.codejava.bookstore.BookDAO.saveOTPToDatabase(BookDAO.java:247)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:188)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:43)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+22:09:30,572 DEBUG root:57 - Handling POST request
+22:09:30,573 DEBUG root:34 - Handling GET request for: /login
+22:09:30,575  INFO root:181 - Login successful, generating OTP...
+22:09:30,591 ERROR root:49 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5 MINUTE) WHERE user_name = 'Value First'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
+	at net.codejava.bookstore.BookDAO.saveOTPToDatabase(BookDAO.java:247)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:188)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:43)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+22:10:46,036  INFO root:26 - BookServlet initialized
+22:10:46,039 DEBUG root:57 - Handling POST request
+22:10:46,039 DEBUG root:34 - Handling GET request for: /login
+22:10:46,605  INFO root:181 - Login successful, generating OTP...
+22:10:46,944 ERROR root:49 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5 MINUTE) WHERE user_name = 'Value First'' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
+	at net.codejava.bookstore.BookDAO.saveOTPToDatabase(BookDAO.java:247)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:188)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:43)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+22:17:36,372  INFO root:26 - BookServlet initialized
+22:17:36,374 DEBUG root:57 - Handling POST request
+22:17:36,375 DEBUG root:34 - Handling GET request for: /login
+22:17:36,377 ERROR root:49 - SQL Exception in doGet
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/Store
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:638)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:199)
+	at net.codejava.bookstore.BookDAO.connect(BookDAO.java:15)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:69)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:178)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:43)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+22:46:42,756  INFO root:26 - BookServlet initialized
+22:46:42,757 DEBUG root:57 - Handling POST request
+22:46:42,757 DEBUG root:34 - Handling GET request for: /login
+22:46:43,137  INFO root:181 - Login successful, generating OTP...
+22:46:43,238 ERROR root:236 - Failed to send OTP email
+com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.gmail.com
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2209)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:740)
+	at javax.mail.Service.connect(Service.java:388)
+	at javax.mail.Service.connect(Service.java:246)
+	at javax.mail.Service.connect(Service.java:195)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at net.codejava.bookstore.BookServlet.sendOTPEmail(BookServlet.java:233)
+	at net.codejava.bookstore.BookServlet.lambda$0(BookServlet.java:194)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: java.net.UnknownHostException: smtp.gmail.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:558)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:282)
+	at java.base/java.net.Socket.connect(Socket.java:665)
+	at java.base/java.net.Socket.connect(Socket.java:603)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:359)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2175)
+	... 9 more
+22:48:41,991 DEBUG root:57 - Handling POST request
+22:48:41,991 DEBUG root:34 - Handling GET request for: /verify-otp
+22:48:42,006  INFO root:256 - OTP verified successfully
+22:48:42,062 DEBUG root:34 - Handling GET request for: /list
+22:59:46,451  INFO root:26 - BookServlet initialized
+22:59:46,453 DEBUG root:57 - Handling POST request
+22:59:46,453 DEBUG root:34 - Handling GET request for: /login
+22:59:46,862  INFO root:181 - Login successful, generating OTP...
+22:59:56,341  INFO root:234 - OTP sent to email: Value First
+23:00:28,928 DEBUG root:57 - Handling POST request
+23:00:28,929 DEBUG root:34 - Handling GET request for: /verify-otp
+23:00:28,945  INFO root:257 - OTP verified successfully
+23:00:28,971 DEBUG root:34 - Handling GET request for: /list
+23:05:48,850 DEBUG root:57 - Handling POST request
+23:05:48,851 DEBUG root:34 - Handling GET request for: /login
+23:05:48,864  INFO root:181 - Login successful, generating OTP...
+23:05:56,516  INFO root:234 - OTP sent to email: Value First
+23:06:18,757 DEBUG root:57 - Handling POST request
+23:06:18,757 DEBUG root:34 - Handling GET request for: /verify-otp
+23:06:18,770  INFO root:257 - OTP verified successfully
+23:06:18,797 DEBUG root:34 - Handling GET request for: /list
+23:06:28,536 DEBUG root:34 - Handling GET request for: /delete
+23:06:28,551  WARN root:158 - Deleted book with ID: 7
+23:06:28,555 DEBUG root:34 - Handling GET request for: /list
+23:06:32,595 DEBUG root:34 - Handling GET request for: /new
+23:06:32,596  INFO root:112 - Showing book form
+23:06:42,497 DEBUG root:57 - Handling POST request
+23:06:42,497 DEBUG root:34 - Handling GET request for: /insert
+23:06:42,497  INFO root:118 - Inserting a new book
+23:06:42,512 DEBUG root:127 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=2100.00,bookName='Java'}
+23:06:42,515 DEBUG root:34 - Handling GET request for: /list
+23:12:54,162  INFO root:26 - BookServlet initialized
+23:12:54,164 DEBUG root:57 - Handling POST request
+23:12:54,165 DEBUG root:34 - Handling GET request for: /login
+23:12:54,592  INFO root:182 - Login successful, generating OTP...
+23:13:04,306  INFO root:235 - OTP sent to email: Value First
+23:13:18,318 DEBUG root:57 - Handling POST request
+23:13:18,319 DEBUG root:34 - Handling GET request for: /verify-otp
+23:13:18,334  WARN root:262 - Invalid or expired OTP
+23:13:39,058 DEBUG root:57 - Handling POST request
+23:13:39,058 DEBUG root:34 - Handling GET request for: /verify-otp
+23:13:39,074  INFO root:258 - OTP verified successfully
+23:13:39,103 DEBUG root:34 - Handling GET request for: /list
+23:13:43,277 DEBUG root:34 - Handling GET request for: /new
+23:13:43,277  INFO root:112 - Showing book form
+23:13:52,823 DEBUG root:57 - Handling POST request
+23:13:52,823 DEBUG root:34 - Handling GET request for: /insert
+23:13:52,824  INFO root:118 - Inserting a new book
+23:13:52,838 DEBUG root:127 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=2100.00,bookName='Java'}
+23:13:52,842 DEBUG root:34 - Handling GET request for: /list
+23:14:42,286 DEBUG root:34 - Handling GET request for: /list
+23:14:46,342 DEBUG root:34 - Handling GET request for: /new
+23:14:46,343  INFO root:112 - Showing book form
+23:14:52,911 DEBUG root:57 - Handling POST request
+23:14:52,911 DEBUG root:34 - Handling GET request for: /insert
+23:14:52,911  INFO root:118 - Inserting a new book
+23:14:52,926 DEBUG root:127 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=2100.00,bookName='Java'}
+23:14:52,929 DEBUG root:34 - Handling GET request for: /list
+23:18:16,417  INFO root:26 - BookServlet initialized
+23:18:16,419 DEBUG root:57 - Handling POST request
+23:18:16,420 DEBUG root:34 - Handling GET request for: /login
+23:18:16,856  INFO root:193 - Login successful, generating OTP...
+23:18:25,096  INFO root:246 - OTP sent to email: Value First
+23:18:33,039 DEBUG root:57 - Handling POST request
+23:18:33,039 DEBUG root:34 - Handling GET request for: /verify-otp
+23:18:33,053  WARN root:273 - Invalid or expired OTP
+23:18:36,544 DEBUG root:57 - Handling POST request
+23:18:36,545 DEBUG root:34 - Handling GET request for: /verify-otp
+23:18:36,559  WARN root:273 - Invalid or expired OTP
+23:18:50,739 DEBUG root:57 - Handling POST request
+23:18:50,740 DEBUG root:34 - Handling GET request for: /verify-otp
+23:18:50,752  WARN root:273 - Invalid or expired OTP
+23:19:03,824 DEBUG root:57 - Handling POST request
+23:19:03,824 DEBUG root:34 - Handling GET request for: /verify-otp
+23:19:03,838  WARN root:273 - Invalid or expired OTP
+23:19:11,560 DEBUG root:57 - Handling POST request
+23:19:11,561 DEBUG root:34 - Handling GET request for: /verify-otp
+23:19:11,574  INFO root:269 - OTP verified successfully
+23:19:11,600 DEBUG root:34 - Handling GET request for: /list
+23:19:17,122 DEBUG root:34 - Handling GET request for: /delete
+23:19:17,133  WARN root:167 - Deleted book with ID: 8
+23:20:12,694 DEBUG root:34 - Handling GET request for: /delete
+23:20:12,707  WARN root:167 - Deleted book with ID: 8
+23:20:13,919 DEBUG root:34 - Handling GET request for: /delete
+23:20:13,930  WARN root:167 - Deleted book with ID: 8
+23:20:40,245 DEBUG root:57 - Handling POST request
+23:20:40,245 DEBUG root:34 - Handling GET request for: /login
+23:20:40,255  INFO root:193 - Login successful, generating OTP...
+23:20:48,244  INFO root:246 - OTP sent to email: Value First
+23:21:07,185 DEBUG root:57 - Handling POST request
+23:21:07,185 DEBUG root:34 - Handling GET request for: /verify-otp
+23:21:07,195  INFO root:269 - OTP verified successfully
+23:21:07,217 DEBUG root:34 - Handling GET request for: /list
+23:21:11,550 DEBUG root:34 - Handling GET request for: /delete
+23:21:11,563  WARN root:167 - Deleted book with ID: 9
+23:21:30,909 DEBUG root:34 - Handling GET request for: /delete
+23:21:30,918  WARN root:167 - Deleted book with ID: 9
+23:21:31,959 DEBUG root:34 - Handling GET request for: /delete
+23:21:31,969  WARN root:167 - Deleted book with ID: 9
+23:21:35,145 DEBUG root:34 - Handling GET request for: /delete
+23:21:35,157  WARN root:167 - Deleted book with ID: 10
+23:22:07,885 DEBUG root:34 - Handling GET request for: /delete
+23:22:07,899  WARN root:167 - Deleted book with ID: 10
+23:27:50,243  INFO root:26 - BookServlet initialized
+23:27:50,244 DEBUG root:57 - Handling POST request
+23:27:50,245 DEBUG root:34 - Handling GET request for: /login
+23:27:50,648  INFO root:184 - Login successful, generating OTP...
+23:27:58,185  INFO root:237 - OTP sent to email: Value First
+23:28:15,406 DEBUG root:57 - Handling POST request
+23:28:15,407 DEBUG root:34 - Handling GET request for: /verify-otp
+23:28:15,423  INFO root:260 - OTP verified successfully
+23:28:36,184 DEBUG root:34 - Handling GET request for: /delete
+23:28:36,199  WARN root:160 - Deleted book with ID: 10
+23:31:05,847 DEBUG root:57 - Handling POST request
+23:31:05,848 DEBUG root:34 - Handling GET request for: /login
+23:31:05,861  INFO root:184 - Login successful, generating OTP...
+23:31:13,232  INFO root:237 - OTP sent to email: Value First
+23:31:28,745 DEBUG root:57 - Handling POST request
+23:31:28,745 DEBUG root:34 - Handling GET request for: /verify-otp
+23:31:28,756  INFO root:260 - OTP verified successfully
+23:31:39,871 DEBUG root:34 - Handling GET request for: /delete
+23:31:39,883  WARN root:160 - Deleted book with ID: 11
+23:32:13,360 DEBUG root:34 - Handling GET request for: /delete
+23:32:13,375  WARN root:160 - Deleted book with ID: 11
+23:32:14,567 DEBUG root:34 - Handling GET request for: /delete
+23:32:14,577  WARN root:160 - Deleted book with ID: 11
+23:33:38,690 DEBUG root:34 - Handling GET request for: /delete
+23:33:38,703  WARN root:160 - Deleted book with ID: 11
+23:33:39,650 DEBUG root:34 - Handling GET request for: /delete
+23:33:39,660  WARN root:160 - Deleted book with ID: 11
+23:33:40,142 DEBUG root:34 - Handling GET request for: /delete
+23:33:40,152  WARN root:160 - Deleted book with ID: 11
+23:33:52,318 DEBUG root:34 - Handling GET request for: /new
+23:33:52,318  INFO root:112 - Showing book form
+23:34:01,902 DEBUG root:57 - Handling POST request
+23:34:01,903 DEBUG root:34 - Handling GET request for: /insert
+23:34:01,903  INFO root:118 - Inserting a new book
+23:34:01,939 DEBUG root:127 - Book inserted: Book{id=0, author='hardik', customer='Abhinav', price=1234.00,bookName='Java'}
+23:34:06,628 DEBUG root:34 - Handling GET request for: /edit
+23:34:06,636  INFO root:136 - Editing book with ID: 13
+23:34:13,486 DEBUG root:57 - Handling POST request
+23:34:13,486 DEBUG root:34 - Handling GET request for: /update
+23:34:13,498  INFO root:151 - Updated book: Book{id=13, author='Author', customer='Customer', price=6118.61,bookName='Book_2553'}
+23:35:31,280 DEBUG root:57 - Handling POST request
+23:35:31,281 DEBUG root:34 - Handling GET request for: /update
+23:35:31,290  INFO root:151 - Updated book: Book{id=13, author='Author', customer='Customer', price=6118.61,bookName='Book_2553'}
+23:36:00,005 DEBUG root:57 - Handling POST request
+23:36:00,005 DEBUG root:34 - Handling GET request for: /update
+23:36:00,016  INFO root:151 - Updated book: Book{id=13, author='Author', customer='Customer', price=6118.61,bookName='Book_2553'}
+23:36:37,195 DEBUG root:57 - Handling POST request
+23:36:37,195 DEBUG root:34 - Handling GET request for: /update
+23:36:37,205  INFO root:151 - Updated book: Book{id=13, author='Author', customer='Customer', price=6118.61,bookName='Book_2553'}
+23:37:06,229 DEBUG root:57 - Handling POST request
+23:37:06,229 DEBUG root:34 - Handling GET request for: /update
+23:37:06,239  INFO root:151 - Updated book: Book{id=13, author='Author', customer='Customer', price=6118.61,bookName='Book_2553'}
+23:37:26,753 DEBUG root:57 - Handling POST request
+23:37:26,753 DEBUG root:34 - Handling GET request for: /update
+23:37:26,762  INFO root:151 - Updated book: Book{id=13, author='Author', customer='Customer', price=6118.61,bookName='Book_2553'}
+23:37:47,213 DEBUG root:34 - Handling GET request for: /list
+23:37:50,445 DEBUG root:34 - Handling GET request for: /list
+23:37:54,430 DEBUG root:34 - Handling GET request for: /new
+23:37:54,430  INFO root:112 - Showing book form
+23:38:02,194 DEBUG root:57 - Handling POST request
+23:38:02,194 DEBUG root:34 - Handling GET request for: /insert
+23:38:02,195  INFO root:118 - Inserting a new book
+23:38:02,230 DEBUG root:127 - Book inserted: Book{id=0, author='Jane ', customer='Abhinav', price=2100.00,bookName='Java'}
+23:38:07,087 DEBUG root:34 - Handling GET request for: /delete
+23:38:07,096  WARN root:160 - Deleted book with ID: 12
+23:38:08,740 DEBUG root:34 - Handling GET request for: /search
+23:38:08,742 DEBUG root:34 - Handling GET request for: /list
+23:38:35,360 DEBUG root:34 - Handling GET request for: /delete
+23:38:35,372  WARN root:160 - Deleted book with ID: 13

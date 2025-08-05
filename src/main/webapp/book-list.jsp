@@ -6,10 +6,14 @@
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background: linear-gradient(to right, #b3d9ff, #e6f0ff); min-height: 100vh;">
 
-  <!-- Logo -->
-  <div style="position: absolute; top: 30px; left: 40px; z-index: 1000;">
-    <img src="<c:url value='/resources/logo3.png' />" alt="BookStore Logo" style="height: 180px;" />
-  </div>
+<!-- Logo (clickable) -->
+<div style="position: absolute; top: 30px; left: 40px; z-index: 1000;">
+  <a href="list">
+    <img src="<c:url value='/resources/logo3.png' />" alt="BookStore Logo"
+         style="height: 150px; margin: -27px; cursor: pointer;" />
+  </a>
+</div>
+
 
   <!-- Logout Button -->
   <div style="position: absolute; top: 40px; right: 20px; z-index: 1000;">
@@ -20,31 +24,30 @@
       Log Out
     </a>
   </div>
-
+  
   <!-- Spacer -->
-  <div style="height: 140px;"></div>
+<div style="height: 140px;"></div>
+
 
   <!-- Main Container -->
   <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
-    <div style="background-color: white; padding: 20px 30px;
+    <div style="background-color: white; padding: 10px 7px;
                 border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
                 display: flex; flex-direction: column; align-items: center;">
-      <h1 style="margin-bottom: -20px;">Book Store Records</h1>
+     <h1 style="margin-bottom: -10px; font-size: 36px; font-weight: bold;">Book Store Records</h1>
+
+
 
       <!-- Search Bar -->
-      <form action="search" method="get" style="display: flex; gap: 10px; align-items: center; width: 100%; margin-bottom: 20px;">
+      <form action="search" method="get" style="display: flex; gap: 10px; align-items: center; width: 70%; margin-bottom: 20px;">
         <input type="text" name="query" value="${searchQuery}" placeholder="Search"
-               style="flex: 1; padding: 7px; border: 2px solid #ccc; border-radius: 6px; font-size: 15px;" />
+               style="flex: 1; padding: 5px; border: 2px solid #ccc; border-radius: 5px; font-size: 15px;" />
         <button type="submit"
                 style="padding: 9px 20px; background-color: #3399ff; color: white; font-weight: bold;
                        border: none; border-radius: 6px; cursor: pointer;">
           Search
         </button>
-        <a href="list"
-           style="padding: 7px 20px; background-color: #ccc; color: black; font-weight: bold;
-                  border-radius: 6px; text-decoration: none;">
-          Cancel
-        </a>
+        
       </form>
 
       <!-- Search Info -->
@@ -53,6 +56,15 @@
           Search results for: "<strong>${searchQuery}</strong>"
         </p>
       </c:if>
+      
+      <!-- Message Alert (Placed above the main container) -->
+<c:if test="${not empty message}">
+  <div style="background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;
+              padding: 5px 20px; border-radius: 6px; margin: 0 auto 20px auto;
+              text-align: center; font-weight: bold; width: 80%;">
+    ${message}
+  </div>
+</c:if>
 
       <!-- Add New -->
       <div style="width: 100%; text-align: right; margin-bottom: -12px;">
@@ -60,23 +72,27 @@
       </div>
 
       <!-- Table -->
-      <table style="width: 100%; border-collapse: collapse; text-align: center;">
+      <table style="width: 100.5%; border-collapse: collapse; text-align: center;">
         <tr style="background-color: #f0f0f0; font-weight: bold; font-size: 16px; border-bottom: 2px solid #ccc;">
           <th style="padding: 12px; border: 1px solid #ddd;">ID</th>
-          <th style="padding: 12px; border: 1px solid #ddd;">Author</th>
           <th style="padding: 12px; border: 1px solid #ddd;">Customer</th>
-          <th style="padding: 12px; border: 1px solid #ddd;">Price</th>
           <th style="padding: 12px; border: 1px solid #ddd;">Book Name</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Author</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Issued</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Updated</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Price</th>
           <th style="padding: 12px; border: 1px solid #ddd;">Actions</th>
         </tr>
         <c:forEach var="b" items="${listBook}">
           <tr style="background-color: #f9f9f9;">
             <td style="padding: 8px;">${b.id}</td>
-            <td>${b.author}</td>
             <td>${b.customerName}</td>
-            <td>${b.price}</td>
             <td>${b.bookName}</td>
-            <td>
+            <td>${b.author}</td>
+            <td><c:out value="${b.issuedDate}" default="NULL"/></td>
+            <td><c:out value="${b.updatedDate}" default="NOT UPDATED"/></td>
+            <td>${b.price}</td>
+             <td>
               <a href="edit?id=${b.id}" style="color: #0077cc; text-decoration: none; margin-right: 8px;">Edit</a>
               <a href="delete?id=${b.id}" onclick="return confirm('Delete?')"
                  style="color: red; text-decoration: none;">Delete</a>
@@ -124,7 +140,7 @@
             </a>
           </c:forEach>
 
-          <!-- Ellipsis + Last Page -->
+          <!-- Verify OTPPage -->
           <c:if test="${end < totalPages}">
             <span style="margin: 0 5px;">...</span>
             <c:url var="lastUrl" value="${empty searchQuery ? 'list' : 'search'}">

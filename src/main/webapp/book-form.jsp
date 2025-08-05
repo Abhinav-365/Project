@@ -5,16 +5,18 @@
   <link rel="stylesheet" href="<c:url value='/resources/Styles.css'/>" />
 </head>
 <body>
-  <!-- Logo -->
-  <div style="position: absolute; top: 30px; left: 40px; z-index: 1000;">
-    <img src="<c:url value='/resources/logo3.png' />" alt="BookStore Logo" style="height: 180px;" />
-  </div>
-
+<!-- Logo (clickable) -->
+<div style="position: absolute; top: 30px; left: 40px; z-index: 1000;">
+  <a href="list">
+    <img src="<c:url value='/resources/logo3.png' />" alt="BookStore Logo"
+         style="height: 150px; margin: -27px; cursor: pointer;" />
+  </a>
+</div>
   <!-- Form Section -->
   <div class="body-container" style="width: 38%">
     <c:choose>
       <c:when test="${book != null}">
-        <h2>Edit Records</h2>
+        <h2>Edit Record</h2>
         <div class="form-wrapper">
           <form action="update" method="post">
             <input type="hidden" name="id" value="${book.id}" />
@@ -73,5 +75,14 @@
       <a href="list">Cancel</a>
     </div>
   </div>
+  
+   <!-- Footer -->
+  <footer style="width: 100%; background: linear-gradient(to right, #b3d9ff, #e6f0ff);
+                 color: #333; text-align: center; padding: 1px 0;
+                 position: fixed; bottom: 0; left: 0; font-size: 14px;">
+    <p style="margin: 0;">&copy; 2025 ValueFirst BookStore Inc.</p>
+    <a href='/privacy' style='color: #333; text-decoration: none; margin: 0 5px;'>Privacy Policy</a> |
+    <a href='/contact' style='color: #333; text-decoration: none; margin: 0 5px;'>Contact Us</a>
+  </footer>
 </body>
 </html>

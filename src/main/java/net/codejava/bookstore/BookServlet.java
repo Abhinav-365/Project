@@ -62,7 +62,7 @@ public class BookServlet extends HttpServlet {
             throws SQLException, ServletException, IOException {
 
         int page = 1;
-        int recordsPerPage = 6;
+        int recordsPerPage = 5;
 
         if (req.getParameter("page") != null) {
             page = Integer.parseInt(req.getParameter("page"));
@@ -75,6 +75,9 @@ public class BookServlet extends HttpServlet {
         req.setAttribute("listBook", books);
         req.setAttribute("currentPage", page);
         req.setAttribute("totalPages", totalPages);
+        for (Book b : books) {
+            System.out.println("Book ID: " + b.getId() + " | Issued Date: " + b.getIssuedDate());
+        }
 
         req.getRequestDispatcher("book-list.jsp").forward(req, resp);
     }
@@ -89,7 +92,7 @@ public class BookServlet extends HttpServlet {
         }
 
         int page = 1;
-        int recordsPerPage = 6;
+        int recordsPerPage = 5;
 
         if (req.getParameter("page") != null) {
             page = Integer.parseInt(req.getParameter("page"));
@@ -114,18 +117,21 @@ public class BookServlet extends HttpServlet {
     }
 
     private void insert(HttpServletRequest req, HttpServletResponse resp)
-            throws SQLException, IOException {
+            throws SQLException, ServletException, IOException {
         logger.info("Inserting a new book");
         Book book = new Book(
                 req.getParameter("author"),
                 req.getParameter("customer"),
                 Float.parseFloat(req.getParameter("price")),
-                req.getParameter("bookName")
+                req.getParameter("bookName"),
+                req.getParameter("issuedDate"),
+                req.getParameter("updatedDate")
         );
 
         dao.insertBook(book);
         logger.debug("Book inserted: " + book);
-        resp.sendRedirect("list");
+        req.setAttribute("message", "Book inserted successfully!");
+        list(req, resp); // forward with message
     }
 
     private void showEdit(HttpServletRequest req, HttpServletResponse resp)
@@ -138,25 +144,29 @@ public class BookServlet extends HttpServlet {
     }
 
     private void update(HttpServletRequest req, HttpServletResponse resp)
-            throws SQLException, IOException {
+            throws SQLException, ServletException, IOException {
         Book book = new Book(
                 Integer.parseInt(req.getParameter("id")),
                 req.getParameter("author"),
                 req.getParameter("customer"),
                 Float.parseFloat(req.getParameter("price")),
-                req.getParameter("bookName")
+                req.getParameter("bookName"),
+                req.getParameter("issuedDate"),
+                req.getParameter("updatedDate")
         );
         dao.updateBook(book);
         logger.info("Updated book: " + book);
-        resp.sendRedirect("list");
+        req.setAttribute("message", "Customer ID: "+req.getParameter("id") +" updated successfully!");
+        list(req, resp);
     }
 
     private void delete(HttpServletRequest req, HttpServletResponse resp)
-            throws SQLException, IOException {
+            throws SQLException, ServletException, IOException {
         int id = Integer.parseInt(req.getParameter("id"));
         dao.deleteBook(id);
         logger.warn("Deleted book with ID: " + id);
-        resp.sendRedirect("list");
+        req.setAttribute("message", "Customer ID: "+ id+" deleted successfully!");
+        list(req, resp);
     }
 
     private void login(HttpServletRequest req, HttpServletResponse resp)
@@ -181,12 +191,23 @@ public class BookServlet extends HttpServlet {
             logger.info("Login successful, generating OTP...");
 
             String otp = String.valueOf(100000 + new Random().nextInt(900000));
+
             HttpSession session = req.getSession();
-            session.setAttribute("otp", otp);
             session.setAttribute("userName", username);
 
-            sendOTPEmail(username, otp);
-            req.setAttribute("infoMsg", "OTP has been sent to your registered email.");
+            dao.saveOTPToDatabase(username, otp); // Save OTP to DB
+            
+            String finalOtp = otp;
+            String finalUsername = username;
+            new Thread(() -> {
+                try {
+                    sendOTPEmail(finalUsername, finalOtp);
+                } catch (Exception e) {
+                    logger.error("Error sending OTP email in background", e);
+                }
+            }).start();
+
+            req.setAttribute("message", "OTP sent to your registered email.");
             req.getRequestDispatcher("otp-verify.jsp").forward(req, resp);
 
         } else {
@@ -232,22 +253,28 @@ public class BookServlet extends HttpServlet {
         String enteredOtp = req.getParameter("otp");
         HttpSession session = req.getSession(false);
 
-        if (session == null || session.getAttribute("otp") == null) {
+        if (session == null || session.getAttribute("userName") == null) {
             req.setAttribute("errorMsg", "Session expired. Please log in again.");
             req.getRequestDispatcher("login.jsp").forward(req, resp);
             return;
         }
 
-        String generatedOtp = (String) session.getAttribute("otp");
+        String username = (String) session.getAttribute("userName");
 
-        if (enteredOtp.equals(generatedOtp)) {
-            logger.info("OTP verified successfully");
-            session.removeAttribute("otp");
-            resp.sendRedirect("list");
-        } else {
-            logger.warn("Invalid OTP");
-            req.setAttribute("errorMsg", "Invalid OTP. Please try again.");
-            req.getRequestDispatcher("otp-verify.jsp").forward(req, resp);
+        try {
+            boolean isValid = dao.verifyOTPFromDatabase(username, enteredOtp);
+            if (isValid) {
+                logger.info("OTP verified successfully");
+                dao.clearOTP(username);
+                list(req, resp);
+            } else {
+                logger.warn("Invalid or expired OTP");
+                req.setAttribute("errorMsg", "Invalid or expired OTP. Please try again.");
+                req.getRequestDispatcher("otp-verify.jsp").forward(req, resp);
+            }
+        } catch (SQLException e) {
+            logger.error("Error verifying OTP from DB", e);
+            throw new ServletException(e);
         }
     }
 }
