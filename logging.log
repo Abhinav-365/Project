@@ -383,3 +383,140 @@ java.sql.SQLSyntaxErrorException: Unknown database 'Store'
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1447)
+11:50:45,662  INFO root:26 - BookServlet initialized
+11:50:45,664 DEBUG root:57 - Handling POST request
+11:50:45,664 DEBUG root:34 - Handling GET request for: /login
+11:50:46,373 ERROR root:49 - SQL Exception in doGet
+java.sql.SQLSyntaxErrorException: Table 'mystore.login' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1058)
+	at net.codejava.bookstore.BookDAO.loginStore(BookDAO.java:71)
+	at net.codejava.bookstore.BookServlet.login(BookServlet.java:188)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:43)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+11:56:09,912 DEBUG root:57 - Handling POST request
+11:56:09,913 DEBUG root:34 - Handling GET request for: /login
+11:56:09,924  WARN root:214 - Login failed
+12:00:53,114 DEBUG root:57 - Handling POST request
+12:00:53,114 DEBUG root:34 - Handling GET request for: /login
+12:00:53,132  INFO root:191 - Login successful, generating OTP...
+12:00:59,226  INFO root:244 - OTP sent to email: Value First
+12:01:18,264 DEBUG root:57 - Handling POST request
+12:01:18,264 DEBUG root:34 - Handling GET request for: /verify-otp
+12:01:18,277  INFO root:267 - OTP verified successfully
+12:01:23,325 DEBUG root:34 - Handling GET request for: /list
+12:01:24,389 DEBUG root:34 - Handling GET request for: /list
+12:01:25,458 DEBUG root:34 - Handling GET request for: /list
+12:01:29,488 DEBUG root:34 - Handling GET request for: /list
+12:01:30,244 DEBUG root:34 - Handling GET request for: /list
+12:01:30,826 DEBUG root:34 - Handling GET request for: /list
+12:01:31,257 DEBUG root:34 - Handling GET request for: /list
+12:01:31,597 DEBUG root:34 - Handling GET request for: /list
+12:01:31,995 DEBUG root:34 - Handling GET request for: /list
+12:01:32,381 DEBUG root:34 - Handling GET request for: /list
+12:01:32,783 DEBUG root:34 - Handling GET request for: /list
+12:01:33,200 DEBUG root:34 - Handling GET request for: /list
+12:01:33,616 DEBUG root:34 - Handling GET request for: /list
+12:01:34,058 DEBUG root:34 - Handling GET request for: /list
+12:01:34,472 DEBUG root:34 - Handling GET request for: /list
+12:01:34,912 DEBUG root:34 - Handling GET request for: /list
+12:01:35,330 DEBUG root:34 - Handling GET request for: /list
+12:01:35,759 DEBUG root:34 - Handling GET request for: /list
+12:01:36,215 DEBUG root:34 - Handling GET request for: /list
+12:01:37,087 DEBUG root:34 - Handling GET request for: /list
+12:01:38,339 DEBUG root:34 - Handling GET request for: /list
+12:01:43,695 DEBUG root:34 - Handling GET request for: /list
+15:08:38,959 DEBUG root:34 - Handling GET request for: /list
+15:15:53,104 DEBUG root:34 - Handling GET request for: /list
+15:15:54,086 DEBUG root:34 - Handling GET request for: /list
+15:16:07,581 DEBUG root:34 - Handling GET request for: /list
+15:16:08,659 DEBUG root:34 - Handling GET request for: /list
+15:16:09,414 DEBUG root:34 - Handling GET request for: /list
+15:16:25,793 DEBUG root:34 - Handling GET request for: /list
+15:17:56,595 DEBUG root:34 - Handling GET request for: /list
+15:17:57,520 DEBUG root:34 - Handling GET request for: /list
+15:17:57,717 DEBUG root:34 - Handling GET request for: /list
+15:17:57,907 DEBUG root:34 - Handling GET request for: /list
+15:18:21,299 DEBUG root:34 - Handling GET request for: /list
+15:18:22,136 DEBUG root:34 - Handling GET request for: /list
+15:18:22,515 DEBUG root:34 - Handling GET request for: /list
+15:21:02,209 DEBUG root:34 - Handling GET request for: /list
+15:35:00,135 DEBUG root:34 - Handling GET request for: /list
+15:35:01,480 DEBUG root:34 - Handling GET request for: /list
+15:35:01,792 DEBUG root:34 - Handling GET request for: /list
+15:35:02,097 DEBUG root:34 - Handling GET request for: /list
+15:35:02,316 DEBUG root:34 - Handling GET request for: /list
+15:35:02,558 DEBUG root:34 - Handling GET request for: /list
+15:35:02,786 DEBUG root:34 - Handling GET request for: /list
+15:35:03,014 DEBUG root:34 - Handling GET request for: /list
+15:35:03,194 DEBUG root:34 - Handling GET request for: /list
+15:42:07,006 DEBUG root:34 - Handling GET request for: /list
+15:42:07,945 DEBUG root:34 - Handling GET request for: /list
+15:42:08,315 DEBUG root:34 - Handling GET request for: /list
+15:42:08,516 DEBUG root:34 - Handling GET request for: /list
+15:42:08,737 DEBUG root:34 - Handling GET request for: /list
+15:42:09,734  INFO root:26 - BookServlet initialized
+15:42:09,736 DEBUG root:34 - Handling GET request for: /list
+15:42:09,915 DEBUG root:34 - Handling GET request for: /list
+15:42:10,310 DEBUG root:34 - Handling GET request for: /list
+15:42:11,138 DEBUG root:34 - Handling GET request for: /list
+15:42:11,611 DEBUG root:34 - Handling GET request for: /list
+15:42:12,000 DEBUG root:34 - Handling GET request for: /list
+15:42:12,305 DEBUG root:34 - Handling GET request for: /list
+15:42:12,492 DEBUG root:34 - Handling GET request for: /list
+15:42:12,693 DEBUG root:34 - Handling GET request for: /list
+15:42:12,944 DEBUG root:34 - Handling GET request for: /list
+15:42:13,149 DEBUG root:34 - Handling GET request for: /list
+15:42:13,335 DEBUG root:34 - Handling GET request for: /list
+15:42:13,599 DEBUG root:34 - Handling GET request for: /list
+15:42:13,830 DEBUG root:34 - Handling GET request for: /list
+15:42:14,017 DEBUG root:34 - Handling GET request for: /list
+16:13:12,607  INFO root:26 - BookServlet initialized
+16:13:12,609 DEBUG root:57 - Handling POST request
+16:13:12,610 DEBUG root:34 - Handling GET request for: /login
+16:13:13,028  INFO root:191 - Login successful, generating OTP...
+16:13:19,063  INFO root:244 - OTP sent to email: Value First
+16:13:29,981 DEBUG root:57 - Handling POST request
+16:13:29,982 DEBUG root:34 - Handling GET request for: /verify-otp
+16:13:29,999  INFO root:267 - OTP verified successfully
+16:13:33,118 DEBUG root:34 - Handling GET request for: /search
+16:13:33,121 DEBUG root:34 - Handling GET request for: /list
+16:13:37,123 DEBUG root:34 - Handling GET request for: /search
+16:13:38,976 DEBUG root:34 - Handling GET request for: /edit
+16:13:38,988  INFO root:141 - Editing book with ID: 1
+16:13:53,218 DEBUG root:57 - Handling POST request
+16:13:53,218 DEBUG root:34 - Handling GET request for: /update
+16:13:53,232  INFO root:158 - Updated book: Book{id=1, author='Author', customer='Customer', price=284.14,bookName='Book 1907',insertedDate='null',updatedDate='null'}
+16:25:55,936 DEBUG root:57 - Handling POST request
+16:25:55,936 DEBUG root:34 - Handling GET request for: /login
+16:25:55,950  INFO root:191 - Login successful, generating OTP...
+16:26:01,327  INFO root:244 - OTP sent to email: Value First
+16:26:03,543 DEBUG root:57 - Handling POST request
+16:26:03,543 DEBUG root:34 - Handling GET request for: /verify-otp
+16:26:03,553  WARN root:271 - Invalid or expired OTP

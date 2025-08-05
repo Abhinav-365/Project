@@ -5,7 +5,7 @@ import java.util.*;
 import java.security.MessageDigest;
 
 public class BookDAO {
-    private final String URL = "jdbc:mysql://localhost:3306/Store";
+    private final String URL = "jdbc:mysql://localhost:3306/mystore";
     private final String Username = "root";
     private final String Password = "asdf@1234";
     private Connection jdbcConnection;
@@ -28,17 +28,17 @@ public class BookDAO {
 
     public List<Book> listAllBooks() throws SQLException {
         List<Book> list = new ArrayList<>();
-        String sql = "SELECT * FROM Book_Store WHERE entry_status = 1";
+        String sql = "SELECT * FROM book_store WHERE entry_status = 1";
         connect();
         Statement stmt = jdbcConnection.createStatement();
         ResultSet rs = stmt.executeQuery(sql);
         while (rs.next()) {
             list.add(new Book(
-                rs.getInt("Id"),
-                rs.getString("Author_Name"),
-                rs.getString("Customer_Name"),
-                rs.getFloat("Price"),
-                rs.getString("Book_Name"),
+                rs.getInt("id"),
+                rs.getString("author_name"),
+                rs.getString("customer_name"),
+                rs.getFloat("price"),
+                rs.getString("book_name"),
                 rs.getString("inserted_date"),
                 rs.getString("updated_date")
             ));
@@ -48,8 +48,8 @@ public class BookDAO {
     }
 
     public boolean insertBook(Book book) throws SQLException {
-        String sql = "INSERT INTO Book_Store (Author_Name, Price, Published_Date, Customer_Name, Book_Name, inserted_date,updated_date)"
-                   + "VALUES (?, ?, NOW(), ?, ?, NOW(),NOW())";
+        String sql = "INSERT INTO book_store (author_name, price, customer_name, book_name, inserted_date,updated_date)"
+                   + "VALUES (?, ?,?, ?, NOW(),NOW())";
         connect();
         PreparedStatement ps = jdbcConnection.prepareStatement(sql);
         ps.setString(1, book.getAuthor());
@@ -97,7 +97,7 @@ public class BookDAO {
     }
 
     public boolean updateBook(Book book) throws SQLException {
-        String sql = "UPDATE Book_Store SET Author_Name=?, Price=?, Customer_Name=?, Book_Name=?, updated_date=now() WHERE Id=?";
+        String sql = "UPDATE book_store SET author_name=?, price=?, customer_name=?, book_name=?, updated_date=now() WHERE id=?";
         connect();
         PreparedStatement ps = jdbcConnection.prepareStatement(sql);
         ps.setString(1, book.getAuthor());
@@ -112,7 +112,7 @@ public class BookDAO {
     }
 
     public boolean deleteBook(int id) throws SQLException {
-        String sql = "UPDATE Book_Store SET entry_status=0 WHERE Id=?";
+        String sql = "UPDATE book_store SET entry_status=0 WHERE id=?";
         connect();
         PreparedStatement ps = jdbcConnection.prepareStatement(sql);
         ps.setInt(1, id);
@@ -123,18 +123,18 @@ public class BookDAO {
 
     public Book getBook(int id) throws SQLException {
         Book book = null;
-        String sql = "SELECT * FROM Book_Store WHERE Id = ?";
+        String sql = "SELECT * FROM book_store WHERE id = ?";
         connect();
         PreparedStatement ps = jdbcConnection.prepareStatement(sql);
         ps.setInt(1, id);
         ResultSet rs = ps.executeQuery();
         if (rs.next()) {
             book = new Book(
-                rs.getInt("Id"),
-                rs.getString("Author_Name"),
-                rs.getString("Customer_Name"),
-                rs.getFloat("Price"),
-                rs.getString("Book_Name"),
+                rs.getInt("id"),
+                rs.getString("author_name"),
+                rs.getString("customer_name"),
+                rs.getFloat("price"),
+                rs.getString("book_name"),
                 rs.getString("inserted_date"),
                 rs.getString("updated_date")
             );
@@ -145,7 +145,7 @@ public class BookDAO {
 
     public List<Book> listBooksPaginated(int offset, int limit) throws SQLException {
         List<Book> list = new ArrayList<>();
-        String sql = "SELECT * FROM Book_Store WHERE entry_status = 1 LIMIT ?, ?";
+        String sql = "SELECT * FROM book_store WHERE entry_status = 1 LIMIT ?, ?";
         connect();
         PreparedStatement ps = jdbcConnection.prepareStatement(sql);
         ps.setInt(1, offset);
@@ -153,11 +153,11 @@ public class BookDAO {
         ResultSet rs = ps.executeQuery();
         while (rs.next()) {
             list.add(new Book(
-                rs.getInt("Id"),
-                rs.getString("Author_Name"),
-                rs.getString("Customer_Name"),
-                rs.getFloat("Price"),
-                rs.getString("Book_Name"),
+                rs.getInt("id"),
+                rs.getString("author_name"),
+                rs.getString("customer_name"),
+                rs.getFloat("price"),
+                rs.getString("book_name"),
                 rs.getString("inserted_date"),
                 rs.getString("updated_date")
             ));
@@ -167,7 +167,7 @@ public class BookDAO {
     }
 
     public int countBooks() throws SQLException {
-        String sql = "SELECT COUNT(*) FROM Book_Store WHERE entry_status=1";
+        String sql = "SELECT COUNT(*) FROM book_store WHERE entry_status=1";
         connect();
         Statement stmt = jdbcConnection.createStatement();
         ResultSet rs = stmt.executeQuery(sql);
@@ -179,7 +179,7 @@ public class BookDAO {
 
     public List<Book> searchBooks(String keyword) throws SQLException {
         List<Book> list = new ArrayList<>();
-        String sql = "SELECT * FROM Book_Store WHERE entry_status=1 AND (Author_Name LIKE ? OR Customer_Name LIKE OR Book_Name LIKE ?)";
+        String sql = "SELECT * FROM book_store WHERE entry_status=1 AND (uthor_Name LIKE ? OR Customer_Name LIKE OR Book_Name LIKE ?)";
         connect();
         PreparedStatement ps = jdbcConnection.prepareStatement(sql);
         String kw = "%" + keyword + "%";
@@ -189,11 +189,11 @@ public class BookDAO {
         ResultSet rs = ps.executeQuery();
         while (rs.next()) {
             list.add(new Book(
-                rs.getInt("Id"),
-                rs.getString("Author_Name"),
-                rs.getString("Customer_Name"),
-                rs.getFloat("Price"),
-                rs.getString("Book_Name"),
+                rs.getInt("id"),
+                rs.getString("author_name"),
+                rs.getString("customer_name"),
+                rs.getFloat("price"),
+                rs.getString("book_name"),
                 rs.getString("inserted_date"),
                 rs.getString("updated_date")
             ));
@@ -204,7 +204,7 @@ public class BookDAO {
 
     public List<Book> searchBooksPaginated(String keyword, int offset, int limit) throws SQLException {
         List<Book> list = new ArrayList<>();
-        String sql = "SELECT * FROM Book_Store WHERE entry_status=1 AND (Author_Name LIKE ? OR Customer_Name LIKE ? OR Book_Name LIKE ?) LIMIT ?, ?";
+        String sql = "SELECT * FROM book_store WHERE entry_status=1 AND (Author_Name LIKE ? OR Customer_Name LIKE ? OR Book_Name LIKE ?) LIMIT ?, ?";
         connect();
         PreparedStatement ps = jdbcConnection.prepareStatement(sql);
         String kw = "%" + keyword + "%";
@@ -216,11 +216,11 @@ public class BookDAO {
         ResultSet rs = ps.executeQuery();
         while (rs.next()) {
             list.add(new Book(
-                rs.getInt("Id"),
-                rs.getString("Author_Name"),
-                rs.getString("Customer_Name"),
-                rs.getFloat("Price"),
-                rs.getString("Book_Name"),
+                rs.getInt("id"),
+                rs.getString("author_name"),
+                rs.getString("customer_name"),
+                rs.getFloat("price"),
+                rs.getString("book_name"),
                 rs.getString("inserted_date"),
                 rs.getString("updated_date")
             ));
@@ -230,7 +230,7 @@ public class BookDAO {
     }
 
     public int countSearchResults(String keyword) throws SQLException {
-        String sql = "SELECT COUNT(*) FROM Book_Store WHERE entry_status=1 AND (Author_Name LIKE ? OR Customer_Name LIKE ? OR Book_Name LIKE ?)";
+        String sql = "SELECT COUNT(*) FROM book_store WHERE entry_status=1 AND (Author_Name LIKE ? OR Customer_Name LIKE ? OR Book_Name LIKE ?)";
         connect();
         PreparedStatement ps = jdbcConnection.prepareStatement(sql);
         String kw = "%" + keyword + "%";
