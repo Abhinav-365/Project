@@ -6,20 +6,28 @@ public class Book {
     private String customerName;
     private float price;
     private String bookName;
+    private String insertedDate;
+    private String updatedDate;
 
     public Book() {}
 
-    public Book(int id, String author, String customerName, float price, String bookName) {
-        this(author, customerName, price, bookName);
-        this.bookName=bookName;
+    public Book(int id, String author, String customerName, float price, String bookName, String insertedDate ,String updatedDate){
         this.id = id;
+        this.author = author;
+        this.customerName = customerName;
+        this.price = price;
+        this.bookName = bookName;
+        this.insertedDate = insertedDate;
+        this.updatedDate=updatedDate;
     }
 
-    public Book(String author, String customerName, float price ,String bookName) {
+    public Book(String author, String customerName, float price ,String bookName,String insertedDate,String updatedDate){
         this.author = author;
         this.customerName = customerName;
         this.price = price;
         this.bookName=bookName;
+        this.insertedDate=insertedDate;
+        this.updatedDate=updatedDate;
     }
 
     public int getId() { return id; }
@@ -37,10 +45,16 @@ public class Book {
     public String getBookName() {return bookName;}
     public void setBookName(String bookName) {this.bookName=bookName;}
     
+    public String getIssuedDate() {return insertedDate;}
+    public void setIssuedDate(String issuedDate) {this.insertedDate=issuedDate;}
+    
+    public String getUpdatedDate() {return updatedDate;}
+    public void setupdatedDate(String updatedDate) {this.updatedDate=updatedDate;}
+    
 
     @Override
     public String toString() {
-        return String.format("Book{id=%d, author='%s', customer='%s', price=%.2f,bookName='%s'}",
-                id, author, customerName, price, bookName);
+        return String.format("Book{id=%d, author='%s', customer='%s', price=%.2f,bookName='%s',insertedDate='%s',updatedDate='%s'}",
+                id, author, customerName, price, bookName,insertedDate,updatedDate);
     }
 }
