@@ -1,0 +1,691 @@
+09:35:44,870  INFO root:26 - BookServlet initialized
+09:35:44,872 DEBUG root:57 - Handling POST request
+09:35:44,873 DEBUG root:34 - Handling GET request for: /login
+09:35:45,263  INFO root:191 - Login successful, generating OTP...
+09:35:50,687  INFO root:244 - OTP sent to email: Value First
+09:37:00,370 DEBUG root:57 - Handling POST request
+09:37:00,371 DEBUG root:34 - Handling GET request for: /verify-otp
+09:37:00,390  INFO root:267 - OTP verified successfully
+09:37:14,511 DEBUG root:34 - Handling GET request for: /search
+09:37:14,523 DEBUG root:34 - Handling GET request for: /list
+09:37:25,604 DEBUG root:34 - Handling GET request for: /list
+09:44:05,713  INFO root:26 - BookServlet initialized
+09:44:05,715 DEBUG root:34 - Handling GET request for: /new
+09:44:05,715  INFO root:115 - Showing book form
+09:48:17,162 DEBUG root:34 - Handling GET request for: /new
+09:48:17,163  INFO root:115 - Showing book form
+09:48:24,832 DEBUG root:34 - Handling GET request for: /list
+09:48:28,209 DEBUG root:34 - Handling GET request for: /edit
+09:48:28,222  INFO root:141 - Editing book with ID: 1
+09:48:46,871 DEBUG root:57 - Handling POST request
+09:48:46,871 DEBUG root:34 - Handling GET request for: /update
+09:48:46,886  INFO root:158 - Updated book: Book{id=1, author='Author', customer='Customer_', price=284.14,bookName='Book 1907',insertedDate='null',updatedDate='null'}
+10:56:26,856  INFO root:26 - BookServlet initialized
+10:56:26,857 DEBUG root:57 - Handling POST request
+10:56:26,858 DEBUG root:34 - Handling GET request for: /login
+10:56:27,231  WARN root:214 - Login failed
+10:58:01,986 DEBUG root:57 - Handling POST request
+10:58:01,987 DEBUG root:34 - Handling GET request for: /login
+10:58:02,005  WARN root:214 - Login failed
+10:58:49,388 DEBUG root:57 - Handling POST request
+10:58:49,389 DEBUG root:34 - Handling GET request for: /signup
+11:02:23,243 DEBUG root:57 - Handling POST request
+11:02:23,243 DEBUG root:34 - Handling GET request for: /signup
+11:07:52,520  INFO root:26 - BookServlet initialized
+11:07:52,522 DEBUG root:59 - Handling POST request
+11:07:52,523 DEBUG root:34 - Handling GET request for: /signup
+11:08:06,203 DEBUG root:59 - Handling POST request
+11:08:06,203 DEBUG root:34 - Handling GET request for: /signup
+11:08:55,713 DEBUG root:59 - Handling POST request
+11:08:55,713 DEBUG root:34 - Handling GET request for: /signup
+11:10:47,851 DEBUG root:59 - Handling POST request
+11:10:47,851 DEBUG root:34 - Handling GET request for: /register
+11:11:02,244 DEBUG root:59 - Handling POST request
+11:11:02,245 DEBUG root:34 - Handling GET request for: /register
+11:11:02,495 ERROR root:335 - Error during registration
+java.sql.SQLSyntaxErrorException: Unknown column 'email' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
+	at net.codejava.bookstore.BookDAO.insertUser(BookDAO.java:313)
+	at net.codejava.bookstore.BookServlet.registerUser(BookServlet.java:315)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:60)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+11:11:14,593 DEBUG root:59 - Handling POST request
+11:11:14,593 DEBUG root:34 - Handling GET request for: /register
+11:11:14,606 ERROR root:335 - Error during registration
+java.sql.SQLSyntaxErrorException: Unknown column 'email' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
+	at net.codejava.bookstore.BookDAO.insertUser(BookDAO.java:313)
+	at net.codejava.bookstore.BookServlet.registerUser(BookServlet.java:315)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:60)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+11:12:11,663  INFO root:26 - BookServlet initialized
+11:12:11,664 DEBUG root:59 - Handling POST request
+11:12:11,664 DEBUG root:34 - Handling GET request for: /register
+11:12:17,296  INFO root:246 - OTP sent to email: tyagiabhinav200503@gmail.com
+11:37:19,449  INFO root:26 - BookServlet initialized
+11:37:19,452 DEBUG root:58 - Handling POST request
+11:37:19,452 DEBUG root:32 - Handling GET request for: /register
+11:39:11,853 DEBUG root:58 - Handling POST request
+11:39:11,853 DEBUG root:32 - Handling GET request for: /signup
+11:39:41,303 DEBUG root:58 - Handling POST request
+11:39:41,303 DEBUG root:32 - Handling GET request for: /register
+11:43:07,252 DEBUG root:58 - Handling POST request
+11:43:07,252 DEBUG root:32 - Handling GET request for: /signup
+11:54:50,484  INFO root:26 - BookServlet initialized
+11:54:50,486 DEBUG root:60 - Handling POST request
+11:54:50,486 DEBUG root:34 - Handling GET request for: /register
+11:55:04,244 DEBUG root:60 - Handling POST request
+11:55:04,244 DEBUG root:34 - Handling GET request for: /register
+11:55:14,716 DEBUG root:60 - Handling POST request
+11:55:14,716 DEBUG root:34 - Handling GET request for: /register
+11:55:14,970 ERROR root:336 - Error during registration
+java.sql.SQLSyntaxErrorException: Unknown column 'email' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
+	at net.codejava.bookstore.BookDAO.insertUser(BookDAO.java:313)
+	at net.codejava.bookstore.BookServlet.registerUser(BookServlet.java:316)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:61)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+11:55:36,491  INFO root:26 - BookServlet initialized
+11:55:36,492 DEBUG root:60 - Handling POST request
+11:55:36,493 DEBUG root:34 - Handling GET request for: /register
+11:55:43,681  INFO root:247 - OTP sent to email: mailmeabhinav3@gmail.com
+11:55:59,326 DEBUG root:60 - Handling POST request
+11:55:59,327 DEBUG root:34 - Handling GET request for: /verify-otp
+11:55:59,340  INFO root:270 - OTP verified successfully
+12:20:04,624  INFO root:26 - BookServlet initialized
+12:20:04,625 DEBUG root:60 - Handling POST request
+12:20:04,625 DEBUG root:34 - Handling GET request for: /register
+12:20:23,954 DEBUG root:60 - Handling POST request
+12:20:23,954 DEBUG root:34 - Handling GET request for: /register
+12:20:32,627 DEBUG root:60 - Handling POST request
+12:20:32,627 DEBUG root:34 - Handling GET request for: /register
+12:20:56,475 DEBUG root:60 - Handling POST request
+12:20:56,475 DEBUG root:34 - Handling GET request for: /register
+12:21:10,150 DEBUG root:60 - Handling POST request
+12:21:10,151 DEBUG root:34 - Handling GET request for: /register
+12:21:21,613 DEBUG root:60 - Handling POST request
+12:21:21,613 DEBUG root:34 - Handling GET request for: /register
+12:21:21,860 ERROR root:370 - Error during registration
+java.sql.SQLException: Field 'password' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1168)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1103)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1450)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1086)
+	at net.codejava.bookstore.BookDAO.saveOTPToDatabase(BookDAO.java:278)
+	at net.codejava.bookstore.BookServlet.registerUser(BookServlet.java:355)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:47)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:61)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+12:43:19,738  INFO root:26 - BookServlet initialized
+12:43:19,740 DEBUG root:60 - Handling POST request
+12:43:19,740 DEBUG root:34 - Handling GET request for: /login
+12:43:20,174  INFO root:194 - Login successful, generating OTP...
+12:43:25,508 ERROR root:249 - Failed to send OTP email
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. d9443c01a7336-241d1f14233sm148761265ad.65 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:2079)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1301)
+	at javax.mail.Transport.send0(Transport.java:255)
+	at javax.mail.Transport.send(Transport.java:124)
+	at net.codejava.bookstore.BookServlet.sendOTPEmail(BookServlet.java:246)
+	at net.codejava.bookstore.BookServlet.lambda$0(BookServlet.java:207)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. d9443c01a7336-241d1f14233sm148761265ad.65 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1932)
+	... 6 more
+12:51:16,822  INFO root:26 - BookServlet initialized
+12:51:16,824 DEBUG root:60 - Handling POST request
+12:51:16,824 DEBUG root:34 - Handling GET request for: /register
+12:51:55,261 DEBUG root:60 - Handling POST request
+12:51:55,262 DEBUG root:34 - Handling GET request for: /register
+12:52:01,405 ERROR root:249 - Failed to send OTP email
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. 41be03b00d2f7-b422b77f530sm12955166a12.1 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:2079)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1301)
+	at javax.mail.Transport.send0(Transport.java:255)
+	at javax.mail.Transport.send(Transport.java:124)
+	at net.codejava.bookstore.BookServlet.sendOTPEmail(BookServlet.java:246)
+	at net.codejava.bookstore.BookServlet.lambda$1(BookServlet.java:360)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. 41be03b00d2f7-b422b77f530sm12955166a12.1 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1932)
+	... 6 more
+12:54:11,758  INFO root:26 - BookServlet initialized
+12:54:11,761 DEBUG root:60 - Handling POST request
+12:54:11,761 DEBUG root:34 - Handling GET request for: /register
+12:54:18,398  INFO root:247 - OTP sent to email: anujkuro7@gmail.com
+12:54:38,178 DEBUG root:60 - Handling POST request
+12:54:38,179 DEBUG root:34 - Handling GET request for: /verify-otp
+12:54:48,148 DEBUG root:60 - Handling POST request
+12:54:48,149 DEBUG root:34 - Handling GET request for: /verify-otp
+12:55:50,267  INFO root:26 - BookServlet initialized
+12:55:50,269 DEBUG root:60 - Handling POST request
+12:55:50,270 DEBUG root:34 - Handling GET request for: /register
+12:56:00,612  INFO root:247 - OTP sent to email: mailmeabhinav3@gmail.com
+12:56:12,599 DEBUG root:60 - Handling POST request
+12:56:12,599 DEBUG root:34 - Handling GET request for: /verify-otp
+12:56:12,612  INFO root:270 - OTP verified successfully
+15:32:53,319  INFO root:26 - BookServlet initialized
+15:32:53,321 DEBUG root:60 - Handling POST request
+15:32:53,321 DEBUG root:34 - Handling GET request for: /login
+15:32:53,740  INFO root:194 - Login successful, generating OTP...
+15:33:08,828 ERROR root:249 - Failed to send OTP email
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. d9443c01a7336-241e8aac4b5sm154238245ad.169 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:2079)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1301)
+	at javax.mail.Transport.send0(Transport.java:255)
+	at javax.mail.Transport.send(Transport.java:124)
+	at net.codejava.bookstore.BookServlet.sendOTPEmail(BookServlet.java:246)
+	at net.codejava.bookstore.BookServlet.lambda$0(BookServlet.java:207)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. d9443c01a7336-241e8aac4b5sm154238245ad.169 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1932)
+	... 6 more
+15:35:57,692  INFO root:26 - BookServlet initialized
+15:35:57,694 DEBUG root:60 - Handling POST request
+15:35:57,694 DEBUG root:34 - Handling GET request for: /login
+15:35:58,143  INFO root:194 - Login successful, generating OTP...
+15:36:03,734 ERROR root:252 - Failed to send OTP email
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. 98e67ed59e1d1-321611d6eeesm2412397a91.6 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:2079)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1301)
+	at javax.mail.Transport.send0(Transport.java:255)
+	at javax.mail.Transport.send(Transport.java:124)
+	at net.codejava.bookstore.BookServlet.sendOTPEmail(BookServlet.java:249)
+	at net.codejava.bookstore.BookServlet.lambda$0(BookServlet.java:210)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. 98e67ed59e1d1-321611d6eeesm2412397a91.6 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1932)
+	... 6 more
+15:37:05,974  INFO root:26 - BookServlet initialized
+15:37:05,976 DEBUG root:60 - Handling POST request
+15:37:05,976 DEBUG root:34 - Handling GET request for: /login
+15:37:06,394  INFO root:194 - Login successful, generating OTP...
+15:37:11,933 ERROR root:251 - Failed to send OTP email
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. d9443c01a7336-241d1f0f603sm155101345ad.48 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:2079)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1301)
+	at javax.mail.Transport.send0(Transport.java:255)
+	at javax.mail.Transport.send(Transport.java:124)
+	at net.codejava.bookstore.BookServlet.sendOTPEmail(BookServlet.java:248)
+	at net.codejava.bookstore.BookServlet.lambda$0(BookServlet.java:209)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. d9443c01a7336-241d1f0f603sm155101345ad.48 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1932)
+	... 6 more
+15:37:54,129 DEBUG root:60 - Handling POST request
+15:37:54,130 DEBUG root:34 - Handling GET request for: /login
+15:37:54,147  INFO root:194 - Login successful, generating OTP...
+15:38:01,810 ERROR root:251 - Failed to send OTP email
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. d9443c01a7336-241d1ef47f5sm153807985ad.10 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:2079)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1301)
+	at javax.mail.Transport.send0(Transport.java:255)
+	at javax.mail.Transport.send(Transport.java:124)
+	at net.codejava.bookstore.BookServlet.sendOTPEmail(BookServlet.java:248)
+	at net.codejava.bookstore.BookServlet.lambda$0(BookServlet.java:209)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. d9443c01a7336-241d1ef47f5sm153807985ad.10 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1932)
+	... 6 more
+15:38:25,197  INFO root:26 - BookServlet initialized
+15:38:25,199 DEBUG root:60 - Handling POST request
+15:38:25,200 DEBUG root:34 - Handling GET request for: /login
+15:38:25,606  INFO root:194 - Login successful, generating OTP...
+15:38:41,023 ERROR root:252 - Failed to send OTP email
+javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. 98e67ed59e1d1-3216128ac08sm2353579a91.30 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:2079)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1301)
+	at javax.mail.Transport.send0(Transport.java:255)
+	at javax.mail.Transport.send(Transport.java:124)
+	at net.codejava.bookstore.BookServlet.sendOTPEmail(BookServlet.java:249)
+	at net.codejava.bookstore.BookServlet.lambda$0(BookServlet.java:210)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <recipientEmail> is not a valid RFC 5321
+553-5.1.3 address. For more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. 98e67ed59e1d1-3216128ac08sm2353579a91.30 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1932)
+	... 6 more
+15:40:20,872  INFO root:26 - BookServlet initialized
+15:40:20,874 DEBUG root:60 - Handling POST request
+15:40:20,875 DEBUG root:34 - Handling GET request for: /login
+15:40:21,328  INFO root:194 - Login successful, generating OTP...
+15:40:27,723  INFO root:250 - OTP sent to email: mailmeabhinav6@gmail.com
+15:43:35,130 DEBUG root:60 - Handling POST request
+15:43:35,130 DEBUG root:34 - Handling GET request for: /register
+15:43:40,964  INFO root:250 - OTP sent to email: anujkuro7@gmail.com
+15:45:07,141 DEBUG root:60 - Handling POST request
+15:45:07,142 DEBUG root:34 - Handling GET request for: /verify-otp
+15:45:07,157  INFO root:273 - OTP verified successfully
+15:45:23,168 DEBUG root:34 - Handling GET request for: /list
+15:54:23,790  INFO root:26 - BookServlet initialized
+15:54:23,792 DEBUG root:60 - Handling POST request
+15:54:23,793 DEBUG root:34 - Handling GET request for: /login
+15:54:24,288  INFO root:194 - Login successful, generating OTP...
+15:54:30,700  INFO root:250 - OTP sent to email: mailmeabhinav6@gmail.com
+15:54:43,353 DEBUG root:60 - Handling POST request
+15:54:43,354 DEBUG root:34 - Handling GET request for: /verify-otp
+15:54:43,369  INFO root:273 - OTP verified successfully
+15:54:48,352 DEBUG root:34 - Handling GET request for: /logout
+15:54:56,335 DEBUG root:34 - Handling GET request for: /verify-otp
+15:57:25,405  INFO root:26 - BookServlet initialized
+15:57:25,407 DEBUG root:60 - Handling POST request
+15:57:25,408 DEBUG root:34 - Handling GET request for: /login
+15:57:25,891  INFO root:201 - Login successful, generating OTP...
+15:57:31,867  INFO root:257 - OTP sent to email: mailmeabhinav6@gmail.com
+15:57:42,582 DEBUG root:60 - Handling POST request
+15:57:42,583 DEBUG root:34 - Handling GET request for: /verify-otp
+15:57:42,599  INFO root:280 - OTP verified successfully
+15:57:55,644 DEBUG root:60 - Handling POST request
+15:57:55,644 DEBUG root:34 - Handling GET request for: /verify-otp
+15:57:55,658  WARN root:284 - Invalid or expired OTP
+16:00:56,807  INFO root:26 - BookServlet initialized
+16:00:56,809 DEBUG root:60 - Handling POST request
+16:00:56,810 DEBUG root:34 - Handling GET request for: /login
+16:00:57,348  INFO root:201 - Login successful, generating OTP...
+16:01:04,005  INFO root:257 - OTP sent to email: mailmeabhinav6@gmail.com
+16:01:16,129 DEBUG root:60 - Handling POST request
+16:01:16,130 DEBUG root:34 - Handling GET request for: /verify-otp
+16:01:16,144  INFO root:280 - OTP verified successfully
+16:01:22,982 DEBUG root:60 - Handling POST request
+16:01:22,982 DEBUG root:34 - Handling GET request for: /login
+16:01:22,996  INFO root:201 - Login successful, generating OTP...
+16:01:27,137 DEBUG root:60 - Handling POST request
+16:01:27,138 DEBUG root:34 - Handling GET request for: /login
+16:01:27,151  INFO root:201 - Login successful, generating OTP...
+16:01:29,502  INFO root:257 - OTP sent to email: mailmeabhinav6@gmail.com
+16:01:32,675  INFO root:257 - OTP sent to email: mailmeabhinav6@gmail.com
+16:01:43,258 DEBUG root:60 - Handling POST request
+16:01:43,258 DEBUG root:34 - Handling GET request for: /verify-otp
+16:01:43,271  INFO root:280 - OTP verified successfully
+16:01:47,072 DEBUG root:34 - Handling GET request for: /logout
+16:01:55,757 DEBUG root:34 - Handling GET request for: /verify-otp
+16:02:50,887  INFO root:26 - BookServlet initialized
+16:02:50,889 DEBUG root:60 - Handling POST request
+16:02:50,889 DEBUG root:34 - Handling GET request for: /login
+16:02:51,277  INFO root:198 - Login successful, generating OTP...
+16:02:58,283  INFO root:254 - OTP sent to email: mailmeabhinav6@gmail.com
+16:03:08,817 DEBUG root:60 - Handling POST request
+16:03:08,818 DEBUG root:34 - Handling GET request for: /verify-otp
+16:03:08,831  INFO root:277 - OTP verified successfully
+16:03:12,046 DEBUG root:34 - Handling GET request for: /logout
+16:03:21,210 DEBUG root:34 - Handling GET request for: /verify-otp
+16:06:45,581  INFO root:26 - BookServlet initialized
+16:06:45,583 DEBUG root:60 - Handling POST request
+16:06:45,584 DEBUG root:34 - Handling GET request for: /login
+16:06:45,987  INFO root:203 - Login successful, generating OTP...
+16:07:02,424 DEBUG root:60 - Handling POST request
+16:07:02,425 DEBUG root:34 - Handling GET request for: /verify-otp
+16:07:02,441  INFO root:282 - OTP verified successfully
+16:07:03,727  INFO root:259 - OTP sent to email: mailmeabhinav6@gmail.com
+16:07:05,473 DEBUG root:34 - Handling GET request for: /logout
+16:07:07,178 DEBUG root:34 - Handling GET request for: /verify-otp
+16:07:46,798 DEBUG root:60 - Handling POST request
+16:07:46,798 DEBUG root:34 - Handling GET request for: /login
+16:07:46,810  WARN root:229 - Login failed
+16:07:55,310 DEBUG root:60 - Handling POST request
+16:07:55,310 DEBUG root:34 - Handling GET request for: /login
+16:07:55,323  INFO root:203 - Login successful, generating OTP...
+16:08:01,066  INFO root:259 - OTP sent to email: mailmeabhinav6@gmail.com
+16:08:09,708 DEBUG root:60 - Handling POST request
+16:08:09,708 DEBUG root:34 - Handling GET request for: /verify-otp
+16:08:09,719  INFO root:282 - OTP verified successfully
+16:08:12,897 DEBUG root:34 - Handling GET request for: /list
+16:08:14,725 DEBUG root:34 - Handling GET request for: /list
+16:08:21,029 DEBUG root:34 - Handling GET request for: /logout
+16:08:25,586 DEBUG root:34 - Handling GET request for: /list
+16:08:28,526 DEBUG root:34 - Handling GET request for: /list
+16:08:39,376 DEBUG root:60 - Handling POST request
+16:08:39,376 DEBUG root:34 - Handling GET request for: /login
+16:08:39,387  INFO root:203 - Login successful, generating OTP...
+16:08:41,415 DEBUG root:34 - Handling GET request for: /list
+16:08:45,105  INFO root:259 - OTP sent to email: mailmeabhinav6@gmail.com
+16:08:57,435 DEBUG root:34 - Handling GET request for: /list
+16:08:57,474 DEBUG root:34 - Handling GET request for: /list
+16:09:16,904 DEBUG root:34 - Handling GET request for: /list
+16:09:16,943 DEBUG root:34 - Handling GET request for: /list
+16:09:29,151 DEBUG root:34 - Handling GET request for: /edit
+16:09:29,161  INFO root:153 - Editing book with ID: 1
+16:09:31,308 DEBUG root:34 - Handling GET request for: /list
+16:09:34,038 DEBUG root:34 - Handling GET request for: /logout
+16:09:37,364 DEBUG root:34 - Handling GET request for: /list
+16:09:38,505 DEBUG root:34 - Handling GET request for: /list
+16:09:42,453 DEBUG root:34 - Handling GET request for: /list
+16:09:42,991 DEBUG root:34 - Handling GET request for: /verify-otp
+16:10:00,993 DEBUG root:60 - Handling POST request
+16:10:00,993 DEBUG root:34 - Handling GET request for: /update
+16:10:01,005  INFO root:170 - Updated book: Book{id=1, author='Author', customer='Customer ', price=284.14,bookName='Book 1907',insertedDate='null',updatedDate='null'}
+16:10:18,964 DEBUG root:60 - Handling POST request
+16:10:18,964 DEBUG root:34 - Handling GET request for: /update
+16:10:18,986  INFO root:170 - Updated book: Book{id=1, author='Author', customer='Customer ', price=28884.14,bookName='Book 1907',insertedDate='null',updatedDate='null'}
+16:11:08,128 DEBUG root:60 - Handling POST request
+16:11:08,128 DEBUG root:34 - Handling GET request for: /update
+16:11:08,178  INFO root:170 - Updated book: Book{id=1, author='Author', customer='Customer ', price=84.14,bookName='Book 1907',insertedDate='null',updatedDate='null'}
+16:12:26,100 DEBUG root:34 - Handling GET request for: /list
+16:12:41,191 DEBUG root:60 - Handling POST request
+16:12:41,191 DEBUG root:34 - Handling GET request for: /login
+16:12:41,202  INFO root:203 - Login successful, generating OTP...
+16:12:48,320  INFO root:259 - OTP sent to email: mailmeabhinav6@gmail.com
+16:13:05,967 DEBUG root:60 - Handling POST request
+16:13:05,967 DEBUG root:34 - Handling GET request for: /login
+16:13:05,976  INFO root:203 - Login successful, generating OTP...
+16:13:12,174  INFO root:259 - OTP sent to email: anujkuro7@gmail.com
+16:13:22,307 DEBUG root:60 - Handling POST request
+16:13:22,307 DEBUG root:34 - Handling GET request for: /verify-otp
+16:13:22,317  WARN root:286 - Invalid or expired OTP
+16:13:25,733 DEBUG root:60 - Handling POST request
+16:13:25,733 DEBUG root:34 - Handling GET request for: /verify-otp
+16:13:25,742  WARN root:286 - Invalid or expired OTP
+16:13:30,603 DEBUG root:60 - Handling POST request
+16:13:30,603 DEBUG root:34 - Handling GET request for: /verify-otp
+16:13:30,613  WARN root:286 - Invalid or expired OTP
+16:13:41,472 DEBUG root:60 - Handling POST request
+16:13:41,472 DEBUG root:34 - Handling GET request for: /verify-otp
+16:13:41,482  WARN root:286 - Invalid or expired OTP
+16:13:53,373 DEBUG root:60 - Handling POST request
+16:13:53,373 DEBUG root:34 - Handling GET request for: /verify-otp
+16:13:53,383  WARN root:286 - Invalid or expired OTP
+16:14:12,098 DEBUG root:60 - Handling POST request
+16:14:12,098 DEBUG root:34 - Handling GET request for: /verify-otp
+16:14:12,107  INFO root:282 - OTP verified successfully
+16:14:19,920 DEBUG root:60 - Handling POST request
+16:14:19,920 DEBUG root:34 - Handling GET request for: /verify-otp
+16:14:19,929  WARN root:286 - Invalid or expired OTP
+16:14:29,673 DEBUG root:34 - Handling GET request for: /list
+16:14:48,231 DEBUG root:60 - Handling POST request
+16:14:48,231 DEBUG root:34 - Handling GET request for: /verify-otp
+16:14:48,241  WARN root:286 - Invalid or expired OTP
+16:15:19,775 DEBUG root:60 - Handling POST request
+16:15:19,775 DEBUG root:34 - Handling GET request for: /login
+16:15:19,785  INFO root:203 - Login successful, generating OTP...
+16:15:24,999  INFO root:259 - OTP sent to email: mailmeabhinav6@gmail.com
+16:15:28,696 DEBUG root:60 - Handling POST request
+16:15:28,696 DEBUG root:34 - Handling GET request for: /verify-otp
+16:15:28,706  INFO root:282 - OTP verified successfully
+16:15:47,581 DEBUG root:34 - Handling GET request for: /list
+16:15:54,466 DEBUG root:34 - Handling GET request for: /logout
+16:15:55,947 DEBUG root:34 - Handling GET request for: /verify-otp
+16:16:04,428 DEBUG root:34 - Handling GET request for: /verify-otp
+16:16:13,339 DEBUG root:34 - Handling GET request for: /verify-otp
+16:16:27,673 DEBUG root:34 - Handling GET request for: /verify-
+16:16:38,295 DEBUG root:60 - Handling POST request
+16:16:38,296 DEBUG root:34 - Handling GET request for: /login
+16:16:38,304  INFO root:203 - Login successful, generating OTP...
+16:16:44,326  INFO root:259 - OTP sent to email: anujkuro7@gmail.com
+16:16:47,004 DEBUG root:60 - Handling POST request
+16:16:47,005 DEBUG root:34 - Handling GET request for: /login
+16:16:47,016  INFO root:203 - Login successful, generating OTP...
+16:16:53,543  INFO root:259 - OTP sent to email: mailmeabhinav6@gmail.com
+16:16:58,367 DEBUG root:60 - Handling POST request
+16:16:58,368 DEBUG root:34 - Handling GET request for: /verify-otp
+16:16:58,377  INFO root:282 - OTP verified successfully
+16:17:05,690 DEBUG root:60 - Handling POST request
+16:17:05,690 DEBUG root:34 - Handling GET request for: /verify-otp
+16:17:05,698  INFO root:282 - OTP verified successfully
+16:17:13,688 DEBUG root:34 - Handling GET request for: /logout
+16:17:14,962 DEBUG root:34 - Handling GET request for: /verify-otp
+16:17:14,971  WARN root:286 - Invalid or expired OTP
+16:46:53,191  INFO root:26 - BookServlet initialized
+16:46:53,193 DEBUG root:60 - Handling POST request
+16:46:53,193 DEBUG root:34 - Handling GET request for: /login
+16:46:53,610  INFO root:202 - Login successful, generating OTP...
+16:47:01,603  INFO root:258 - OTP sent to email: mailmeabhinav6@gmail.com
+16:47:11,245 DEBUG root:60 - Handling POST request
+16:47:11,246 DEBUG root:34 - Handling GET request for: /verify-otp
+16:47:11,259  INFO root:281 - OTP verified successfully
+16:47:13,817 DEBUG root:34 - Handling GET request for: /list
+16:47:22,491 DEBUG root:34 - Handling GET request for: /list
+16:48:14,136  INFO root:26 - BookServlet initialized
+16:48:14,138 DEBUG root:34 - Handling GET request for: /list
+16:48:21,392 DEBUG root:34 - Handling GET request for: /list
+16:48:22,766 DEBUG root:34 - Handling GET request for: /list
+16:48:29,852 DEBUG root:34 - Handling GET request for: /list
+16:50:19,645 DEBUG root:34 - Handling GET request for: /list
+16:50:20,485 DEBUG root:34 - Handling GET request for: /list
+16:50:42,710  INFO root:26 - BookServlet initialized
+16:50:42,712 DEBUG root:60 - Handling POST request
+16:50:42,712 DEBUG root:34 - Handling GET request for: /login
+16:50:43,151  INFO root:202 - Login successful, generating OTP...
+16:50:50,110  INFO root:258 - OTP sent to email: mailmeabhinav6@gmail.com
+16:51:01,884 DEBUG root:60 - Handling POST request
+16:51:01,885 DEBUG root:34 - Handling GET request for: /verify-otp
+16:51:01,900  INFO root:281 - OTP verified successfully
+16:51:02,273 ERROR root:290 - Error verifying OTP from DB
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND user_id=1' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:990)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1058)
+	at net.codejava.bookstore.BookDAO.listBooksPaginated(BookDAO.java:153)
+	at net.codejava.bookstore.BookServlet.list(BookServlet.java:85)
+	at net.codejava.bookstore.BookServlet.verifyOtp(BookServlet.java:283)
+	at net.codejava.bookstore.BookServlet.doGet(BookServlet.java:45)
+	at net.codejava.bookstore.BookServlet.doPost(BookServlet.java:61)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+16:51:57,704  INFO root:26 - BookServlet initialized
+16:51:57,705 DEBUG root:60 - Handling POST request
+16:51:57,705 DEBUG root:34 - Handling GET request for: /verify-otp
+16:51:57,853  WARN root:285 - Invalid or expired OTP
+16:52:04,586 DEBUG root:60 - Handling POST request
+16:52:04,587 DEBUG root:34 - Handling GET request for: /login
+16:52:04,600  INFO root:202 - Login successful, generating OTP...
+16:52:10,254  INFO root:258 - OTP sent to email: mailmeabhinav6@gmail.com
+16:52:17,949 DEBUG root:60 - Handling POST request
+16:52:17,949 DEBUG root:34 - Handling GET request for: /verify-otp
+16:52:17,962  INFO root:281 - OTP verified successfully
+16:52:20,499 DEBUG root:34 - Handling GET request for: /list
+16:52:23,303 DEBUG root:34 - Handling GET request for: /list
+16:52:27,614 DEBUG root:34 - Handling GET request for: /list
+16:52:29,138 DEBUG root:34 - Handling GET request for: /list
+16:52:31,747 DEBUG root:34 - Handling GET request for: /list
+16:52:33,026 DEBUG root:34 - Handling GET request for: /list
+16:52:38,282 DEBUG root:34 - Handling GET request for: /list
+16:52:39,536 DEBUG root:34 - Handling GET request for: /list
+16:52:41,405 DEBUG root:34 - Handling GET request for: /list
+16:52:42,745 DEBUG root:34 - Handling GET request for: /list
