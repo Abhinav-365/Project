@@ -1,35 +1,37 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #b3d9ff, #e6f0ff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    color: #333;
+    color: #eee;
 }
 
 .body-container {
-    display: block;
-    margin: 25px auto;
-    padding: 25px;
+    width: 95%;
     max-width: 900px;
-    background: white;
-    border-radius: 25px;   
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 
 form {
     border-radius: 20px;
-    width: 100%;
     max-width: 400px;
     margin: 30px auto;
-  
+    padding: 30px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
     text-align: center;
 }
 
 form h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #f0f0f0;
 }
 
 form input[type="text"],
@@ -38,10 +40,14 @@ form input[type="number"] {
     display: block;
     width: 90%;
     padding: 12px;
-    margin: 6px auto;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    margin: 10px auto;
+    border: 1px solid #bbb;
+    border-radius: 8px;
     box-sizing: border-box;
+    background: rgba(255,255,255,0.8);
+    color: #222;
+    font-size: 16px;
+    transition: border-color 0.3s;
 }
 
 form input[type="text"]:focus,
@@ -57,11 +63,13 @@ form input[type="submit"] {
     padding: 12px;
     background: #3399ff;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    margin: 12px auto 0 auto;
+    margin: 15px auto 0 auto;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 form input[type="submit"]:hover {
@@ -71,39 +79,51 @@ form input[type="submit"]:hover {
 a[href="list"] {
     display: block;
     text-align: center;
-    margin-top: 1px;
+    margin-top: 10px;
     color: #ff4d4d;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 table th, table td {
-    padding: 12px 15px;
-    border: 1px solid #eee;
+    padding: 14px 15px;
+    border: 1px solid rgba(255,255,255,0.15);
     text-align: left;
+    color: #eee;
 }
 
 table th {
-    background-color: #f4f6f9;
+    background-color: rgba(51, 153, 255, 0.4);
+    font-weight: 600;
 }
 
 table tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 a {
     color: #3399ff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     margin-right: 10px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #267acc;
 }
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #f0f0f0;
+    margin-bottom: 20px;
 }

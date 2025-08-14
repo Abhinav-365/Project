@@ -1,0 +1,515 @@
+11:00:55,733  INFO root:26 - BookServlet initialized
+11:00:55,735 DEBUG root:60 - Handling POST request
+11:00:55,735 DEBUG root:34 - Handling GET request for: /login
+11:00:56,163  INFO root:265 - Login successful, generating OTP...
+11:01:01,789  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+11:01:22,517 DEBUG root:60 - Handling POST request
+11:01:22,518 DEBUG root:34 - Handling GET request for: /verify-otp
+11:01:22,531  INFO root:344 - OTP verified successfully
+11:18:15,010  INFO root:26 - BookServlet initialized
+11:18:15,013 DEBUG root:60 - Handling POST request
+11:18:15,014 DEBUG root:34 - Handling GET request for: /login
+11:18:15,436  INFO root:265 - Login successful, generating OTP...
+11:18:21,096  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+11:18:42,642 DEBUG root:60 - Handling POST request
+11:18:42,643 DEBUG root:34 - Handling GET request for: /verify-otp
+11:18:42,657  INFO root:344 - OTP verified successfully
+11:20:51,017 DEBUG root:60 - Handling POST request
+11:20:51,017 DEBUG root:34 - Handling GET request for: /verify-otp
+11:20:51,029  WARN root:349 - Invalid or expired OTP
+11:20:56,115 DEBUG root:60 - Handling POST request
+11:20:56,115 DEBUG root:34 - Handling GET request for: /login
+11:20:56,127  INFO root:265 - Login successful, generating OTP...
+11:21:01,663  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+11:21:23,102 DEBUG root:60 - Handling POST request
+11:21:23,102 DEBUG root:34 - Handling GET request for: /verify-otp
+11:21:23,116  INFO root:344 - OTP verified successfully
+11:21:23,286 DEBUG root:34 - Handling GET request for: /styles.css
+11:22:07,510 DEBUG root:34 - Handling GET request for: /edit
+11:22:07,518  INFO root:194 - Editing book with ID: 3
+11:22:11,654 DEBUG root:60 - Handling POST request
+11:22:11,654 DEBUG root:34 - Handling GET request for: /verify-otp
+11:22:11,665  WARN root:349 - Invalid or expired OTP
+11:28:19,349  INFO root:26 - BookServlet initialized
+11:28:19,351 DEBUG root:60 - Handling POST request
+11:28:19,351 DEBUG root:34 - Handling GET request for: /login
+11:28:19,773  INFO root:265 - Login successful, generating OTP...
+11:28:25,406  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+11:28:35,641 DEBUG root:60 - Handling POST request
+11:28:35,642 DEBUG root:34 - Handling GET request for: /verify-otp
+11:28:35,656  INFO root:344 - OTP verified successfully
+11:29:12,050 DEBUG root:60 - Handling POST request
+11:29:12,050 DEBUG root:34 - Handling GET request for: /login
+11:29:12,064  INFO root:265 - Login successful, generating OTP...
+11:29:17,531  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+11:29:30,666 DEBUG root:60 - Handling POST request
+11:29:30,666 DEBUG root:34 - Handling GET request for: /verify-otp
+11:29:30,679  INFO root:344 - OTP verified successfully
+11:30:33,692 DEBUG root:34 - Handling GET request for: /verify-otp
+11:30:33,704  WARN root:354 - Invalid or expired OTP
+11:30:39,721 DEBUG root:60 - Handling POST request
+11:30:39,722 DEBUG root:34 - Handling GET request for: /verify-otp
+11:30:39,734  WARN root:354 - Invalid or expired OTP
+11:30:44,251 DEBUG root:60 - Handling POST request
+11:30:44,251 DEBUG root:34 - Handling GET request for: /login
+11:30:44,262  INFO root:265 - Login successful, generating OTP...
+11:30:49,735  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+11:31:08,686 DEBUG root:60 - Handling POST request
+11:31:08,686 DEBUG root:34 - Handling GET request for: /verify-otp
+11:31:08,697  INFO root:344 - OTP verified successfully
+11:33:20,349 DEBUG root:34 - Handling GET request for: /verify-otp
+11:33:20,360  WARN root:354 - Invalid or expired OTP
+11:33:38,753 DEBUG root:60 - Handling POST request
+11:33:38,753 DEBUG root:34 - Handling GET request for: /login
+11:33:38,762  INFO root:265 - Login successful, generating OTP...
+11:33:44,391  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+11:33:56,550 DEBUG root:60 - Handling POST request
+11:33:56,551 DEBUG root:34 - Handling GET request for: /verify-otp
+11:33:56,561  INFO root:344 - OTP verified successfully
+11:38:58,739 DEBUG root:34 - Handling GET request for: /verify-otp
+11:38:58,748  WARN root:354 - Invalid or expired OTP
+11:39:04,362 DEBUG root:60 - Handling POST request
+11:39:04,362 DEBUG root:34 - Handling GET request for: /login
+11:39:04,371  INFO root:265 - Login successful, generating OTP...
+11:39:09,927  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+11:39:31,873 DEBUG root:60 - Handling POST request
+11:39:31,873 DEBUG root:34 - Handling GET request for: /verify-otp
+11:39:31,882  INFO root:344 - OTP verified successfully
+11:43:05,542  INFO root:26 - BookServlet initialized
+11:43:05,545 DEBUG root:60 - Handling POST request
+11:43:05,545 DEBUG root:34 - Handling GET request for: /register
+11:43:11,290  INFO root:321 - OTP sent to email: ranjani.bhatt@vfirst.com
+11:43:32,319 DEBUG root:60 - Handling POST request
+11:43:32,320 DEBUG root:34 - Handling GET request for: /verify-otp
+11:43:32,333  WARN root:353 - Invalid or expired OTP
+11:44:43,647 DEBUG root:60 - Handling POST request
+11:44:43,648 DEBUG root:34 - Handling GET request for: /verify-otp
+11:44:43,662  INFO root:344 - OTP verified successfully
+11:45:06,111 DEBUG root:34 - Handling GET request for: /search
+11:45:11,326 DEBUG root:34 - Handling GET request for: /search
+11:45:19,246 DEBUG root:34 - Handling GET request for: /list
+11:45:22,095 DEBUG root:34 - Handling GET request for: /edit
+11:45:22,107  INFO root:194 - Editing book with ID: 3
+11:45:26,606 DEBUG root:34 - Handling GET request for: /list
+11:45:28,368 DEBUG root:34 - Handling GET request for: /edit
+11:45:28,380  INFO root:194 - Editing book with ID: 3
+11:45:34,113 DEBUG root:34 - Handling GET request for: /list
+11:45:35,831 DEBUG root:34 - Handling GET request for: /new
+11:45:35,831  INFO root:147 - Showing book form
+11:45:38,593 DEBUG root:34 - Handling GET request for: /list
+11:45:44,682 DEBUG root:34 - Handling GET request for: /delete
+11:45:44,696  WARN root:239 - Deleted book with ID: 3
+11:46:41,113 DEBUG root:34 - Handling GET request for: /list
+11:46:42,784 DEBUG root:34 - Handling GET request for: /list
+11:46:44,183 DEBUG root:34 - Handling GET request for: /list
+11:47:57,423 DEBUG root:34 - Handling GET request for: /new
+11:47:57,423  INFO root:147 - Showing book form
+11:48:12,303 DEBUG root:60 - Handling POST request
+11:48:12,303 DEBUG root:34 - Handling GET request for: /insert
+11:48:12,303  INFO root:163 - Inserting a new book
+11:48:12,341 DEBUG root:174 - Book inserted: Book{id=0, author='old auther', customer='new book', price=10.00,bookName='old book',insertedDate='null',updatedDate='null'}
+11:48:25,263 DEBUG root:34 - Handling GET request for: /list
+11:48:35,978 DEBUG root:34 - Handling GET request for: /edit
+11:48:35,987  INFO root:194 - Editing book with ID: 21
+11:48:37,957 DEBUG root:34 - Handling GET request for: /list
+11:48:48,406 DEBUG root:34 - Handling GET request for: /list
+11:49:36,847 DEBUG root:34 - Handling GET request for: /logout
+11:51:48,523 DEBUG root:34 - Handling GET request for: /list
+11:51:49,403 DEBUG root:34 - Handling GET request for: /edit
+12:22:22,559  INFO root:26 - BookServlet initialized
+12:22:22,563 DEBUG root:34 - Handling GET request for: /
+14:59:03,333  INFO root:26 - BookServlet initialized
+14:59:03,335 DEBUG root:60 - Handling POST request
+14:59:03,335 DEBUG root:34 - Handling GET request for: /login
+14:59:03,733  INFO root:265 - Login successful, generating OTP...
+14:59:09,699  INFO root:321 - OTP sent to email: anujkuro7@gmail.com
+14:59:28,081 DEBUG root:60 - Handling POST request
+14:59:28,081 DEBUG root:34 - Handling GET request for: /verify-otp
+14:59:28,095  INFO root:344 - OTP verified successfully
+14:59:49,494 DEBUG root:34 - Handling GET request for: /list
+14:59:50,797 DEBUG root:34 - Handling GET request for: /list
+14:59:51,882 DEBUG root:34 - Handling GET request for: /list
+14:59:53,969 DEBUG root:34 - Handling GET request for: /list
+14:59:57,318 DEBUG root:34 - Handling GET request for: /delete
+14:59:57,332  WARN root:239 - Deleted book with ID: 6
+15:04:28,558 DEBUG root:34 - Handling GET request for: /delete
+15:04:28,568  WARN root:239 - Deleted book with ID: 6
+15:04:30,242 DEBUG root:34 - Handling GET request for: /delete
+15:04:30,252  WARN root:239 - Deleted book with ID: 6
+15:04:32,887 DEBUG root:34 - Handling GET request for: /list
+15:04:32,931 DEBUG root:34 - Handling GET request for: /list
+15:04:33,558 DEBUG root:34 - Handling GET request for: /list
+15:04:33,596 DEBUG root:34 - Handling GET request for: /list
+15:04:34,202 DEBUG root:34 - Handling GET request for: /list
+15:04:34,240 DEBUG root:34 - Handling GET request for: /list
+15:04:34,777 DEBUG root:34 - Handling GET request for: /list
+15:04:34,812 DEBUG root:34 - Handling GET request for: /list
+15:04:35,397 DEBUG root:34 - Handling GET request for: /verify-otp
+15:04:35,406  WARN root:353 - Invalid or expired OTP
+15:04:58,761 DEBUG root:60 - Handling POST request
+15:04:58,761 DEBUG root:34 - Handling GET request for: /login
+15:04:58,771  INFO root:265 - Login successful, generating OTP...
+15:05:04,019  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+15:05:24,485 DEBUG root:60 - Handling POST request
+15:05:24,485 DEBUG root:34 - Handling GET request for: /verify-otp
+15:05:24,495  INFO root:344 - OTP verified successfully
+15:07:33,285 DEBUG root:60 - Handling POST request
+15:07:33,285 DEBUG root:34 - Handling GET request for: /login
+15:07:33,296  INFO root:265 - Login successful, generating OTP...
+15:07:38,167  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+15:08:08,375 DEBUG root:60 - Handling POST request
+15:08:08,375 DEBUG root:34 - Handling GET request for: /verify-otp
+15:08:08,384  INFO root:344 - OTP verified successfully
+15:08:15,089 DEBUG root:34 - Handling GET request for: /new
+15:08:15,089  INFO root:147 - Showing book form
+15:08:18,290 DEBUG root:34 - Handling GET request for: /list
+15:08:20,913 DEBUG root:34 - Handling GET request for: /edit
+15:08:20,921  INFO root:194 - Editing book with ID: 4
+15:08:23,039 DEBUG root:34 - Handling GET request for: /list
+15:09:33,822 DEBUG root:34 - Handling GET request for: /list
+15:09:36,381 DEBUG root:34 - Handling GET request for: /edit
+15:09:36,391  INFO root:194 - Editing book with ID: 4
+15:09:39,008 DEBUG root:34 - Handling GET request for: /list
+15:09:40,399 DEBUG root:34 - Handling GET request for: /edit
+15:09:40,408  INFO root:194 - Editing book with ID: 4
+15:09:42,103 DEBUG root:34 - Handling GET request for: /list
+15:09:45,755 DEBUG root:34 - Handling GET request for: /edit
+15:09:45,763  INFO root:194 - Editing book with ID: 5
+15:09:47,600 DEBUG root:34 - Handling GET request for: /list
+15:09:49,159 DEBUG root:34 - Handling GET request for: /edit
+15:09:49,168  INFO root:194 - Editing book with ID: 4
+15:09:51,089 DEBUG root:34 - Handling GET request for: /edit
+15:09:51,099  INFO root:194 - Editing book with ID: 4
+15:09:53,508 DEBUG root:34 - Handling GET request for: /list
+15:09:56,719 DEBUG root:34 - Handling GET request for: /delete
+15:09:56,738  WARN root:239 - Deleted book with ID: 4
+15:09:58,972 DEBUG root:34 - Handling GET request for: /edit
+15:09:58,981  INFO root:194 - Editing book with ID: 7
+15:10:00,391 DEBUG root:34 - Handling GET request for: /list
+15:10:01,592 DEBUG root:34 - Handling GET request for: /edit
+15:10:01,602  INFO root:194 - Editing book with ID: 5
+15:10:03,164 DEBUG root:34 - Handling GET request for: /list
+15:10:04,480 DEBUG root:34 - Handling GET request for: /edit
+15:10:04,489  INFO root:194 - Editing book with ID: 8
+15:10:05,783 DEBUG root:34 - Handling GET request for: /list
+15:10:07,184 DEBUG root:34 - Handling GET request for: /edit
+15:10:07,193  INFO root:194 - Editing book with ID: 10
+15:10:08,555 DEBUG root:34 - Handling GET request for: /list
+15:10:09,763 DEBUG root:34 - Handling GET request for: /edit
+15:10:09,772  INFO root:194 - Editing book with ID: 5
+15:10:11,586 DEBUG root:34 - Handling GET request for: /list
+15:11:03,293 DEBUG root:34 - Handling GET request for: /edit
+15:11:03,303  INFO root:194 - Editing book with ID: 5
+15:11:04,962 DEBUG root:34 - Handling GET request for: /list
+15:11:06,254 DEBUG root:34 - Handling GET request for: /edit
+15:11:06,262  INFO root:194 - Editing book with ID: 7
+15:11:07,896 DEBUG root:34 - Handling GET request for: /list
+15:11:09,285 DEBUG root:34 - Handling GET request for: /list
+15:11:10,714 DEBUG root:34 - Handling GET request for: /edit
+15:11:10,722  INFO root:194 - Editing book with ID: 21
+15:11:12,184 DEBUG root:34 - Handling GET request for: /list
+15:12:56,834 DEBUG root:34 - Handling GET request for: /edit
+15:12:56,843  INFO root:194 - Editing book with ID: 5
+15:12:58,293 DEBUG root:34 - Handling GET request for: /list
+15:12:59,629 DEBUG root:34 - Handling GET request for: /edit
+15:12:59,637  INFO root:194 - Editing book with ID: 7
+15:13:00,791 DEBUG root:34 - Handling GET request for: /list
+15:13:13,369 DEBUG root:34 - Handling GET request for: /edit
+15:13:13,378  INFO root:194 - Editing book with ID: 7
+15:13:24,167 DEBUG root:60 - Handling POST request
+15:13:24,167 DEBUG root:34 - Handling GET request for: /insert
+15:13:24,167  INFO root:163 - Inserting a new book
+15:13:24,179 DEBUG root:174 - Book inserted: Book{id=0, author='hgchg', customer='mn mn', price=56.00,bookName='gfccgf',insertedDate='null',updatedDate='null'}
+15:13:35,384 DEBUG root:34 - Handling GET request for: /edit
+15:13:35,392  INFO root:194 - Editing book with ID: 5
+15:13:48,786 DEBUG root:60 - Handling POST request
+15:13:48,787 DEBUG root:34 - Handling GET request for: /update
+15:13:48,796  INFO root:221 - Updated book: Book{id=11, author='Author', customer='Customer', price=7903.68,bookName='Book ',insertedDate='null',updatedDate='null'}
+15:13:57,252 DEBUG root:34 - Handling GET request for: /list
+15:14:02,511 DEBUG root:34 - Handling GET request for: /edit
+15:14:02,518  INFO root:194 - Editing book with ID: 12
+15:14:04,289 DEBUG root:34 - Handling GET request for: /list
+15:14:57,984  INFO root:26 - BookServlet initialized
+15:14:57,986 DEBUG root:60 - Handling POST request
+15:14:57,986 DEBUG root:34 - Handling GET request for: /login
+15:14:58,476  INFO root:265 - Login successful, generating OTP...
+15:15:03,809  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+15:15:27,084 DEBUG root:60 - Handling POST request
+15:15:27,085 DEBUG root:34 - Handling GET request for: /verify-otp
+15:15:27,099  INFO root:344 - OTP verified successfully
+15:15:28,801 DEBUG root:34 - Handling GET request for: /edit
+15:15:28,815  INFO root:194 - Editing book with ID: 5
+15:15:30,372 DEBUG root:34 - Handling GET request for: /list
+15:15:31,800 DEBUG root:34 - Handling GET request for: /edit
+15:15:31,811  INFO root:194 - Editing book with ID: 7
+15:15:34,658 DEBUG root:34 - Handling GET request for: /list
+15:15:36,057 DEBUG root:34 - Handling GET request for: /new
+15:15:36,058  INFO root:147 - Showing book form
+15:15:37,501 DEBUG root:34 - Handling GET request for: /list
+15:15:38,838 DEBUG root:34 - Handling GET request for: /edit
+15:15:38,853  INFO root:194 - Editing book with ID: 5
+15:15:40,632 DEBUG root:34 - Handling GET request for: /list
+15:15:42,356 DEBUG root:34 - Handling GET request for: /edit
+15:15:42,367  INFO root:194 - Editing book with ID: 7
+15:15:43,934 DEBUG root:34 - Handling GET request for: /list
+15:15:48,387 DEBUG root:34 - Handling GET request for: /edit
+15:15:48,401  INFO root:194 - Editing book with ID: 8
+15:15:50,269 DEBUG root:34 - Handling GET request for: /list
+15:15:52,608 DEBUG root:34 - Handling GET request for: /edit
+15:15:52,619  INFO root:194 - Editing book with ID: 5
+15:15:54,443 DEBUG root:34 - Handling GET request for: /list
+15:15:56,095 DEBUG root:34 - Handling GET request for: /edit
+15:15:56,105  INFO root:194 - Editing book with ID: 7
+15:17:08,486 DEBUG root:34 - Handling GET request for: /edit
+15:17:08,497  INFO root:194 - Editing book with ID: 5
+15:17:28,120 DEBUG root:34 - Handling GET request for: /edit
+15:17:28,132  INFO root:194 - Editing book with ID: 5
+15:17:31,347 DEBUG root:34 - Handling GET request for: /edit
+15:17:31,358  INFO root:194 - Editing book with ID: 5
+15:18:15,743 DEBUG root:34 - Handling GET request for: /edit
+15:18:15,755  INFO root:194 - Editing book with ID: 5
+15:18:34,256 DEBUG root:34 - Handling GET request for: /edit
+15:18:34,265  INFO root:194 - Editing book with ID: 5
+15:18:40,718 DEBUG root:34 - Handling GET request for: /list
+15:18:42,641 DEBUG root:34 - Handling GET request for: /edit
+15:18:42,650  INFO root:194 - Editing book with ID: 7
+15:18:46,131 DEBUG root:34 - Handling GET request for: /list
+15:21:05,682 DEBUG root:34 - Handling GET request for: /list
+15:21:08,154 DEBUG root:34 - Handling GET request for: /edit
+15:21:08,163  INFO root:194 - Editing book with ID: 1
+15:21:09,795 DEBUG root:34 - Handling GET request for: /list
+15:21:11,818 DEBUG root:34 - Handling GET request for: /edit
+15:21:11,827  INFO root:194 - Editing book with ID: 2
+15:21:14,355 DEBUG root:34 - Handling GET request for: /list
+15:21:15,882 DEBUG root:34 - Handling GET request for: /edit
+15:21:15,891  INFO root:194 - Editing book with ID: 3
+15:21:17,280 DEBUG root:34 - Handling GET request for: /list
+15:21:23,528 DEBUG root:34 - Handling GET request for: /edit
+15:21:23,539  INFO root:194 - Editing book with ID: 1
+15:38:02,642 DEBUG root:34 - Handling GET request for: /edit
+15:38:02,652  INFO root:194 - Editing book with ID: 1
+15:38:15,044 DEBUG root:34 - Handling GET request for: /list
+15:39:50,443 DEBUG root:60 - Handling POST request
+15:39:50,443 DEBUG root:34 - Handling GET request for: /login
+15:39:50,452  INFO root:265 - Login successful, generating OTP...
+15:39:55,617  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+15:40:27,533 DEBUG root:60 - Handling POST request
+15:40:27,533 DEBUG root:34 - Handling GET request for: /verify-otp
+15:40:27,543  INFO root:344 - OTP verified successfully
+15:40:33,441 DEBUG root:34 - Handling GET request for: /customerLogin
+15:40:34,657 DEBUG root:34 - Handling GET request for: /customerLogin
+15:40:35,781 DEBUG root:34 - Handling GET request for: /adminLogin
+15:43:36,216 DEBUG root:34 - Handling GET request for: /adminLogin
+15:43:38,144 DEBUG root:34 - Handling GET request for: /adminLogin
+15:43:38,509 DEBUG root:34 - Handling GET request for: /adminLogin
+15:43:38,736 DEBUG root:34 - Handling GET request for: /adminLogin
+15:43:38,916 DEBUG root:34 - Handling GET request for: /adminLogin
+15:43:39,203 DEBUG root:34 - Handling GET request for: /adminLogin
+15:43:50,253 DEBUG root:34 - Handling GET request for: /adminLogin
+15:45:09,851 DEBUG root:34 - Handling GET request for: /edit
+15:45:09,861  INFO root:194 - Editing book with ID: 4
+15:45:11,911 DEBUG root:34 - Handling GET request for: /list
+15:45:13,884 DEBUG root:34 - Handling GET request for: /logout
+15:45:16,788 DEBUG root:34 - Handling GET request for: /list
+15:45:17,549 DEBUG root:34 - Handling GET request for: /edit
+15:45:17,764 DEBUG root:34 - Handling GET request for: /adminLogin
+15:45:17,965 DEBUG root:34 - Handling GET request for: /customerLogin
+15:45:18,256 DEBUG root:34 - Handling GET request for: /verify-otp
+15:52:32,826 DEBUG root:60 - Handling POST request
+15:52:32,826 DEBUG root:34 - Handling GET request for: /login
+15:52:32,836  INFO root:265 - Login successful, generating OTP...
+15:52:38,308  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+15:52:46,007 DEBUG root:60 - Handling POST request
+15:52:46,008 DEBUG root:34 - Handling GET request for: /verify-otp
+15:52:46,017  WARN root:353 - Invalid or expired OTP
+15:52:50,269 DEBUG root:60 - Handling POST request
+15:52:50,270 DEBUG root:34 - Handling GET request for: /verify-otp
+15:52:50,279  INFO root:344 - OTP verified successfully
+15:52:58,217 DEBUG root:34 - Handling GET request for: /new
+15:52:58,217  INFO root:147 - Showing book form
+15:53:57,420 DEBUG root:60 - Handling POST request
+15:53:57,420 DEBUG root:34 - Handling GET request for: /insert
+15:53:57,420  INFO root:163 - Inserting a new book
+15:53:57,432 DEBUG root:174 - Book inserted: Book{id=0, author='Chetan', customer='Hardik', price=500.02,bookName='Flamingo',insertedDate='null',updatedDate='null'}
+15:56:17,090 DEBUG root:60 - Handling POST request
+15:56:17,090 DEBUG root:34 - Handling GET request for: /login
+15:56:17,099  INFO root:265 - Login successful, generating OTP...
+15:56:22,046  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+15:56:29,930 DEBUG root:60 - Handling POST request
+15:56:29,930 DEBUG root:34 - Handling GET request for: /verify-otp
+15:56:29,939  INFO root:344 - OTP verified successfully
+15:56:35,806 DEBUG root:34 - Handling GET request for: /list
+15:56:36,046 DEBUG root:34 - Handling GET request for: /list
+15:56:36,983 DEBUG root:34 - Handling GET request for: /list
+15:56:39,004 DEBUG root:34 - Handling GET request for: /list
+15:56:44,367 DEBUG root:34 - Handling GET request for: /list
+15:56:46,968 DEBUG root:34 - Handling GET request for: /edit
+15:56:46,976  INFO root:194 - Editing book with ID: 11
+15:57:08,410 DEBUG root:60 - Handling POST request
+15:57:08,410 DEBUG root:34 - Handling GET request for: /insert
+15:57:08,410  INFO root:163 - Inserting a new book
+15:57:08,422 DEBUG root:174 - Book inserted: Book{id=0, author='hb', customer='hb', price=2100.00,bookName='hb',insertedDate='null',updatedDate='null'}
+15:57:10,071 DEBUG root:34 - Handling GET request for: /list
+15:57:11,121 DEBUG root:34 - Handling GET request for: /list
+15:57:21,251 DEBUG root:34 - Handling GET request for: /edit
+15:57:21,257  INFO root:194 - Editing book with ID: 12
+15:57:29,687 DEBUG root:60 - Handling POST request
+15:57:29,687 DEBUG root:34 - Handling GET request for: /insert
+15:57:29,687  INFO root:163 - Inserting a new book
+15:57:29,698 DEBUG root:174 - Book inserted: Book{id=0, author='hj', customer='hj', price=1200.00,bookName='hj',insertedDate='null',updatedDate='null'}
+15:57:31,623 DEBUG root:34 - Handling GET request for: /list
+15:57:41,751 DEBUG root:34 - Handling GET request for: /delete
+15:57:41,760  WARN root:239 - Deleted book with ID: 13
+15:57:43,639 DEBUG root:34 - Handling GET request for: /list
+15:58:26,043  INFO root:26 - BookServlet initialized
+15:58:26,044 DEBUG root:34 - Handling GET request for: /list
+15:58:28,324 DEBUG root:34 - Handling GET request for: /edit
+15:58:28,333  INFO root:194 - Editing book with ID: 11
+16:02:02,903  INFO root:26 - BookServlet initialized
+16:02:02,905 DEBUG root:60 - Handling POST request
+16:02:02,905 DEBUG root:34 - Handling GET request for: /login
+16:02:03,407  INFO root:265 - Login successful, generating OTP...
+16:02:09,035  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+16:02:23,001 DEBUG root:60 - Handling POST request
+16:02:23,002 DEBUG root:34 - Handling GET request for: /verify-otp
+16:02:23,016  INFO root:344 - OTP verified successfully
+16:02:26,330 DEBUG root:34 - Handling GET request for: /edit
+16:02:26,344  INFO root:194 - Editing book with ID: 1
+16:02:27,825 DEBUG root:34 - Handling GET request for: /list
+16:02:29,017 DEBUG root:34 - Handling GET request for: /edit
+16:02:29,029  INFO root:194 - Editing book with ID: 2
+16:02:30,651 DEBUG root:34 - Handling GET request for: /list
+16:02:33,249 DEBUG root:34 - Handling GET request for: /edit
+16:02:33,260  INFO root:194 - Editing book with ID: 3
+16:02:35,057 DEBUG root:34 - Handling GET request for: /list
+16:02:36,220 DEBUG root:34 - Handling GET request for: /edit
+16:02:36,230  INFO root:194 - Editing book with ID: 4
+16:02:37,458 DEBUG root:34 - Handling GET request for: /list
+16:02:38,645 DEBUG root:34 - Handling GET request for: /edit
+16:02:38,656  INFO root:194 - Editing book with ID: 5
+16:02:41,740 DEBUG root:34 - Handling GET request for: /list
+16:02:43,413 DEBUG root:34 - Handling GET request for: /list
+16:03:34,334 DEBUG root:34 - Handling GET request for: /edit
+16:03:34,344  INFO root:194 - Editing book with ID: 10
+16:03:37,468 DEBUG root:34 - Handling GET request for: /list
+16:03:39,291 DEBUG root:34 - Handling GET request for: /edit
+16:03:39,301  INFO root:194 - Editing book with ID: 5
+16:03:44,312 DEBUG root:34 - Handling GET request for: /edit
+16:03:44,322  INFO root:194 - Editing book with ID: 5
+16:03:46,665 DEBUG root:34 - Handling GET request for: /edit
+16:03:46,677  INFO root:194 - Editing book with ID: 5
+16:04:49,382 DEBUG root:34 - Handling GET request for: /edit
+16:04:49,389  INFO root:194 - Editing book with ID: 5
+16:04:53,324 DEBUG root:34 - Handling GET request for: /list
+16:04:57,332  INFO root:26 - BookServlet initialized
+16:04:57,333 DEBUG root:34 - Handling GET request for: /edit
+16:04:57,495  INFO root:184 - Editing book with ID: 1
+16:04:59,431 DEBUG root:34 - Handling GET request for: /list
+16:05:01,110 DEBUG root:34 - Handling GET request for: /edit
+16:05:01,120  INFO root:184 - Editing book with ID: 2
+16:05:02,569 DEBUG root:34 - Handling GET request for: /list
+16:05:03,701 DEBUG root:34 - Handling GET request for: /list
+16:05:05,683 DEBUG root:34 - Handling GET request for: /edit
+16:05:05,693  INFO root:184 - Editing book with ID: 10
+16:05:07,403 DEBUG root:34 - Handling GET request for: /list
+16:05:09,318 DEBUG root:34 - Handling GET request for: /edit
+16:05:09,327  INFO root:184 - Editing book with ID: 1
+16:05:10,739 DEBUG root:34 - Handling GET request for: /list
+16:05:11,955 DEBUG root:34 - Handling GET request for: /edit
+16:05:11,964  INFO root:184 - Editing book with ID: 2
+16:05:13,360 DEBUG root:34 - Handling GET request for: /list
+16:05:14,644 DEBUG root:34 - Handling GET request for: /edit
+16:05:14,653  INFO root:184 - Editing book with ID: 3
+16:05:15,905 DEBUG root:34 - Handling GET request for: /list
+16:05:17,325 DEBUG root:34 - Handling GET request for: /edit
+16:05:17,333  INFO root:184 - Editing book with ID: 4
+16:05:18,761 DEBUG root:34 - Handling GET request for: /list
+16:05:20,060 DEBUG root:34 - Handling GET request for: /edit
+16:05:20,070  INFO root:184 - Editing book with ID: 5
+16:05:21,588 DEBUG root:34 - Handling GET request for: /list
+16:05:23,267 DEBUG root:34 - Handling GET request for: /list
+16:05:24,931 DEBUG root:34 - Handling GET request for: /edit
+16:05:24,941  INFO root:184 - Editing book with ID: 6
+16:05:26,298 DEBUG root:34 - Handling GET request for: /list
+16:05:27,702 DEBUG root:34 - Handling GET request for: /list
+16:05:29,346 DEBUG root:34 - Handling GET request for: /edit
+16:05:29,355  INFO root:184 - Editing book with ID: 7
+16:05:30,744 DEBUG root:34 - Handling GET request for: /list
+16:05:32,333 DEBUG root:34 - Handling GET request for: /list
+16:05:33,617 DEBUG root:34 - Handling GET request for: /edit
+16:05:33,627  INFO root:184 - Editing book with ID: 8
+16:05:34,861 DEBUG root:34 - Handling GET request for: /list
+16:05:36,199 DEBUG root:34 - Handling GET request for: /list
+16:05:37,455 DEBUG root:34 - Handling GET request for: /edit
+16:05:37,464  INFO root:184 - Editing book with ID: 9
+16:05:38,750 DEBUG root:34 - Handling GET request for: /list
+16:05:39,942 DEBUG root:34 - Handling GET request for: /list
+16:05:41,143 DEBUG root:34 - Handling GET request for: /edit
+16:05:41,152  INFO root:184 - Editing book with ID: 10
+16:05:42,494 DEBUG root:34 - Handling GET request for: /list
+16:05:43,817 DEBUG root:34 - Handling GET request for: /list
+16:05:45,435 DEBUG root:34 - Handling GET request for: /edit
+16:05:45,444  INFO root:184 - Editing book with ID: 11
+16:05:46,740 DEBUG root:34 - Handling GET request for: /list
+16:05:48,153 DEBUG root:34 - Handling GET request for: /list
+16:05:49,497 DEBUG root:34 - Handling GET request for: /edit
+16:05:49,506  INFO root:184 - Editing book with ID: 12
+16:05:51,084 DEBUG root:34 - Handling GET request for: /list
+16:10:34,197  INFO root:26 - BookServlet initialized
+16:10:34,199 DEBUG root:60 - Handling POST request
+16:10:34,199 DEBUG root:34 - Handling GET request for: /login
+16:10:34,612  INFO root:255 - Login successful, generating OTP...
+16:10:41,057  INFO root:311 - OTP sent to email: mailmeabhinav6@gmail.com
+16:10:58,338 DEBUG root:60 - Handling POST request
+16:10:58,339 DEBUG root:34 - Handling GET request for: /verify-otp
+16:10:58,353  INFO root:334 - OTP verified successfully
+16:11:00,612 DEBUG root:34 - Handling GET request for: /edit
+16:11:00,624  INFO root:184 - Editing book with ID: 1
+16:11:02,236 DEBUG root:34 - Handling GET request for: /list
+16:11:04,769 DEBUG root:34 - Handling GET request for: /edit
+16:11:04,783  INFO root:184 - Editing book with ID: 5
+16:11:06,370 DEBUG root:34 - Handling GET request for: /list
+16:11:17,330 DEBUG root:34 - Handling GET request for: /edit
+16:11:17,342  INFO root:184 - Editing book with ID: 1
+16:11:22,167 DEBUG root:34 - Handling GET request for: /list
+16:11:23,771 DEBUG root:34 - Handling GET request for: /edit
+16:11:23,784  INFO root:184 - Editing book with ID: 5
+16:11:46,422 DEBUG root:34 - Handling GET request for: /edit
+16:11:46,436  INFO root:184 - Editing book with ID: 1
+16:12:13,331 DEBUG root:34 - Handling GET request for: /edit
+16:12:13,342  INFO root:184 - Editing book with ID: 5
+16:12:43,729 DEBUG root:34 - Handling GET request for: /edit
+16:12:43,745  INFO root:184 - Editing book with ID: 1
+16:13:18,550 DEBUG root:34 - Handling GET request for: /edit
+16:13:18,562  INFO root:184 - Editing book with ID: 5
+16:13:29,389 DEBUG root:34 - Handling GET request for: /edit
+16:13:29,404  INFO root:184 - Editing book with ID: 5
+16:13:46,648 DEBUG root:34 - Handling GET request for: /edit
+16:13:46,660  INFO root:184 - Editing book with ID: 1
+16:15:21,739  INFO root:26 - BookServlet initialized
+16:15:21,741 DEBUG root:57 - Handling POST request
+16:15:21,742 DEBUG root:34 - Handling GET request for: /login
+16:15:22,126  INFO root:191 - Login successful, generating OTP...
+16:15:27,674  INFO root:244 - OTP sent to email: Value First
+16:15:40,651 DEBUG root:57 - Handling POST request
+16:15:40,652 DEBUG root:34 - Handling GET request for: /verify-otp
+16:15:40,667  INFO root:267 - OTP verified successfully
+16:15:42,176 DEBUG root:34 - Handling GET request for: /edit
+16:15:42,191  INFO root:141 - Editing book with ID: 1
+16:15:43,755 DEBUG root:34 - Handling GET request for: /list
+16:20:20,629  INFO root:26 - BookServlet initialized
+16:20:20,631 DEBUG root:60 - Handling POST request
+16:20:20,631 DEBUG root:34 - Handling GET request for: /login
+16:20:20,793  INFO root:265 - Login successful, generating OTP...
+16:20:26,932  INFO root:321 - OTP sent to email: mailmeabhinav6@gmail.com
+16:20:35,963 DEBUG root:60 - Handling POST request
+16:20:35,963 DEBUG root:34 - Handling GET request for: /verify-otp
+16:20:35,977  INFO root:344 - OTP verified successfully
+16:20:37,470 DEBUG root:34 - Handling GET request for: /edit
+16:20:37,482  INFO root:194 - Editing book with ID: 1
+16:20:39,194 DEBUG root:34 - Handling GET request for: /list
+16:20:59,963 DEBUG root:34 - Handling GET request for: /edit
+16:20:59,975  INFO root:194 - Editing book with ID: 5
+16:21:02,842 DEBUG root:34 - Handling GET request for: /list
+16:21:04,383 DEBUG root:34 - Handling GET request for: /edit
+16:21:04,392  INFO root:194 - Editing book with ID: 1

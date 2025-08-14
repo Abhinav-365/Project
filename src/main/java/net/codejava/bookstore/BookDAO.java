@@ -28,7 +28,7 @@ public class BookDAO {
 
     public List<Book> listAllBooks() throws SQLException {
         List<Book> list = new ArrayList<>();
-        String sql = "SELECT * FROM book_store WHERE entry_status = 1";
+        String sql = "SELECT * FROM book_store WHERE entry_status = 1 AND user_id=1";
         connect();
         Statement stmt = jdbcConnection.createStatement();
         ResultSet rs = stmt.executeQuery(sql);
@@ -123,7 +123,7 @@ public class BookDAO {
 
     public Book getBook(int id) throws SQLException {
         Book book = null;
-        String sql = "SELECT * FROM book_store WHERE id = ?";
+        String sql = "SELECT * FROM book_store WHERE id = ? ";
         connect();
         PreparedStatement ps = jdbcConnection.prepareStatement(sql);
         ps.setInt(1, id);
@@ -291,4 +291,163 @@ public class BookDAO {
         ps.close();
         disconnect();
     }
+    
+    public boolean isUserExists(String username) throws SQLException {
+        String sql = "SELECT user_name FROM login WHERE user_name = ?";
+        connect();
+        PreparedStatement ps = jdbcConnection.prepareStatement(sql);
+        ps.setString(1, username);
+        ResultSet rs = ps.executeQuery();
+        boolean exists = rs.next();
+        rs.close(); ps.close(); disconnect();
+        return exists;
+    }
+
+    public boolean insertUser(String username, String passwordHash, String email) throws SQLException {
+        String sql = "INSERT INTO login (user_name, password, email_id) VALUES (?, ?, ?)";
+        connect();
+        PreparedStatement ps = jdbcConnection.prepareStatement(sql);
+        ps.setString(1, username);
+        ps.setString(2, passwordHash);
+        ps.setString(3, email);
+        boolean inserted = ps.executeUpdate() > 0;
+        ps.close(); disconnect();
+        return inserted;
+    }
+    
+    public String userEmail(String username) throws SQLException {
+        String email = null;
+        String sql = "SELECT email_id FROM login WHERE user_name=?";
+        connect();
+
+        PreparedStatement ps = jdbcConnection.prepareStatement(sql);
+        ps.setString(1, username);
+        ResultSet rs = ps.executeQuery();
+        if (rs.next()) {
+            email = rs.getString("email_id");
+        }
+        rs.close();
+        ps.close();
+        disconnect();
+        
+        return email;
+    }
+    
+    public void recordLoginTime(String username) throws SQLException {
+        int userId = getUserIdByUsername(username); // You'll need this method
+        String sql = "INSERT INTO user_sessions (user_id) VALUES (?)";
+        connect();
+        PreparedStatement stmt = jdbcConnection.prepareStatement(sql);
+        stmt.setInt(1, userId);
+        stmt.executeUpdate();
+        disconnect();
+    }
+
+
+    
+    public void recordLogoutTime(String username) throws SQLException {
+        int userId = getUserIdByUsername(username);
+        String sql = "UPDATE user_sessions SET logout_time = CURRENT_TIMESTAMP WHERE user_id = ? AND logout_time IS NULL";
+        connect();
+        PreparedStatement stmt = jdbcConnection.prepareStatement(sql);
+        stmt.setInt(1, userId);
+        stmt.executeUpdate();
+        disconnect();
+    }
+    
+    public int getUserIdByUsername(String username) throws SQLException {
+        String sql = "SELECT user_id FROM login WHERE user_name = ?";
+        connect();
+        PreparedStatement stmt = jdbcConnection.prepareStatement(sql);
+        stmt.setString(1, username);
+        ResultSet rs = stmt.executeQuery();
+        int id = -1;
+        if (rs.next()) {
+            id = rs.getInt("user_id");
+        }
+        rs.close();
+        stmt.close();
+        disconnect();
+        return id;
+    }
+
+    public List<User> listUsers() throws SQLException {
+        List<User> listUsers = new ArrayList<>();
+        String sql = "SELECT user_id, user_name, user_type, email_id FROM login";
+
+        connect();
+        PreparedStatement stmt = jdbcConnection.prepareStatement(sql);
+        ResultSet rs = stmt.executeQuery();
+
+        while (rs.next()) {
+            User user = new User();
+            user.setId(rs.getInt("user_id"));
+            user.setUsername(rs.getString("user_name"));  // fixed
+            user.setUserType(rs.getString("user_type"));  // fixed
+            user.setEmail(rs.getString("email_id"));
+            listUsers.add(user);
+        }
+
+        rs.close();
+        stmt.close();
+        disconnect();
+
+        return listUsers;
+    }
+
+    public boolean insertUser(String username, String passwordHash, String email, String userType) throws SQLException {
+        String sql = "INSERT INTO login (user_name, password, email_id, user_type) VALUES (?, ?, ?, ?)";
+        connect();
+        PreparedStatement ps = jdbcConnection.prepareStatement(sql);
+        ps.setString(1, username);
+        ps.setString(2, passwordHash);
+        ps.setString(3, email);
+        ps.setString(4, userType);
+        boolean inserted = ps.executeUpdate() > 0;
+        ps.close();
+        disconnect();
+        return inserted;
+    }
+
+    public boolean deleteUser(int userId) throws SQLException {
+        connect();
+
+        try {
+            // Delete dependent records first
+            String sqlBookStore = "DELETE FROM book_store WHERE user_id = ?";
+            PreparedStatement psBookStore = jdbcConnection.prepareStatement(sqlBookStore);
+            psBookStore.setInt(1, userId);
+            psBookStore.executeUpdate();
+            psBookStore.close();
+
+            // Now delete from login
+            String sqlLogin = "DELETE FROM login WHERE user_id = ?";
+            PreparedStatement psLogin = jdbcConnection.prepareStatement(sqlLogin);
+            psLogin.setInt(1, userId);
+            boolean deleted = psLogin.executeUpdate() > 0;
+            psLogin.close();
+
+            return deleted;
+        } finally {
+            disconnect();
+        }
+    }
+
+
+
+    public boolean insertUserWithType(String username, String passwordHash, String email, String userType) throws SQLException {
+        String sql = "INSERT INTO login (user_name, password, email_id, user_type) VALUES (?, ?, ?, ?)";
+        connect();
+        PreparedStatement ps = jdbcConnection.prepareStatement(sql);
+        ps.setString(1, username);
+        ps.setString(2, passwordHash);
+        ps.setString(3, email);
+        ps.setString(4, userType);
+        boolean inserted = ps.executeUpdate() > 0;
+        ps.close();
+        disconnect();
+        return inserted;
+    }
+
+
 }
